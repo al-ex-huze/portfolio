@@ -127,15 +127,15 @@ p {
 .Profile {
     grid-area: Profile;
     display: flex;
-    width: 100%;
+    justify-self: center;
+        width: 100%;
     margin-top: 20%;
 }
 
 .Projects {
     grid-area: Projects;
     display: flex;
-    width: 100%;
-    
+    justify-self: center;    width: 100%;
 }
 
 .Contact {
@@ -180,12 +180,22 @@ p {
         display: block;
     }
 
-.Profile {
-    grid-area: Profile;
-    display: flex;
-    width: 100%;
-    margin-top: 10%;
-}
+    .Profile {
+        grid-area: Profile;
+        
+        width: 100%;
+        margin-top: 10%;
+        max-width: 1280px;
+    }
+
+    .Projects {
+        max-width: 1280px;
+    }
+
+    .Contact {
+        max-width: 1280px;
+    }
+
     .desktop-nav {
         display: flex;
         font-size: 2rem;

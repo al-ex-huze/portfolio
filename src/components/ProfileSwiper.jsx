@@ -3,14 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import "./ProfileSwiper.css";
+import styles from "./ProfileSwiper.module.css";
 
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 
 const ProfileSwiper = () => {
     return (
-        <div className="ProfileSwiper__container">
+        
             <Swiper
                 style={{
                     "--swiper-navigation-color": "#fff",
@@ -92,7 +91,6 @@ const ProfileSwiper = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-        </div>
     );
 };
 

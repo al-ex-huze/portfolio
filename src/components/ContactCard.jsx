@@ -10,6 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { IconButton } from "@mui/material";
+import { Margin } from "@mui/icons-material";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: "#fff",
@@ -25,7 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const card = (
     <React.Fragment>
         <CardContent>
-            <Typography variant="h5">Get In Touch</Typography>
+            <Typography variant="h5">Contact Me</Typography>
         </CardContent>
         <CardActions
             sx={{
@@ -61,13 +62,21 @@ const card = (
                 <EmailIcon style={{ fontSize: "200px" }} />
             </IconButton>
         </CardActions>
+        <Typography
+            sx={{
+                color: "text.secondary",
+                mb: 1.5,
+            }}
+        >
+            {"("}Yes I'm Open For Work{")"}
+        </Typography>
     </React.Fragment>
 );
 
 const ContactCard = () => {
     return (
         <div className="Contact__card">
-            <Box sx={{ minWidth: 275 }}>
+            <Box sx={{ marginTop: "15px", minWidth: 275 }}>
                 <Item>
                     <Card variant="outlined">{card}</Card>
                 </Item>

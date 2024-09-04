@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid2";
 
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
-import "./ProjectsGrid.css";
+import styles from "./ProjectsGrid.module.css";
 import ContactCard from "./ContactCard";
 
 const ProjectsGrid = ({ visibleSection }) => {
