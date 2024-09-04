@@ -62,7 +62,7 @@ const ProjectsGrid = ({ visibleSection }) => {
             >
                 {projectsData.map((projectDatum) => {
                     return (
-                        <Grid key={projectDatum.event_id} size="grow">
+                        <Grid key={projectDatum.event_id}  size={{ xs: 4, sm: 8, md:  10}}>
                             <Item>
                                 <ProjectCard projectDatum={projectDatum} />
                             </Item>

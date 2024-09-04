@@ -67,6 +67,17 @@ p {
     font-size: 1.5em;
 }
 
+.App {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "Banner"
+        "Profile"
+        "Projects"
+        "Contact";
+    justify-content: center;
+}
 .Banner {
     grid-area: Banner;
     position: fixed;
@@ -118,14 +129,15 @@ p {
 .Nav__link:hover {
     text-decoration: underline 0.1rem;
 }
-
 .Content {
     grid-area: Content;
     display: block;
     justify-content: center;
     width: 100%;
-    margin-top: 20%;
+    height: auto;
+    margin-top: 15%;
     max-width: 1280px;
+    overflow: hidden;
 }
 
 .Profile {
@@ -138,26 +150,22 @@ p {
     grid-area: Projects;
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 
 .Contact {
     grid-area: Contact;
     display: flex;
     justify-self: center;
-    /* margin-top: 20%; */
+    color: white;
+    padding: 10px;
 }
 
 .Contact__card {
     display: flex;
     justify-self: center;
-    width:fit-content
+    width: fit-content;
 }
-
-.App {
-    display: flex;
-    justify-content: center;
-}
-
 .desktop-nav {
     display: none;
 }
@@ -168,7 +176,14 @@ p {
 
 @media (min-width: 768px) {
     .App {
-        display: flex;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "Banner"
+            "Profile"
+            "Projects"
+            "Contact";
         justify-content: center;
     }
     .Header img {
@@ -185,9 +200,6 @@ p {
     .mobile-nav {
         display: none;
     }
-}
-
-@media (max-width: 768px) {
 }
 
 .section {

@@ -13,7 +13,7 @@ const ProjectCard = ({ projectDatum }) => {
     return (
         <Card sx={{ width: "100%" }}>
             <CardMedia
-                style={{ borderRadius: "4px", height: 0, paddingTop: "56.25%" }}
+                style={{height: 0, paddingTop: "56.25%" }}
                 image={`${projectDatum.event_img_url}`}
                 title={projectDatum.title}
             />

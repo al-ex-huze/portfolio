@@ -13,13 +13,14 @@ import { IconButton } from "@mui/material";
 const card = (
     <React.Fragment>
         <CardContent>
-            <Typography variant="h5" component="div">
+            <Typography variant="h5">
                 Get In Touch
             </Typography>
         </CardContent>
         <CardActions
             sx={{
                 display: "flex",
+                alignItems: "flex-end",
                 width: "fit-content",
                 justifyContent: "space-between",
             }}
@@ -55,11 +56,11 @@ const card = (
 
 const ContactCard = () => {
     return (
-        <div className="Contact__card">
+        // <div className="Contact__card">
             <Box sx={{ minWidth: 275 }}>
                 <Card variant="outlined">{card}</Card>
             </Box>
-        </div>
+        // </div>
     );
 };
 
