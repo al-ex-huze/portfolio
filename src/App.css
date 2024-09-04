@@ -1,109 +1,124 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 200vh;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
 }
 
 .app {
-  position: relative;
+    position: relative;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  transition: transform 0.3s, top 0.3s;
-  position: relative;
+h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
-.logo {
-  width: 200px;
-  height: auto;
-  transition: width 0.3s, top 0.3s;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+p {
+    font-size: 1.5em;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #003153);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #003153);
-}
-
-.scrolled {
-  transform: translate(-50%, -50%);
-  position: fixed;
-  top: 20px;
-  left: 20px;
+.App {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "Header Nav"
+        "Profile Profile"
+        "Projects Projects"
+        "Contact Contact";
 }
 
-.scrolled .logo {
-  width: 100px;
-  transform: translate(30px, 50px);
+@media only screen and (min-width: 768px) {
+    .App {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "Header Nav"
+            "Profile Profile"
+            "Projects Projects"
+            "Contact Contact";
+    }
 }
 
-.sticky {
-  top: 0;
+.Header {
+    grid-area: Header;
+    position: fixed;
+    top: 20px; /* Adjust as necessary */
+    left: 20px; /* Adjust as necessary */
+    transition: top 0.3s; /* Smooth transition */
 }
-
+.Header img {
+    width: 200px; /* Initial logo size */
+    transition: width 0.3s; /* Smooth logo resizing */
+}
+.Nav {
+    grid-area: Nav;
+}
 .navbar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  transition: top 0.3s;
+    position: absolute;
+    top: 20px; /* Adjust as necessary */
+    right: 20px; /* Adjust as necessary */
+    transition: top 0.3s; /* Smooth transition */
 }
 
 .navbar.sticky {
-  position: fixed;
-  top: 10px;
+    position: fixed; /* Make it fixed when scrolling */
+    top: 10px; /* Adjust as necessary */
 }
 
 .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .navbar li {
-  margin-left: 20px;
+    margin-left: 20px; /* Space between links */
 }
 
 .navbar a {
-  text-decoration: none;
-  color: #008FFB;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: #005c8a; /* Darker shade on hover */
+    font-size: xx-large;
+    transition: color 0.3s; /* Smooth transition for color */
 }
 
 .navbar a:hover {
-  color: #005C8A;
+    color: #003153; /* Link color */
 }
-
-.content {
-  padding: 20px;
+.Profile {
+    grid-area: Profile;
+}
+.Projects {
+    grid-area: Projects;
+}
+.Contact {
+    grid-area: Contact;
 }
