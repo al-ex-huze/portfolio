@@ -1,9 +1,9 @@
 import Nav from "./Nav";
 
-const Banner = () => {
+const Banner = ({ setVisibleSection }) => {
     return (
         <div className="Banner">
-            <Nav />
+            <Nav setVisibleSection={setVisibleSection} />
         </div>
     );
 };

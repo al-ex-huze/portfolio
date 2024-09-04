@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from "react";
 import "../App.css";
 import ProjectsGrid from "./ProjectsGrid";
 
-const Projects = () => {
+const Projects = ({ visibleSection }) => {
     return (
-        <div className="Projects" id="Projects">
+        <div
+            className={`Projects section ${
+                visibleSection === "section2" ? "fade-in" : "fade-out"
+            }`}
+            id="section2"
+        >
             <ProjectsGrid />
         </div>
     );
