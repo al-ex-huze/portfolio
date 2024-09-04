@@ -24,7 +24,7 @@
 }
 
 html {
-    display: flex;
+    display: flexbox;
     justify-content: center;
     width: 100%;
     margin: 0;
@@ -110,7 +110,7 @@ p {
 }
 
 .Nav__link {
-    font-size: 50px;
+    font-size: 2rem;
     color: #ffffff;
     padding: 0px 10px;
 }
@@ -121,7 +121,7 @@ p {
 
 .Content {
     grid-area: Content;
-    display: block;
+    display: flexbox;
     justify-content: center;
     width: 100%;
     margin-top: 20%;
@@ -136,11 +136,21 @@ p {
 
 .Projects {
     grid-area: Projects;
+    display: flex;
     width: 100%;
 }
 
 .Contact {
     grid-area: Contact;
+    display: flex;
+    justify-self: center;
+    /* margin-top: 20%; */
+}
+
+.Contact__card {
+    display: flex;
+    justify-self: center;
+    width:fit-content
 }
 
 .App {

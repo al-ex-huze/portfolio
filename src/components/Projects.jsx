@@ -9,7 +9,7 @@ const Projects = ({ visibleSection }) => {
             }`}
             id="section2"
         >
-            <ProjectsGrid />
+            <ProjectsGrid visibleSection={visibleSection} />
         </div>
     );
 };

@@ -6,9 +6,9 @@ import Grid from "@mui/material/Grid2";
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
 import "../styles/ProjectsGrid.css";
-import { ImageTwoTone } from "@mui/icons-material";
+import ContactCard from "./ContactCard";
 
-const ProjectsGrid = () => {
+const ProjectsGrid = ({ visibleSection }) => {
     const [projectsData, setProjectsData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -56,7 +56,8 @@ const ProjectsGrid = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Grid
-                // direction="row"
+                container
+                direction="row"
                 spacing={2}
                 sx={{
                     justifyContent: "center",
@@ -67,14 +68,32 @@ const ProjectsGrid = () => {
                     return (
                         <Grid
                             key={projectDatum.event_id}
-                            size={Math.floor(Math.random() * 8)}
+                            // size={Math.floor(Math.random() * (10) + 6)}
+                            size={Math.floor(10)}
                         >
-                            <Item>
-                                <ProjectCard projectDatum={projectDatum} />
-                            </Item>
+                            <div
+                                className={`Contact section ${
+                                    visibleSection === "section2"
+                                        ? "fade-in"
+                                        : "fade-out"
+                                }`}
+                                id="section2"
+                            >
+                                <Item>
+                                    <ProjectCard projectDatum={projectDatum} />
+                                </Item>
+                            </div>
                         </Grid>
                     );
                 })}
+                <div
+                    className={`Contact section ${
+                        visibleSection === "section2" ? "fade-in" : "fade-out"
+                    }`}
+                    id="section3"
+                >
+                    <ContactCard />
+                </div>
             </Grid>
         </Box>
     );

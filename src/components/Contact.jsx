@@ -9,7 +9,7 @@ const Contact = ({ visibleSection }) => {
             }`}
             id="section3"
         >
-            <ContactCard />
+            {/* <ContactCard /> */}
         </div>
     );
 };
