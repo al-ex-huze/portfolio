@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import './App.css'; 
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 50) {
+      setIsScrolled(true);
+      if (scrollTop > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    } else {
+      setIsScrolled(false);
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app">
+      <div className={`container ${isScrolled ? 'scrolled' : ''} ${isSticky ? 'sticky' : ''}`}>
+        <img
+          src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah2003153.png"
+          alt="Logo"
+          className="logo"
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div className="content">
+        <h2>Profile</h2>
+        <p>Hi, Im Alex.</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
