@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid2";
 
+import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
 import "../styles/ProjectsGrid.css";
 
@@ -32,7 +33,6 @@ const ProjectsGrid = () => {
                     throw new Error("Network response was not ok");
                 }
                 const result = await response.json();
-                console.log(result.events);
                 setProjectsData(result.events);
             } catch (error) {
                 setError(error.message);
@@ -59,15 +59,9 @@ const ProjectsGrid = () => {
                     return (
                         <Grid
                             key={projectDatum.event_id}
-                            size={Math.floor(Math.random() * (12) + 6)}
+                            size={Math.floor(Math.random() * 3 + 6)}
                         >
-                            <Item>
-                              {/* <img style={{position:"relative"}} src={`${projectDatum.event_img_url}`}/> */}
-                                <h1>{projectDatum.title}</h1>
-                                <p>{projectDatum.body}</p>
-                                <p>{projectDatum.topics}</p>
-
-                            </Item>
+                                <ProjectCard projectDatum={projectDatum} />
                         </Grid>
                     );
                 })}
