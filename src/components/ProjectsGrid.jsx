@@ -57,43 +57,38 @@ const ProjectsGrid = ({ visibleSection }) => {
         <Box sx={{ flexGrow: 1 }}>
             <Grid
                 container
-                direction="row"
-                spacing={2}
-                sx={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
+                spacing={3}
             >
-                {projectsData.map((projectDatum) => {
-                    return (
-                        <Grid
-                            key={projectDatum.event_id}
-                            // size={Math.floor(Math.random() * (10) + 6)}
-                            size={Math.floor(10)}
-                        >
-                            <div
-                                className={`Contact section ${
-                                    visibleSection === "section2"
-                                        ? "fade-in"
-                                        : "fade-out"
-                                }`}
-                                id="section2"
-                            >
-                                <Item>
-                                    <ProjectCard projectDatum={projectDatum} />
-                                </Item>
-                            </div>
-                        </Grid>
-                    );
-                })}
                 <div
                     className={`Contact section ${
                         visibleSection === "section2" ? "fade-in" : "fade-out"
                     }`}
-                    id="section3"
+                    id="section2"
                 >
-                    <ContactCard />
+                    {projectsData.map((projectDatum) => {
+                        return (
+                            <Grid key={projectDatum.event_id} size="grow">
+                                <Item sx={{ height: "fit-content" }}>
+                                    <ProjectCard projectDatum={projectDatum} />
+                                </Item>
+                            </Grid>
+                        );
+                    })}
                 </div>
+                <Grid size="grow">
+                    <div
+                        className={`Contact section ${
+                            visibleSection === "section2"
+                                ? "fade-in"
+                                : "fade-out"
+                        }`}
+                        id="section3"
+                    >
+                        <Item sx={{ height: "fit-content" }}>
+                            <ContactCard />
+                        </Item>
+                    </div>
+                </Grid>
             </Grid>
         </Box>
     );

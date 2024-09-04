@@ -24,7 +24,7 @@
 }
 
 html {
-    display: flexbox;
+    display: flex;
     justify-content: center;
     width: 100%;
     margin: 0;
@@ -121,7 +121,7 @@ p {
 
 .Content {
     grid-area: Content;
-    display: flexbox;
+    display: block;
     justify-content: center;
     width: 100%;
     margin-top: 20%;
