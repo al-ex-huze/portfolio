@@ -29,21 +29,20 @@ const ProfileSwiper = () => {
                     slot="container-start"
                     className="parallax-bg"
                     data-swiper-parallax="-23%"
-                >
-                </div>
+                ></div>
                 <SwiperSlide>
-                    <div className="title" data-swiper-parallax="-300">
-                        Profile
-                    </div>
                     <div className="subtitle" data-swiper-parallax="-200">
+                        About me...
+                    </div>
+                    <div className="title" data-swiper-parallax="-300">
                         Alex Hughes
                     </div>
+
                     <div className="text" data-swiper-parallax="-100">
                         <p>
-                            I am an enthusiastic and dynamic developer with
-                            strong problem-solving skills built through a range
-                            of experience in the engineering and construction
-                            industries.
+                            I am an enthusiastic and versatile developer
+                            experienced in problem-solving skills built in the
+                            engineering and construction industries.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -54,9 +53,8 @@ const ProfileSwiper = () => {
                     <div className="text" data-swiper-parallax="-100">
                         <p>
                             I have recently completed Northcoders’ Software
-                            Development course allowing me to utilise these
-                            skills within a field that aligns with my passions
-                            and strengths.
+                            Development course broadening my skillset in a field
+                            that aligns with my strengths and interests.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -66,10 +64,10 @@ const ProfileSwiper = () => {
                     </div>
                     <div className="text" data-swiper-parallax="-100">
                         <p>
-                            I am pro-active and self-motivated yet I excel most
-                            when made use of. I love being challenged with a
-                            task and will always strive to deliver innovative
-                            solutions.
+                            I am self-motivated yet excel most when made use of.
+                            I love being tasked with a problem and will always
+                            rise to a challenge. I love being in the thick of it
+                            and will always do my part and more.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -79,9 +77,9 @@ const ProfileSwiper = () => {
                     </div>
                     <div className="text" data-swiper-parallax="-100">
                         <p>
-                            As a quick-learner, accustomed to facing unique
-                            challenges, I have become adept at identifying and
-                            solving complex problems in demanding situations.
+                            I am a quick-learner, but more usefully, I will
+                            never give up... Just try to tell me I cannot do
+                            something.
                         </p>
                     </div>
                 </SwiperSlide>

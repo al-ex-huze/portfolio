@@ -56,11 +56,11 @@ const card = (
 
 const ContactCard = () => {
     return (
-        // <div className="Contact__card">
+        <div className="Contact__card">
             <Box sx={{ minWidth: 275 }}>
                 <Card variant="outlined">{card}</Card>
             </Box>
-        // </div>
+        </div>
     );
 };
 

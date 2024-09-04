@@ -81,16 +81,12 @@ p {
 .Banner {
     grid-area: Banner;
     position: fixed;
-    top: 0;
-    /* left: 0; */
     height: fit-content;
     background-color: #000d15;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px;
-    padding: 0px 0px;
     z-index: 1000;
     width: 100%;
 }
@@ -100,8 +96,6 @@ p {
     justify-content: baseline;
     width: 100%;
     grid-area: Header;
-    top: 0px;
-    left: 0px;
     transition: top 0.3s;
 }
 
@@ -129,43 +123,36 @@ p {
 .Nav__link:hover {
     text-decoration: underline 0.1rem;
 }
-.Content {
-    grid-area: Content;
-    display: block;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: 15%;
-    max-width: 1280px;
-    overflow: hidden;
-}
 
 .Profile {
     grid-area: Profile;
     display: flex;
     width: 100%;
+    margin-top: 20%;
 }
 
 .Projects {
     grid-area: Projects;
     display: flex;
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .Contact {
     grid-area: Contact;
     display: flex;
     justify-self: center;
-    color: white;
+    height: fit-content;
     padding: 10px;
 }
 
 .Contact__card {
+    grid-area: Contact;
     display: flex;
     justify-self: center;
     width: fit-content;
 }
+
 .desktop-nav {
     display: none;
 }
@@ -192,6 +179,13 @@ p {
         transition: width 0.3s;
         display: block;
     }
+
+.Profile {
+    grid-area: Profile;
+    display: flex;
+    width: 100%;
+    margin-top: 10%;
+}
     .desktop-nav {
         display: flex;
         font-size: 2rem;
@@ -203,8 +197,6 @@ p {
 }
 
 .section {
-    padding: 20px;
-    height: 100vh;
     opacity: 1;
     transition: 1s ease;
 }
