@@ -1,5 +1,6 @@
 import "../App.css";
 import ProjectsGrid from "./ProjectsGrid";
+import ProjectsSwiperGrid from "./ProjectsSwiperGrid";
 
 const Projects = ({ visibleSection }) => {
     return (
@@ -9,6 +10,7 @@ const Projects = ({ visibleSection }) => {
             }`}
             id="section2"
         >
+            {/* <ProjectsSwiperGrid visibleSection={visibleSection} /> */}
             <ProjectsGrid visibleSection={visibleSection} />
         </div>
     );

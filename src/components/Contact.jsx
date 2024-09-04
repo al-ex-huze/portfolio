@@ -5,11 +5,11 @@ const Contact = ({ visibleSection }) => {
     return (
         <div
             className={`Contact section ${
-                visibleSection === "section2" ? "fade-in" : "fade-out"
+                visibleSection === "section3" ? "fade-in" : "fade-out"
             }`}
             id="section3"
         >
-            {/* <ContactCard /> */}
+            <ContactCard />
         </div>
     );
 };

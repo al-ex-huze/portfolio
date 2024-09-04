@@ -57,38 +57,18 @@ const ProjectsGrid = ({ visibleSection }) => {
         <Box sx={{ flexGrow: 1 }}>
             <Grid
                 container
-                spacing={3}
+                spacing={{ xs: 2, md: 4 }}
+                columns={{ xs: 3, sm: 4, md: 6 }}
             >
-                <div
-                    className={`Contact section ${
-                        visibleSection === "section2" ? "fade-in" : "fade-out"
-                    }`}
-                    id="section2"
-                >
-                    {projectsData.map((projectDatum) => {
-                        return (
-                            <Grid key={projectDatum.event_id} size="grow">
-                                <Item sx={{ height: "fit-content" }}>
-                                    <ProjectCard projectDatum={projectDatum} />
-                                </Item>
-                            </Grid>
-                        );
-                    })}
-                </div>
-                <Grid size="grow">
-                    <div
-                        className={`Contact section ${
-                            visibleSection === "section2"
-                                ? "fade-in"
-                                : "fade-out"
-                        }`}
-                        id="section3"
-                    >
-                        <Item sx={{ height: "fit-content" }}>
-                            <ContactCard />
-                        </Item>
-                    </div>
-                </Grid>
+                {projectsData.map((projectDatum) => {
+                    return (
+                        <Grid key={projectDatum.event_id} size="grow">
+                            <Item>
+                                <ProjectCard projectDatum={projectDatum} />
+                            </Item>
+                        </Grid>
+                    );
+                })}
             </Grid>
         </Box>
     );
