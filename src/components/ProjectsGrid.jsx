@@ -6,9 +6,9 @@ import Grid from "@mui/material/Grid2";
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
 import "../styles/ProjectsGrid.css";
-import { ImageTwoTone } from "@mui/icons-material";
+import ContactCard from "./ContactCard";
 
-const ProjectsGrid = () => {
+const ProjectsGrid = ({ visibleSection }) => {
     const [projectsData, setProjectsData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -56,25 +56,39 @@ const ProjectsGrid = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Grid
-                // direction="row"
-                spacing={2}
-                sx={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
+                container
+                spacing={3}
             >
-                {projectsData.map((projectDatum) => {
-                    return (
-                        <Grid
-                            key={projectDatum.event_id}
-                            size={Math.floor(Math.random() * 8)}
-                        >
-                            <Item>
-                                <ProjectCard projectDatum={projectDatum} />
-                            </Item>
-                        </Grid>
-                    );
-                })}
+                <div
+                    className={`Contact section ${
+                        visibleSection === "section2" ? "fade-in" : "fade-out"
+                    }`}
+                    id="section2"
+                >
+                    {projectsData.map((projectDatum) => {
+                        return (
+                            <Grid key={projectDatum.event_id} size="grow">
+                                <Item sx={{ height: "fit-content" }}>
+                                    <ProjectCard projectDatum={projectDatum} />
+                                </Item>
+                            </Grid>
+                        );
+                    })}
+                </div>
+                <Grid size="grow">
+                    <div
+                        className={`Contact section ${
+                            visibleSection === "section2"
+                                ? "fade-in"
+                                : "fade-out"
+                        }`}
+                        id="section3"
+                    >
+                        <Item sx={{ height: "fit-content" }}>
+                            <ContactCard />
+                        </Item>
+                    </div>
+                </Grid>
             </Grid>
         </Box>
     );

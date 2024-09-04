@@ -11,7 +11,7 @@ import { useState } from "react";
 
 import Header from "./Header";
 
-const Nav = () => {
+const Nav = ({ setVisibleSection }) => {
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleMenuClick = (event) => {
@@ -22,24 +22,31 @@ const Nav = () => {
         setAnchorEl(null);
     };
 
+    const handleLinkClick = (section) => {
+        setVisibleSection(section);
+        document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <AppBar position="static" style={{ backgroundColor: "#000d15" }}>
             <Toolbar>
                 <Header />
                 <Typography variant="h3" style={{ flexGrow: 1 }}></Typography>
                 <div className="desktop-nav">
+                    <MenuItem onClick={() => handleLinkClick("section1")}>
+                        <div className="Nav__link">Profile</div>
+                    </MenuItem>
                     <MenuItem
-                        class="Nav__link"
-                        component="a"
-                        href="#Profile"
+                        className="Nav__link"
+                        onClick={() => handleLinkClick("section2")}
                     >
-                        Profile
+                        <div className="Nav__link">Projects</div>
                     </MenuItem>
-                    <MenuItem class="Nav__link" component="a" href="#Projects">
-                        Projects
-                    </MenuItem>
-                    <MenuItem class="Nav__link" component="a" href="#Contact">
-                        Contact
+                    <MenuItem
+                        className="Nav__link"
+                        onClick={() => handleLinkClick("section3")}
+                    >
+                        <div className="Nav__link">Contact</div>
                     </MenuItem>
                 </div>
                 <div className="mobile-nav">

@@ -20,7 +20,7 @@ const card = (
         <CardActions
             sx={{
                 display: "flex",
-                // width: "fit-content",
+                width: "fit-content",
                 justifyContent: "space-between",
             }}
         >
@@ -55,9 +55,11 @@ const card = (
 
 const ContactCard = () => {
     return (
-        <Box sx={{ minWidth: 275 }}>
-            <Card variant="outlined">{card}</Card>
-        </Box>
+        <div className="Contact__card">
+            <Box sx={{ minWidth: 275 }}>
+                <Card variant="outlined">{card}</Card>
+            </Box>
+        </div>
     );
 };
 

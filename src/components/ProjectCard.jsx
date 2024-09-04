@@ -7,12 +7,13 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 const ProjectCard = ({ projectDatum }) => {
+    console.log(projectDatum.event_img_url)
     return (
         <Card sx={{ width: "100%" }}>
             <CardMedia
-                sx={{ height: 140 }}
+                style = {{ borderRadius: "4px", height: 0, paddingTop: '56.25%'}}
                 image={`${projectDatum.event_img_url}`}
-                title="green iguana"
+                title={projectDatum.title}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
