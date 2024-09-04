@@ -48,7 +48,6 @@ html {
 body {
     color: #ffffff;
     margin: 0;
-    max-width: 1280px;
     width: 100%;
     height: auto;
 }
@@ -66,33 +65,12 @@ p {
     font-size: 1.5em;
 }
 
-.App {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "Banner Banner"
-        "Content Content";
-}
-
-@media only screen and (min-width: 768px) {
-    .App {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "Banner Banner"
-            "Content Content";
-    }
-}
-
 .Banner {
     grid-area: Banner;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 20%;
+    /* left: 0; */
+    height: fit-content;
     background-color: #000d15;
     color: white;
     display: flex;
@@ -105,19 +83,23 @@ p {
 }
 
 .Header {
+    display: flex;
+    justify-content: baseline;
     width: 100%;
     grid-area: Header;
     top: 0px;
     left: 0px;
     transition: top 0.3s;
 }
+
 .Header img {
-    left: 10px;
-    padding: 2%;
-    width: 15%;
+    padding: 20px 0px;
+    margin: 0px;
+    width: 20%;
     transition: width 0.3s;
     display: block;
 }
+
 .Nav {
     grid-area: Nav;
     top: 0px;
@@ -125,12 +107,25 @@ p {
     transition: top 0.3s;
 }
 
+.Nav__link {
+    font-size: 50px;
+    color: #ffffff;
+    padding: 0px 10px;
+}
+
+.Nav__link:hover {
+    text-decoration: underline 0.1rem;
+}
+
 .Content {
     grid-area: Content;
-    display: flexbox;
+    display: block;
+    justify-content: center;
     width: 100%;
     margin-top: 20%;
+    max-width: 1280px;
 }
+
 .Profile {
     grid-area: Profile;
     display: flex;
@@ -142,24 +137,53 @@ p {
 }
 .Contact {
     grid-area: Contact;
-    width: 100%;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "Banner Banner"
+        "Content Content"; */
 }
 
 .desktop-nav {
-    display: flex;
-    font-size: 2rem;
-}
-
-.mobile-nav {
     display: none;
 }
 
-@media (max-width: 768px) {
+.mobile-nav {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .App {
+        /* display: grid; */
+        display: flex;
+        justify-content: center;
+        /* grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "Banner Banner"
+            "Content Content"; */
+    }
+    .Header img {
+        padding: 20px;
+        width: 10%;
+        transition: width 0.3s;
+        display: block;
+    }
     .desktop-nav {
-        display: none;
+        display: flex;
+        font-size: 2rem;
     }
 
     .mobile-nav {
-        display: block;
+        display: none;
     }
+}
+
+@media (max-width: 768px) {
 }

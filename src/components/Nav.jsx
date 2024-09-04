@@ -23,19 +23,22 @@ const Nav = () => {
     };
 
     return (
-        <AppBar position="static" style={{ backgroundColor: "#0d1117" }}>
+        <AppBar position="static" style={{ backgroundColor: "#000d15" }}>
             <Toolbar>
                 <Header />
-                <Typography variant="h6" style={{ flexGrow: 1 }}>
-                </Typography>
+                <Typography variant="h3" style={{ flexGrow: 1 }}></Typography>
                 <div className="desktop-nav">
-                    <MenuItem component="a" href="#Profile">
+                    <MenuItem
+                        class="Nav__link"
+                        component="a"
+                        href="#Profile"
+                    >
                         Profile
                     </MenuItem>
-                    <MenuItem component="a" href="#Projects">
+                    <MenuItem class="Nav__link" component="a" href="#Projects">
                         Projects
                     </MenuItem>
-                    <MenuItem component="a" href="#Contact">
+                    <MenuItem class="Nav__link" component="a" href="#Contact">
                         Contact
                     </MenuItem>
                 </div>

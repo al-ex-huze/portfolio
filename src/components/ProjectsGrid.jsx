@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid2";
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
 import "../styles/ProjectsGrid.css";
+import { ImageTwoTone } from "@mui/icons-material";
 
 const ProjectsGrid = () => {
     const [projectsData, setProjectsData] = useState([]);
@@ -54,14 +55,23 @@ const ProjectsGrid = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
+            <Grid
+                // direction="row"
+                spacing={2}
+                sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}
+            >
                 {projectsData.map((projectDatum) => {
                     return (
                         <Grid
                             key={projectDatum.event_id}
-                            size={Math.floor(Math.random() * 3 + 6)}
+                            size={Math.floor(Math.random() * 8)}
                         >
+                            <Item>
                                 <ProjectCard projectDatum={projectDatum} />
+                            </Item>
                         </Grid>
                     );
                 })}

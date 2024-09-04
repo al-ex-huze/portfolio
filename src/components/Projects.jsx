@@ -4,7 +4,7 @@ import ProjectsGrid from "./ProjectsGrid";
 
 const Projects = () => {
     return (
-        <div className="Projects">
+        <div className="Projects" id="Projects">
             <ProjectsGrid />
         </div>
     );

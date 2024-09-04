@@ -4,7 +4,7 @@ import ProfileSwiper from "./ProfileSwiper";
 
 const Profile = () => {
     return (
-        <div className="Profile">
+        <div className="Profile" id="Profile">
             <ProfileSwiper />
         </div>
     );

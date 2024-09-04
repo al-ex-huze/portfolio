@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 
 const ProjectCard = ({ projectDatum }) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ width: "100%" }}>
             <CardMedia
                 sx={{ height: 140 }}
                 image={`${projectDatum.event_img_url}`}
