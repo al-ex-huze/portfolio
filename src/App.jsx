@@ -3,8 +3,6 @@ import Banner from "./components/Banner";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-// import "./styles/ProfileSwiper.css";
-
 
 const App = () => {
     return (

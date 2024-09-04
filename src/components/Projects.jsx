@@ -1,22 +1,13 @@
 import React, { useEffect, useState } from "react";
-import "../App.css"; 
+import "../App.css";
+import ProjectsGrid from "./ProjectsGrid";
 
 const Projects = () => {
-return(
-    <div className="Projects">
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-        <h1>Projects</h1>
-    </div>
-
-)
+    return (
+        <div className="Projects">
+            <ProjectsGrid />
+        </div>
+    );
 };
 
 export default Projects;

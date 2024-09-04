@@ -1,0 +1,35 @@
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.card-description {
+    font-size: 0.9em;
+    margin: 10px;
+}

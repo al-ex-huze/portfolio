@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../App.css"; // Assuming CSS is in App.css
+import "../App.css";
 
 const Contact = () => {
 return(

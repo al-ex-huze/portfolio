@@ -28,13 +28,8 @@ const ProfileSwiper = () => {
                 <div
                     slot="container-start"
                     className="parallax-bg"
-                    // style={{
-                    //     "background-image":
-                    //         "url(https://swiperjs.com/demos/images/nature-1.jpg)",
-                    // }}
                     data-swiper-parallax="-23%"
                 >
-                    {/* <img src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah2003153bg.png" /> */}
                 </div>
                 <SwiperSlide>
                     <div className="title" data-swiper-parallax="-300">
