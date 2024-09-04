@@ -1,11 +1,11 @@
 import React from "react";
 import "../App.css";
-
+import ProfileSwiper from "./ProfileSwiper";
 
 const Profile = () => {
     return (
         <div className="Profile">
-            <h1>Profile</h1>
+            <ProfileSwiper />
         </div>
     );
 };

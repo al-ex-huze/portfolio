@@ -1,21 +1,20 @@
-import { Routes, Route } from "react-router-dom";
-
 import "./App.css";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
+import Banner from "./components/Banner";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+// import "./styles/ProfileSwiper.css";
 
 
 const App = () => {
     return (
         <div className="App">
-            <Header />
-            <Nav />
-            <Profile />
-            <Projects />
-            <Contact />
+            <Banner />
+            <div className="Content">
+                <Profile />
+                <Projects />
+                <Contact />
+            </div>
         </div>
     );
 };
