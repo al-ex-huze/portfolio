@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "../styles/ProfileSwiper.css";
+import "./ProfileSwiper.css";
 
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 
@@ -69,6 +69,14 @@ const ProfileSwiper = () => {
                             rise to a challenge. I love being in the thick of it
                             and will always do my part and more.
                         </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="subtitle" data-swiper-parallax="-200">
+                        Top Geezer
+                    </div>
+                    <div className="text" data-swiper-parallax="-100">
+                        <p>I find a solution when needed.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

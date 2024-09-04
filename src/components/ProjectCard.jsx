@@ -1,3 +1,16 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./ProjectCard.css";
+
+// import required modules
+import { EffectFlip, Pagination, Navigation } from "swiper/modules";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -13,7 +26,7 @@ const ProjectCard = ({ projectDatum }) => {
     return (
         <Card sx={{ width: "100%" }}>
             <CardMedia
-                style={{height: 0, paddingTop: "56.25%" }}
+                style={{ height: 0, paddingTop: "56.25%" }}
                 image={`${projectDatum.event_img_url}`}
                 title={projectDatum.title}
             />

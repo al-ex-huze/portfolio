@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid2";
 
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
-import "../styles/ProjectsGrid.css";
+import "./ProjectsGrid.css";
 import ContactCard from "./ContactCard";
 
 const ProjectsGrid = ({ visibleSection }) => {
@@ -62,7 +62,10 @@ const ProjectsGrid = ({ visibleSection }) => {
             >
                 {projectsData.map((projectDatum) => {
                     return (
-                        <Grid key={projectDatum.event_id}  size={{ xs: 4, sm: 8, md:  10}}>
+                        <Grid
+                            key={projectDatum.event_id}
+                            size={{ xs: 4, sm: 8, md: 10 }}
+                        >
                             <Item>
                                 <ProjectCard projectDatum={projectDatum} />
                             </Item>

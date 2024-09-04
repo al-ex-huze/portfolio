@@ -1,21 +1,31 @@
 import * as React from "react";
+import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-
+import Paper from "@mui/material/Paper";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { IconButton } from "@mui/material";
 
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: "#fff",
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+    ...theme.applyStyles("dark", {
+        backgroundColor: "#1A2027",
+    }),
+}));
+
 const card = (
     <React.Fragment>
         <CardContent>
-            <Typography variant="h5">
-                Get In Touch
-            </Typography>
+            <Typography variant="h5">Get In Touch</Typography>
         </CardContent>
         <CardActions
             sx={{
@@ -58,7 +68,9 @@ const ContactCard = () => {
     return (
         <div className="Contact__card">
             <Box sx={{ minWidth: 275 }}>
-                <Card variant="outlined">{card}</Card>
+                <Item>
+                    <Card variant="outlined">{card}</Card>
+                </Item>
             </Box>
         </div>
     );
