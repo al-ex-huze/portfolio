@@ -30,7 +30,7 @@ const card = (
         <CardActions
             sx={{
                 display: "flex",
-                alignItems: "flex-end",
+                alignItems: "center",
                 width: "fit-content",
                 justifyContent: "space-between",
             }}
@@ -41,7 +41,11 @@ const card = (
                     (window.location.href = "https://github.com/al-ex-huze")
                 }
             >
-                <GitHubIcon style={{ fontSize: "150px" }} />
+                <GitHubIcon
+                    sx={{
+                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                    }}
+                />
             </IconButton>
             <IconButton
                 aria-label="redirect"
@@ -50,7 +54,11 @@ const card = (
                         "https://www.linkedin.com/in/alex-hughes-b960a1301/")
                 }
             >
-                <LinkedInIcon style={{ fontSize: "150px" }} />
+                <LinkedInIcon
+                    sx={{
+                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                    }}
+                />
             </IconButton>
             <IconButton
                 aria-label="redirect"
@@ -58,7 +66,11 @@ const card = (
                     (window.location.href = "mailto:al.ex.hughes@outlook.com")
                 }
             >
-                <EmailIcon style={{ fontSize: "150px" }} />
+                <EmailIcon
+                    sx={{
+                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                    }}
+                />
             </IconButton>
         </CardActions>
         <Typography
