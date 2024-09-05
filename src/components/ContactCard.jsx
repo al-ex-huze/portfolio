@@ -68,7 +68,7 @@ const card = (
                 mb: 1.5,
             }}
         >
-            {"("}Yes I'm Open For Work{")"}
+            {"("}Open For Work{")"}
         </Typography>
     </React.Fragment>
 );
@@ -76,7 +76,7 @@ const card = (
 const ContactCard = () => {
     return (
         <div className="Contact__card">
-            <Box sx={{ marginTop: "15px", minWidth: 275 }}>
+            <Box sx={{ marginTop: "5px", minWidth: 200 }}>
                 <Item>
                     <Card variant="outlined">{card}</Card>
                 </Item>

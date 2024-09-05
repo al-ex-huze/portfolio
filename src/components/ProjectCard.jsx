@@ -33,11 +33,12 @@ const ProjectCard = ({ projectDatum }) => {
 
     return (
         <ReactFlipCard
+            flipTrigger="onClick"
             containerStyle={{ width: "400px", height: "400px" }}
             frontStyle={rfcStyles.card}
             backStyle={rfcStyles.card}
             frontComponent={
-                <Card>
+                <Card variant="outlined">
                     <Item sx={{ height: "400px" }}>
                         <CardMedia
                             style={{ height: 0, paddingTop: "56.25%" }}
@@ -105,63 +106,3 @@ const ProjectCard = ({ projectDatum }) => {
 };
 
 export default ProjectCard;
-
-// <SwiperSlide>
-// <Card sx={{ width: "400px" }}>
-//     <CardMedia
-//         style={{ height: 0, paddingTop: "56.25%" }}
-//         image={`${projectDatum.event_img_url}`}
-//         title={projectDatum.title}
-//     />
-//     <CardContent>
-//         <Typography
-//             gutterBottom
-//             variant="h5"
-//             component="div"
-//         >
-//             {projectDatum.title}
-//         </Typography>
-//         <Typography
-//             variant="body2"
-//             sx={{ color: "text.secondary" }}
-//         >
-//             {projectDatum.topics}
-//         </Typography>
-//     </CardContent>
-
-// <SwiperSlide>
-// <Card sx={{ width: "400px" }}>
-//     <CardContent>
-//         <Typography
-//             variant="body2"
-//             sx={{ color: "text.secondary" }}
-//         >
-//             {projectDatum.body}
-//         </Typography>
-//     </CardContent>
-//     <CardActions>
-//         {projectDatum.github_url ? (
-//             <Button
-//                 size="small"
-//                 aria-label="redirect"
-//                 onClick={(event) =>
-//                     (window.location.href = `${projectDatum.github_url}`)
-//                 }
-//             >
-//                 Repo
-//             </Button>
-//         ) : null}
-//         {projectDatum.deployed_url ? (
-//             <Button
-//                 size="small"
-//                 aria-label="redirect"
-//                 onClick={(event) =>
-//                     (window.location.href = `${projectDatum.deployed_url}`)
-//                 }
-//             >
-//                 Link
-//             </Button>
-//         ) : null}
-//     </CardActions>
-// </Card>
-//                 </SwiperSlide>
