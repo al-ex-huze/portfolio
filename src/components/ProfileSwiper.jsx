@@ -9,6 +9,7 @@ import { Parallax, Pagination, Navigation } from "swiper/modules";
 
 const ProfileSwiper = () => {
     return (
+        <div className={`${styles.ProfileSwiper}`}>
         <Swiper
             style={{
                 "--swiper-navigation-color": "#fff",
@@ -89,6 +90,7 @@ const ProfileSwiper = () => {
                 <div className="text" data-swiper-parallax="-100"></div>
             </SwiperSlide>
         </Swiper>
+        </div>
     );
 };
 

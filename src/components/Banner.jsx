@@ -10,7 +10,6 @@ const Banner = ({ setVisibleSection }) => {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY > lastScrollY) {
-            console.log("SCL Y ? LAST Y")
             setIsVisible(false);
         } else {
             setIsVisible(true);

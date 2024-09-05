@@ -1,0 +1,7 @@
+.Profile {
+    grid-area: Profile;
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    margin-top: 30%;
+}
