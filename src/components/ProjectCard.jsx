@@ -91,7 +91,9 @@ const ProjectCard = ({ projectDatum }) => {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                {projectDatum.github_url ? (
+                                {!projectDatum.github_url ||
+                                projectDatum.github_url ===
+                                    "Coming Soon" ? null : (
                                     <Button
                                         size="small"
                                         aria-label="redirect"
@@ -101,7 +103,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     >
                                         Github
                                     </Button>
-                                ) : null}
+                                )}
                                 {projectDatum.deployed_url ? (
                                     <Button
                                         size="small"
