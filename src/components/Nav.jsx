@@ -63,25 +63,13 @@ const Nav = ({ setVisibleSection }) => {
                         open={Boolean(anchorEl)}
                         onClose={handleMenuClose}
                     >
-                        <MenuItem
-                            onClick={handleMenuClose}
-                            component="a"
-                            href="#Profile"
-                        >
+                        <MenuItem onClick={() => handleLinkClick("section1")}>
                             Profile
                         </MenuItem>
-                        <MenuItem
-                            onClick={handleMenuClose}
-                            component="a"
-                            href="#Projects"
-                        >
+                        <MenuItem onClick={() => handleLinkClick("section2")}>
                             Projects
                         </MenuItem>
-                        <MenuItem
-                            onClick={handleMenuClose}
-                            component="a"
-                            href="#Contact"
-                        >
+                        <MenuItem onClick={() => handleLinkClick("section3")}>
                             Contact
                         </MenuItem>
                     </Menu>
