@@ -103,20 +103,12 @@ p {
 
 .Profile__fade-in {
     grid-area: Profile;
-    display: flex;
-    justify-self: center;
-    width: 100%;
-    margin-top: 30%;
     opacity: 1;
     transition: 1s ease;
 }
 
 .Profile__fade-out {
     grid-area: Profile;
-    display: flex;
-    justify-self: center;
-    width: 100%;
-    margin-top: 30%;
     opacity: 1;
     transition: 1s ease;
 }
@@ -172,12 +164,12 @@ p {
         display: block;
     }
 
-    .Profile {
+    /* .Profile {
         grid-area: Profile;
         width: 100%;
         margin-top: 10%;
         max-width: 1280px;
-    }
+    } */
 
     .Projects {
         max-width: 1280px;
