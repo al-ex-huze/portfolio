@@ -1,0 +1,11 @@
+.Projects {
+    grid-area: Projects;
+    margin-top: 10vh;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .Projects {
+        margin-top: 10vh;
+    }
+}

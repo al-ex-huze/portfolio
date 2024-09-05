@@ -39,13 +39,13 @@ const Nav = ({ setVisibleSection }) => {
                 <Typography variant="h3" style={{ flexGrow: 1 }}></Typography>
                 <div className="desktop-nav">
                     <MenuItem onClick={() => handleLinkClick("section1")}>
-                            <a className="Nav__link">Profile</a>
+                        <a className="Nav__link">Profile</a>
                     </MenuItem>
                     <MenuItem onClick={() => handleLinkClick("section2")}>
-                    <a className="Nav__link">Projects</a>
+                        <a className="Nav__link">Projects</a>
                     </MenuItem>
                     <MenuItem onClick={() => handleLinkClick("section3")}>
-                    <a className="Nav__link">Contact</a>
+                        <a className="Nav__link">Contact</a>
                     </MenuItem>
                 </div>
                 <div className="mobile-nav">
