@@ -14,6 +14,11 @@ import Header from "./Header";
 const Nav = ({ setVisibleSection }) => {
     const [anchorEl, setAnchorEl] = useState(null);
 
+    const handleLinkClickMob = (section) => {
+        handleLinkClick(section);
+        setAnchorEl(null);
+    };
+
     const handleMenuClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -36,16 +41,10 @@ const Nav = ({ setVisibleSection }) => {
                     <MenuItem onClick={() => handleLinkClick("section1")}>
                         <div className="Nav__link">Profile</div>
                     </MenuItem>
-                    <MenuItem
-                        className="Nav__link"
-                        onClick={() => handleLinkClick("section2")}
-                    >
+                    <MenuItem onClick={() => handleLinkClick("section2")}>
                         <div className="Nav__link">Projects</div>
                     </MenuItem>
-                    <MenuItem
-                        className="Nav__link"
-                        onClick={() => handleLinkClick("section3")}
-                    >
+                    <MenuItem onClick={() => handleLinkClick("section3")}>
                         <div className="Nav__link">Contact</div>
                     </MenuItem>
                 </div>
@@ -63,13 +62,19 @@ const Nav = ({ setVisibleSection }) => {
                         open={Boolean(anchorEl)}
                         onClose={handleMenuClose}
                     >
-                        <MenuItem onClick={() => handleLinkClick("section1")}>
+                        <MenuItem
+                            onClick={() => handleLinkClickMob("section1")}
+                        >
                             Profile
                         </MenuItem>
-                        <MenuItem onClick={() => handleLinkClick("section2")}>
+                        <MenuItem
+                            onClick={() => handleLinkClickMob("section2")}
+                        >
                             Projects
                         </MenuItem>
-                        <MenuItem onClick={() => handleLinkClick("section3")}>
+                        <MenuItem
+                            onClick={() => handleLinkClickMob("section3")}
+                        >
                             Contact
                         </MenuItem>
                     </Menu>
