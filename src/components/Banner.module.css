@@ -1,6 +1,8 @@
 .Banner {
     background-color: #003153;
     padding: 10px;
+    position: fixed;
+
     transition: transform 0.2s ease;
     z-index: 1000
 }

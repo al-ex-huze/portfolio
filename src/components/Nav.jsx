@@ -1,4 +1,3 @@
-import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -7,24 +6,25 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
+import React from "react";
 import { useState } from "react";
 
 import Header from "./Header";
 
 const Nav = ({ setVisibleSection }) => {
-    const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorElement, setAnchorElement] = useState(null);
 
     const handleLinkClickMob = (section) => {
         handleLinkClick(section);
-        setAnchorEl(null);
+        setAnchorElement(null);
     };
 
     const handleMenuClick = (event) => {
-        setAnchorEl(event.currentTarget);
+        setAnchorElement(event.currentTarget);
     };
 
     const handleMenuClose = () => {
-        setAnchorEl(null);
+        setAnchorElement(null);
     };
 
     const handleLinkClick = (section) => {
@@ -39,13 +39,13 @@ const Nav = ({ setVisibleSection }) => {
                 <Typography variant="h3" style={{ flexGrow: 1 }}></Typography>
                 <div className="desktop-nav">
                     <MenuItem onClick={() => handleLinkClick("section1")}>
-                        <div className="Nav__link">Profile</div>
+                            <a className="Nav__link">Profile</a>
                     </MenuItem>
                     <MenuItem onClick={() => handleLinkClick("section2")}>
-                        <div className="Nav__link">Projects</div>
+                    <a className="Nav__link">Projects</a>
                     </MenuItem>
                     <MenuItem onClick={() => handleLinkClick("section3")}>
-                        <div className="Nav__link">Contact</div>
+                    <a className="Nav__link">Contact</a>
                     </MenuItem>
                 </div>
                 <div className="mobile-nav">
@@ -58,8 +58,8 @@ const Nav = ({ setVisibleSection }) => {
                         <MenuIcon />
                     </IconButton>
                     <Menu
-                        anchorEl={anchorEl}
-                        open={Boolean(anchorEl)}
+                        anchorElement={anchorElement}
+                        open={Boolean(anchorElement)}
                         onClose={handleMenuClose}
                     >
                         <MenuItem

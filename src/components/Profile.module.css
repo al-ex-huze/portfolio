@@ -5,3 +5,9 @@
     width: 100%;
     margin-top: 30%;
 }
+
+@media only screen and (min-width: 768px) {
+    .Profile {
+        background-color: red;
+    }
+}

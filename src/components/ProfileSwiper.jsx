@@ -36,7 +36,6 @@ const ProfileSwiper = () => {
                 <div className="title" data-swiper-parallax="-300">
                     Alex Hughes
                 </div>
-
                 <div className="text" data-swiper-parallax="-100">
                     <p>
                         I am an enthusiastic and versatile developer experienced
@@ -86,6 +85,9 @@ const ProfileSwiper = () => {
             <SwiperSlide>
                 <div className="subtitle" data-swiper-parallax="-200">
                     <p>"...fizz buzz tatooed on my knuckles"</p>
+                </div>
+                <div className="title" data-swiper-parallax="-300">
+                    - Me
                 </div>
                 <div className="text" data-swiper-parallax="-100"></div>
             </SwiperSlide>
