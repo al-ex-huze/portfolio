@@ -1,5 +1,7 @@
 .Banner {
+    grid-area: Banner;
     background-color: #003153;
+    background-color: #000d15;
     padding: 10px;
     position: fixed;
     width: 100%;

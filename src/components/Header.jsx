@@ -1,6 +1,8 @@
+import styles from "./Header.module.css"
+
 const Header = () => {
     return (
-        <div className="Header">
+        <div className={`${styles.Header} Header`}>
             <a href="#App">
                 <img
                     src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah2003153.png"

@@ -55,33 +55,11 @@ p {
 }
 
 .Banner__visible {
-    grid-area: Banner;
-    z-index: 1000;
-    background-color: #000d15;
     transform: translateY(0);
 }
 
 .Banner__hidden {
-    grid-area: Banner;
-    z-index: 1000;
-    background-color: #000d15;
     transform: translateY(-100%);
-}
-
-.Header {
-    display: flex;
-    justify-content: baseline;
-    width: 100%;
-    grid-area: Header;
-    transition: 0.3s ease;
-}
-
-.Header img {
-    padding: 20px 0px;
-    margin: 0px;
-    width: 20%;
-    transition: width 0.3s;
-    display: block;
 }
 
 .Nav {
