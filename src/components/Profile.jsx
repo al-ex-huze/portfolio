@@ -10,7 +10,7 @@ const Profile = ({ visibleSection }) => {
             }`}
             id="section1"
         >
-            <ProfileSwiper />;
+            <ProfileSwiper />
         </div>
     );
 };

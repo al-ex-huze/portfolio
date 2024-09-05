@@ -55,20 +55,13 @@ const ProjectsGrid = ({ visibleSection }) => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid
-                container
-                spacing={{ xs: 2, md: 4 }}
-                columns={{ xs: 3, sm: 4, md: 6 }}
-            >
+            <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
                 {projectsData.map((projectDatum) => {
                     return (
-                        <Grid
-                            key={projectDatum.event_id}
-                            size={{ xs: 4, sm: 8, md: 10 }}
-                        >
-                            <Item>
-                                <ProjectCard projectDatum={projectDatum} />
-                            </Item>
+                        <Grid key={projectDatum.event_id}>
+                            {/* <Item sx={{ height: "fit-content" }}> */}
+                            <ProjectCard projectDatum={projectDatum} />
+                            {/* </Item> */}
                         </Grid>
                     );
                 })}

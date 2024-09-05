@@ -1,17 +1,3 @@
-@font-face {
-    font-family: "Aboreto";
-    src: url("/src/assets/fonts/Aboreto.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Gotu";
-    src: url("/src/assets/fonts/Gotu.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Sacramento";
-    src: url("/src/assets/fonts/Sacramento.ttf") format("truetype");
-}
 
 @font-face {
     font-family: "Roboto-Light";
@@ -30,7 +16,7 @@ html {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: "Gotu", "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #ffffff;
     line-height: 1.5;
     font-weight: 100;
@@ -129,13 +115,16 @@ p {
     display: flex;
     justify-self: center;
         width: 100%;
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 .Projects {
     grid-area: Projects;
     display: flex;
-    justify-self: center;    width: 100%;
+    justify-self: center;
+    height: fit-content;
+    overflow: hidden;
+    /* width: 1000px; */
 }
 
 .Contact {
