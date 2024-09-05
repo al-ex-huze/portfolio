@@ -5,7 +5,6 @@ import ProfileSwiper from "./ProfileSwiper";
 import styles from "./Profile.module.css"
 
 const Profile = ({ visibleSection }) => {
-    console.log(visibleSection)
     return (
         <div
             className={`${styles.Profile}${" "}Profile__${

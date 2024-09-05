@@ -5,11 +5,10 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { Avatar } from "@mui/material";
 
 import React from "react";
 import { useState } from "react";
-
-import Header from "./Header";
 
 const Nav = ({ setVisibleSection }) => {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -35,7 +34,36 @@ const Nav = ({ setVisibleSection }) => {
     return (
         <AppBar position="static" style={{ backgroundColor: "#000d15" }}>
             <Toolbar>
-                <Header />
+                <IconButton onClick={() => handleLinkClick("App")}>
+                    <Avatar
+                        sx={{
+                            bgcolor: "#ffffff",
+                            padding: 1,
+                            width: {
+                                xs: 40,
+                                sm: 60,
+                                md: 80,
+                                lg: 100,
+                                xl: 120,
+                            },
+                            height: {
+                                xs: 40,
+                                sm: 60,
+                                md: 80,
+                                lg: 100,
+                                xl: 120,
+                            },
+                        }}
+                        size={{
+                            xs: { width: 56, height: 56 },
+                            md: { width: 100, height: 100 },
+                        }}
+                        variant="square"
+                        src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah2003153.png"
+                        alt="Logo"
+                    />
+                </IconButton>
+
                 <Typography variant="h3" style={{ flexGrow: 1 }}></Typography>
                 <div className="desktop-nav">
                     <MenuItem onClick={() => handleLinkClick("section1")}>

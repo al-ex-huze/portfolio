@@ -41,7 +41,7 @@ const card = (
                     (window.location.href = "https://github.com/al-ex-huze")
                 }
             >
-                <GitHubIcon style={{ fontSize: "200px" }} />
+                <GitHubIcon style={{ fontSize: "150px" }} />
             </IconButton>
             <IconButton
                 aria-label="redirect"
@@ -50,7 +50,7 @@ const card = (
                         "https://www.linkedin.com/in/alex-hughes-b960a1301/")
                 }
             >
-                <LinkedInIcon style={{ fontSize: "200px" }} />
+                <LinkedInIcon style={{ fontSize: "150px" }} />
             </IconButton>
             <IconButton
                 aria-label="redirect"
@@ -58,7 +58,7 @@ const card = (
                     (window.location.href = "mailto:al.ex.hughes@outlook.com")
                 }
             >
-                <EmailIcon style={{ fontSize: "200px" }} />
+                <EmailIcon style={{ fontSize: "150px" }} />
             </IconButton>
         </CardActions>
         <Typography
