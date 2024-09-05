@@ -38,9 +38,9 @@ const ProfileSwiper = () => {
                     </div>
                     <div className="text" data-swiper-parallax="-100">
                         <p>
-                            I'm an enthusiastic and versatile developer with
-                            experienced problem-solving skills built in the
-                            engineering and construction industries.
+                            I'm an enthusiastic, versatile developer with strong
+                            problem-solving skills built in the engineering and
+                            construction industries.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -51,9 +51,9 @@ const ProfileSwiper = () => {
                     <div className="text" data-swiper-parallax="-100">
                         <p>
                             I've recently completed Northcoders’ Software
-                            Development, course broadening my skillset and diving
-                            into a field that aligns with my strengths and
-                            interests.
+                            Development course, expanding my skillset and
+                            preparing me to dive into a field that aligns with
+                            my strengths and interests.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -63,10 +63,9 @@ const ProfileSwiper = () => {
                     </div>
                     <div className="text" data-swiper-parallax="-100">
                         <p>
-                            I'm at my best when made use of.
-                            I love being tasked with a problem and will always
-                            rise to a challenge and find a solution when
-                            needed.
+                            I'm at my best when made use of. I love being tasked
+                            with a problem and will always rise to a challenge
+                            and find a solution when needed.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -76,9 +75,9 @@ const ProfileSwiper = () => {
                     </div>
                     <div className="text" data-swiper-parallax="-100">
                         <p>
-                            I've worked in some unique envrionments and love
-                            to be in the thick of it. I'm at my best when under pressure and I always do my part, and
-                            more.
+                            I've worked in a variety of environments and love to
+                            be in the thick of it. I'm at my best when under
+                            pressure and I always do my part, and more.
                         </p>
                     </div>
                 </SwiperSlide>

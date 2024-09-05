@@ -79,7 +79,7 @@ const card = (
                 mb: 1.5,
             }}
         >
-            {"("}Open For Work{")"}
+            {"("}I'm  Open To Work{")"}
         </Typography>
     </React.Fragment>
 );
