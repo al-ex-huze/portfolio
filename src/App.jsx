@@ -4,7 +4,7 @@ import "./App.css";
 import Banner from "./components/Banner";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Contact from "./components/ContactCard";
 
 const App = () => {
     const [visibleSection, setVisibleSection] = useState("section1");
@@ -12,14 +12,10 @@ const App = () => {
     return (
         <>
             <div className="App" id="App">
-                <Banner
-                    setVisibleSection={setVisibleSection}
-                />
-                <div className="Content" id="Content">
-                    <Profile visibleSection={visibleSection} />
-                    <Projects visibleSection={visibleSection} />
-                    <Contact visibleSection={visibleSection} />
-                </div>
+                <Banner setVisibleSection={setVisibleSection} />
+                <Profile visibleSection={visibleSection} />
+                <Projects visibleSection={visibleSection} />
+                <Contact visibleSection={visibleSection} />
             </div>
         </>
     );

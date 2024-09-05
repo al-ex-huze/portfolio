@@ -1,3 +1,6 @@
+import ReactFlipCard from "reactjs-flip-card";
+import styles from "./ProjectCard.module.css";
+
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -6,31 +9,107 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+import { styled } from "@mui/material/styles";
+import Paper from "@mui/material/Paper";
+
 const ProjectCard = ({ projectDatum }) => {
-    console.log(projectDatum.event_img_url)
+    const rfcStyles = {
+        card: {
+            color: "white",
+            borderRadius: 20,
+        },
+    };
+
+    const Item = styled(Paper)(({ theme }) => ({
+        backgroundColor: "#fff",
+        ...theme.typography.body2,
+        padding: theme.spacing(1),
+        textAlign: "center",
+        color: theme.palette.text.secondary,
+        ...theme.applyStyles("dark", {
+            backgroundColor: "#1A2027",
+        }),
+    }));
+
     return (
-        <Card sx={{ width: "100%" }}>
-            <CardMedia
-                style = {{ borderRadius: "4px", height: 0, paddingTop: '56.25%'}}
-                image={`${projectDatum.event_img_url}`}
-                title={projectDatum.title}
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    {projectDatum.title}
-                </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    {projectDatum.body}
-                </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    {projectDatum.topics}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Github</Button>
-                <Button size="small">Visit</Button>
-            </CardActions>
-        </Card>
+        <ReactFlipCard
+            flipTrigger="onClick"
+            containerStyle={{ width: "500px", height: "500px" }}
+            frontStyle={rfcStyles.card}
+            backStyle={rfcStyles.card}
+            frontComponent={
+                <Card variant="outlined">
+                    <Item sx={{ height: "500px" }}>
+                        <CardMedia
+                            style={{paddingTop: "56.25%" }}
+                            image={`${projectDatum.event_img_url_1}`}
+                            title={projectDatum.title}
+                        />
+                        <CardContent>
+                            <Typography
+                                gutterBottom
+                                variant="h5"
+                                component="div"
+                                sx={{ color: "text.primary" }}
+                            >
+                                {projectDatum.title}
+                            </Typography>
+                            <Typography
+                                variant="body2"
+                                sx={{ color: "text.secondary" }}
+                            >
+                                {projectDatum.topics}
+                            </Typography>
+                        </CardContent>
+                    </Item>
+                </Card>
+            }
+            backComponent={
+                <Card>
+                    <Item sx={{ height: "500px" }}>
+                        <CardMedia
+                            style={{
+                                paddingTop: "56.25%",
+                            }}
+                            image={`${projectDatum.event_img_url_2}`}
+                            title={projectDatum.title}
+                        />
+                        <CardContent>
+                            <Typography
+                                variant="body2"
+                                sx={{ color: "text.secondary" }}
+                            >
+                                {projectDatum.body}
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            {projectDatum.github_url ? (
+                                <Button
+                                    size="small"
+                                    aria-label="redirect"
+                                    onClick={(event) =>
+                                        (window.location.href = `${projectDatum.github_url}`)
+                                    }
+                                >
+                                    Github
+                                </Button>
+                            ) : null}
+                            {projectDatum.deployed_url ? (
+                                <Button
+                                    size="small"
+                                    aria-label="redirect"
+                                    onClick={(event) =>
+                                        (window.location.href = `${projectDatum.deployed_url}`)
+                                    }
+                                >
+                                    Deployed
+                                </Button>
+                            ) : null}
+                        </CardActions>
+                    </Item>
+                </Card>
+            }
+        />
     );
 };
 

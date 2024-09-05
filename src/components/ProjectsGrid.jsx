@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid2";
 
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
-import "../styles/ProjectsGrid.css";
+import styles from "./ProjectsGrid.module.css";
 import ContactCard from "./ContactCard";
 
 const ProjectsGrid = ({ visibleSection }) => {
@@ -55,40 +55,16 @@ const ProjectsGrid = ({ visibleSection }) => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid
-                container
-                spacing={3}
-            >
-                <div
-                    className={`Contact section ${
-                        visibleSection === "section2" ? "fade-in" : "fade-out"
-                    }`}
-                    id="section2"
-                >
-                    {projectsData.map((projectDatum) => {
-                        return (
-                            <Grid key={projectDatum.event_id} size="grow">
-                                <Item sx={{ height: "fit-content" }}>
-                                    <ProjectCard projectDatum={projectDatum} />
-                                </Item>
-                            </Grid>
-                        );
-                    })}
-                </div>
-                <Grid size="grow">
-                    <div
-                        className={`Contact section ${
-                            visibleSection === "section2"
-                                ? "fade-in"
-                                : "fade-out"
-                        }`}
-                        id="section3"
-                    >
-                        <Item sx={{ height: "fit-content" }}>
-                            <ContactCard />
-                        </Item>
-                    </div>
-                </Grid>
+            <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
+                {projectsData.map((projectDatum) => {
+                    return (
+                        <Grid key={projectDatum.event_id}>
+                            {/* <Item sx={{ height: "fit-content" }}> */}
+                            <ProjectCard projectDatum={projectDatum} />
+                            {/* </Item> */}
+                        </Grid>
+                    );
+                })}
             </Grid>
         </Box>
     );
