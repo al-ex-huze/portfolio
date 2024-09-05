@@ -34,15 +34,15 @@ const ProjectCard = ({ projectDatum }) => {
     return (
         <ReactFlipCard
             flipTrigger="onClick"
-            containerStyle={{ width: "400px", height: "400px" }}
+            containerStyle={{ width: "500px", height: "500px" }}
             frontStyle={rfcStyles.card}
             backStyle={rfcStyles.card}
             frontComponent={
                 <Card variant="outlined">
-                    <Item sx={{ height: "400px" }}>
+                    <Item sx={{ height: "500px" }}>
                         <CardMedia
-                            style={{ height: 0, paddingTop: "56.25%" }}
-                            image={`${projectDatum.event_img_url}`}
+                            style={{paddingTop: "56.25%" }}
+                            image={`${projectDatum.event_img_url_1}`}
                             title={projectDatum.title}
                         />
                         <CardContent>
@@ -50,6 +50,7 @@ const ProjectCard = ({ projectDatum }) => {
                                 gutterBottom
                                 variant="h5"
                                 component="div"
+                                sx={{ color: "text.primary" }}
                             >
                                 {projectDatum.title}
                             </Typography>
@@ -65,7 +66,14 @@ const ProjectCard = ({ projectDatum }) => {
             }
             backComponent={
                 <Card>
-                    <Item sx={{ height: "400px" }}>
+                    <Item sx={{ height: "500px" }}>
+                        <CardMedia
+                            style={{
+                                paddingTop: "56.25%",
+                            }}
+                            image={`${projectDatum.event_img_url_2}`}
+                            title={projectDatum.title}
+                        />
                         <CardContent>
                             <Typography
                                 variant="body2"
