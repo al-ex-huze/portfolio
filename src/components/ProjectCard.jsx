@@ -32,6 +32,7 @@ const ProjectCard = ({ projectDatum }) => {
     }));
 
     return (
+        //get to grow
         <ReactFlipCard
             flipTrigger="onClick"
             containerStyle={{ width: "500px", height: "500px" }}
