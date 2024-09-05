@@ -5,24 +5,11 @@ import Grid from "@mui/material/Grid2";
 
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
-import styles from "./ProjectsGrid.module.css";
-import ContactCard from "./ContactCard";
 
 const ProjectsGrid = ({ visibleSection }) => {
     const [projectsData, setProjectsData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: "#fff",
-        ...theme.typography.body2,
-        padding: theme.spacing(1),
-        textAlign: "center",
-        color: theme.palette.text.secondary,
-        ...theme.applyStyles("dark", {
-            backgroundColor: "#1A2027",
-        }),
-    }));
 
     useEffect(() => {
         const fetchProjectsData = async () => {
@@ -54,14 +41,19 @@ const ProjectsGrid = ({ visibleSection }) => {
     }
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
+        <Box sx={{ mx: "auto", width: 1, flexGrow: 1 }}>
+            <Grid
+                container
+                spacing={{ xs: 2, sm: 4, md: 6, lg: 10, xl: 12 }}
+                sx={{
+                    width: "100",
+                    paddingX: { xs: 5, sm: 10, md: 40, lg: 20, xl: 10 },
+                }}
+            >
                 {projectsData.map((projectDatum) => {
                     return (
                         <Grid key={projectDatum.event_id}>
-                            {/* <Item sx={{ height: "fit-content" }}> */}
                             <ProjectCard projectDatum={projectDatum} />
-                            {/* </Item> */}
                         </Grid>
                     );
                 })}

@@ -1,5 +1,5 @@
 import ReactFlipCard from "reactjs-flip-card";
-import styles from "./ProjectCard.module.css";
+// import styles from "./ProjectCard.module.css";
 
 import * as React from "react";
 import Card from "@mui/material/Card";
@@ -32,6 +32,7 @@ const ProjectCard = ({ projectDatum }) => {
     }));
 
     return (
+        //get to grow
         <ReactFlipCard
             flipTrigger="onClick"
             containerStyle={{ width: "500px", height: "500px" }}

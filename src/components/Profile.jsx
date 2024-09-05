@@ -1,11 +1,13 @@
 import React from "react";
-import "../App.css";
+
 import ProfileSwiper from "./ProfileSwiper";
+
+import styles from "./Profile.module.css"
 
 const Profile = ({ visibleSection }) => {
     return (
         <div
-            className={`Profile section ${
+            className={`${styles.Profile}${" "}Profile__${
                 visibleSection === "section1" ? "fade-in" : "fade-out"
             }`}
             id="section1"

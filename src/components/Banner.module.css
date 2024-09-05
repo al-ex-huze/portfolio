@@ -1,0 +1,18 @@
+.Banner {
+    grid-area: Banner;
+    background-color: #003153;
+    background-color: #000d15;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+    display: flex;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .Banner {
+        padding: 10px;
+    }
+}

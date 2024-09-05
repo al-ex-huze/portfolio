@@ -4,7 +4,7 @@ import "./App.css";
 import Banner from "./components/Banner";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
-import Contact from "./components/ContactCard";
+import Contact from "./components/Contact";
 
 const App = () => {
     const [visibleSection, setVisibleSection] = useState("section1");

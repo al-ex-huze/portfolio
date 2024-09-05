@@ -10,7 +10,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { IconButton } from "@mui/material";
-import { Margin } from "@mui/icons-material";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: "#fff",
@@ -31,7 +30,7 @@ const card = (
         <CardActions
             sx={{
                 display: "flex",
-                alignItems: "flex-end",
+                alignItems: "center",
                 width: "fit-content",
                 justifyContent: "space-between",
             }}
@@ -42,7 +41,11 @@ const card = (
                     (window.location.href = "https://github.com/al-ex-huze")
                 }
             >
-                <GitHubIcon style={{ fontSize: "200px" }} />
+                <GitHubIcon
+                    sx={{
+                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                    }}
+                />
             </IconButton>
             <IconButton
                 aria-label="redirect"
@@ -51,7 +54,11 @@ const card = (
                         "https://www.linkedin.com/in/alex-hughes-b960a1301/")
                 }
             >
-                <LinkedInIcon style={{ fontSize: "200px" }} />
+                <LinkedInIcon
+                    sx={{
+                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                    }}
+                />
             </IconButton>
             <IconButton
                 aria-label="redirect"
@@ -59,7 +66,11 @@ const card = (
                     (window.location.href = "mailto:al.ex.hughes@outlook.com")
                 }
             >
-                <EmailIcon style={{ fontSize: "200px" }} />
+                <EmailIcon
+                    sx={{
+                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                    }}
+                />
             </IconButton>
         </CardActions>
         <Typography
@@ -75,13 +86,11 @@ const card = (
 
 const ContactCard = () => {
     return (
-        <div className="Contact__card">
-            <Box sx={{ marginTop: "5px", minWidth: 200 }}>
-                <Item>
-                    <Card variant="outlined">{card}</Card>
-                </Item>
-            </Box>
-        </div>
+        <Box sx={{ marginTop: "5px", minWidth: 200 }}>
+            <Item>
+                <Card variant="outlined">{card}</Card>
+            </Item>
+        </Box>
     );
 };
 
