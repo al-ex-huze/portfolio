@@ -65,11 +65,20 @@ p {
     justify-content: center;
 }
 
-.Banner {
+.Banner__visible {
     grid-area: Banner;
     position: fixed;
     z-index: 1000;
     background-color: #000d15;
+    transform: translateY(0);
+}
+
+.Banner__hidden {
+    grid-area: Banner;
+    position: fixed;
+    z-index: 1000;
+    background-color: #000d15;
+    transform: translateY(-100%);
 }
 
 .Header {
