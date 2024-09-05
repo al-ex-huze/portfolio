@@ -12,19 +12,19 @@ import { useState } from "react";
 import Header from "./Header";
 
 const Nav = ({ setVisibleSection }) => {
-    const [anchorElement, setAnchorElement] = useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
 
     const handleLinkClickMob = (section) => {
         handleLinkClick(section);
-        setAnchorElement(null);
+        setAnchorEl(null);
     };
 
     const handleMenuClick = (event) => {
-        setAnchorElement(event.currentTarget);
+        setAnchorEl(event.currentTarget);
     };
 
     const handleMenuClose = () => {
-        setAnchorElement(null);
+        setAnchorEl(null);
     };
 
     const handleLinkClick = (section) => {
@@ -58,8 +58,8 @@ const Nav = ({ setVisibleSection }) => {
                         <MenuIcon />
                     </IconButton>
                     <Menu
-                        anchorElement={anchorElement}
-                        open={Boolean(anchorElement)}
+                        anchorEl={anchorEl}
+                        open={Boolean(anchorEl)}
                         onClose={handleMenuClose}
                     >
                         <MenuItem
