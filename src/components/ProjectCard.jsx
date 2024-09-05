@@ -40,8 +40,11 @@ const ProjectCard = ({ projectDatum }) => {
                 frontStyle={rfcStyles.card}
                 backStyle={rfcStyles.card}
                 frontComponent={
-                    <Card variant="outlined">
-                        <Item sx={{ height: "500px" }}>
+                    <Item sx={{ height: "500px", borderRadius: "4px" }}>
+                        <Card
+                            variant="outlined"
+                            sx={{ height: "500px", borderRadius: "4px" }}
+                        >
                             <CardMedia
                                 style={{ paddingTop: "56.25%" }}
                                 image={`${projectDatum.event_img_url_1}`}
@@ -63,12 +66,15 @@ const ProjectCard = ({ projectDatum }) => {
                                     {projectDatum.topics}
                                 </Typography>
                             </CardContent>
-                        </Item>
-                    </Card>
+                        </Card>
+                    </Item>
                 }
                 backComponent={
-                    <Card>
-                        <Item sx={{ height: "500px" }}>
+                    <Item sx={{ height: "500px" }}>
+                        <Card
+                            variant="outlined"
+                            sx={{ height: "500px", borderRadius: "4px" }}
+                        >
                             <CardMedia
                                 style={{
                                     paddingTop: "56.25%",
@@ -108,8 +114,8 @@ const ProjectCard = ({ projectDatum }) => {
                                     </Button>
                                 ) : null}
                             </CardActions>
-                        </Item>
-                    </Card>
+                        </Card>
+                    </Item>
                 }
             />
         </div>
