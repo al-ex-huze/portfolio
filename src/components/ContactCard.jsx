@@ -10,7 +10,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { IconButton } from "@mui/material";
-import { Margin } from "@mui/icons-material";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: "#fff",
@@ -75,13 +74,11 @@ const card = (
 
 const ContactCard = () => {
     return (
-        <div className="Contact__card">
-            <Box sx={{ marginTop: "5px", minWidth: 200 }}>
-                <Item>
-                    <Card variant="outlined">{card}</Card>
-                </Item>
-            </Box>
-        </div>
+        <Box sx={{ marginTop: "5px", minWidth: 200 }}>
+            <Item>
+                <Card variant="outlined">{card}</Card>
+            </Item>
+        </Box>
     );
 };
 

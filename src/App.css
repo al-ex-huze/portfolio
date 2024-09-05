@@ -73,7 +73,7 @@ p {
     justify-content: baseline;
     width: 100%;
     grid-area: Header;
-    transition: top 0.3s;
+    transition: 0.3s ease;
 }
 
 .Header img {
@@ -127,29 +127,14 @@ p {
 
 .Contact__fade-in {
     grid-area: Contact;
-    display: flex;
-    justify-self: center;
-    height: fit-content;
-    padding: 10px;
     opacity: 1;
     transition: 1s ease;
 }
 
 .Contact__fade-out {
     grid-area: Contact;
-    display: flex;
-    justify-self: center;
-    height: fit-content;
-    padding: 10px;
     opacity: 1;
     transition: 1s ease;
-}
-
-.Contact__card {
-    grid-area: Contact;
-    display: flex;
-    justify-self: center;
-    width: fit-content;
 }
 
 .desktop-nav {
@@ -175,7 +160,7 @@ p {
     .Header img {
         padding: 20px;
         width: 10%;
-        transition: width 0.3s;
+        transition: 0.3s ease;
         display: block;
     }
     .desktop-nav {
