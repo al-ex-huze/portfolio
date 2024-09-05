@@ -1,6 +1,6 @@
 import "../App.css";
 
-import ContactCard from "./ContactCard";
+import ContactCard from "./ContactCard.jsx";
 
 import styles from "./Contact.module.css";
 

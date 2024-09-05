@@ -43,7 +43,13 @@ const card = (
             >
                 <GitHubIcon
                     sx={{
-                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                        fontSize: {
+                            xs: "60px",
+                            sm: "80px",
+                            md: "10px",
+                            lg: "100px",
+                            xl: "200px",
+                        },
                     }}
                 />
             </IconButton>
@@ -56,7 +62,13 @@ const card = (
             >
                 <LinkedInIcon
                     sx={{
-                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                        fontSize: {
+                            xs: "60px",
+                            sm: "80px",
+                            md: "10px",
+                            lg: "100px",
+                            xl: "200px",
+                        },
                     }}
                 />
             </IconButton>
@@ -68,7 +80,13 @@ const card = (
             >
                 <EmailIcon
                     sx={{
-                        fontSize: { xs: 60, sm: 80, md: 10, lg: 100, xl: 200 },
+                        fontSize: {
+                            xs: "60px",
+                            sm: "80px",
+                            md: "10px",
+                            lg: "100px",
+                            xl: "200px",
+                        },
                     }}
                 />
             </IconButton>
@@ -79,12 +97,12 @@ const card = (
                 mb: 1.5,
             }}
         >
-            {"("}I'm  Open To Work{")"}
+            {"("}I'm Open To Work{")"}
         </Typography>
     </React.Fragment>
 );
 
-const ContactCard = () => {
+export default function ContactCard(){
     return (
         <Box sx={{ marginTop: "5px", minWidth: 200 }}>
             <Item>
@@ -94,4 +112,4 @@ const ContactCard = () => {
     );
 };
 
-export default ContactCard;
+// export default ContactCard;
