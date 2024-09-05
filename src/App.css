@@ -125,12 +125,24 @@ p {
     transition: 1s ease;
 }
 
-.Contact {
+.Contact__fade-in {
     grid-area: Contact;
     display: flex;
     justify-self: center;
     height: fit-content;
     padding: 10px;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.Contact__fade-out {
+    grid-area: Contact;
+    display: flex;
+    justify-self: center;
+    height: fit-content;
+    padding: 10px;
+    opacity: 1;
+    transition: 1s ease;
 }
 
 .Contact__card {

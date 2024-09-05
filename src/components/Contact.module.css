@@ -1,0 +1,11 @@
+.Contact {
+    grid-area: Contact;
+    margin-top: 10vh;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .Contact {
+        margin-top: 10vh;
+    }
+}
