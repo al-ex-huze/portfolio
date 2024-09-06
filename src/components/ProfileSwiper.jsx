@@ -78,7 +78,7 @@ const ProfileSwiper = () => {
                         className={`${styles.subtitle_l}`}
                         data-swiper-parallax="-200"
                     >
-                        Team Player
+                        Problem Solver
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -96,7 +96,7 @@ const ProfileSwiper = () => {
                         className={`${styles.subtitle_l}`}
                         data-swiper-parallax="-200"
                     >
-                        Problem Solver
+                        Team Player
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -107,23 +107,6 @@ const ProfileSwiper = () => {
                             be in the thick of it. I'm at my best when under
                             pressure and I always do my part, and more.
                         </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div
-                        className={`${styles.text}`}
-                        data-swiper-parallax="-100"
-                    ><br></br><br></br></div>
-                    <div
-                        className={`${styles.text}`}
-                        data-swiper-parallax="-200"
-                    >
-                        <p>"...fizz buzz tatooed on my knuckles"</p>
-                    </div>
-                    <div
-                        className={`${styles.subtitle_c}`}
-                        data-swiper-parallax="-300"
-                    >
                     </div>
                 </SwiperSlide>
             </Swiper>
