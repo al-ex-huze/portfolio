@@ -48,7 +48,7 @@ const ProfileSwiper = () => {
                         data-swiper-parallax="-100"
                     >
                         <p>
-                            I'm an enthusiastic, versatile developer with strong
+                            I'm an energetic and versatile developer with strong
                             problem-solving skills built in the engineering and
                             construction industries.
                         </p>
@@ -66,9 +66,9 @@ const ProfileSwiper = () => {
                         data-swiper-parallax="-100"
                     >
                         <p>
-                            I've recently completed Northcoders’ Software
+                            I recently completed Northcoders’ Software
                             Development course, expanding my skillset and
-                            preparing me to dive into a field that aligns with
+                            preparing me to switch into a field that aligns with
                             my strengths and interests.
                         </p>
                     </div>
