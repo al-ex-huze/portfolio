@@ -33,19 +33,19 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div
                         className={`${styles.subtitle_xs}`}
-                        data-swiper-parallax="-200"
+                        data-swiper-parallax="-300"
                     >
                         About me...
                     </div>
                     <div
                         className={`${styles.title}`}
-                        data-swiper-parallax="-300"
+                        data-swiper-parallax="0"
                     >
                         Alex Hughes
                     </div>
                     <div
                         className={`${styles.text}`}
-                        data-swiper-parallax="-100"
+                        data-swiper-parallax="-400"
                     >
                         <p>
                             I'm an energetic and versatile developer with strong
@@ -56,33 +56,35 @@ const ProfileSwiper = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div
-                        className={`${styles.subtitle_l}`}
-                        data-swiper-parallax="-200"
+                        className={`${styles.subtitle}`}
+                        data-swiper-parallax="100"
                     >
                         Junior Software Developer
                     </div>
                     <div
                         className={`${styles.text}`}
-                        data-swiper-parallax="-100"
+                        data-swiper-parallax="-400
+                        "
                     >
                         <p>
                             I recently completed Northcoders’ Software
                             Development course, expanding my skillset and
-                            preparing me to switch into a field that aligns with
+                            preparing me to transfer to a field that aligns with
                             my strengths and interests.
                         </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div
-                        className={`${styles.subtitle_l}`}
-                        data-swiper-parallax="-200"
+                        className={`${styles.subtitle}`}
+                        data-swiper-parallax="100"
                     >
                         Problem Solver
                     </div>
                     <div
                         className={`${styles.text}`}
-                        data-swiper-parallax="-100"
+                        data-swiper-parallax="-400
+                        "
                     >
                         <p>
                             I'm at my best when made use of. I love being tasked
@@ -93,14 +95,15 @@ const ProfileSwiper = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div
-                        className={`${styles.subtitle_l}`}
-                        data-swiper-parallax="-200"
+                        className={`${styles.subtitle}`}
+                        data-swiper-parallax="100"
                     >
                         Team Player
                     </div>
                     <div
                         className={`${styles.text}`}
-                        data-swiper-parallax="-100"
+                        data-swiper-parallax="-400
+                        "
                     >
                         <p>
                             I've worked in a variety of environments and love to
