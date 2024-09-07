@@ -33,7 +33,7 @@ const ProjectCard = ({ projectDatum }) => {
 
     return (
         //get to grow
-        <div className={`${styles.ProjectCard}`}>
+        <div className={`${styles.ProfileSwiper}`}>
             <ReactFlipCard
                 flipTrigger="onHover"
                 containerStyle={{ width: "500px", height: "500px" }}
