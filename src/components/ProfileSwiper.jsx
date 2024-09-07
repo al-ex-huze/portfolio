@@ -11,6 +11,7 @@ const ProfileSwiper = () => {
     return (
         <div className={`${styles.ProfileSwiper}`}>
             <Swiper
+                rewind={true}
                 style={{
                     "--swiper-navigation-color": "#fff",
                     "--swiper-pagination-color": "#fff",
@@ -20,6 +21,12 @@ const ProfileSwiper = () => {
                 parallax={true}
                 pagination={{
                     clickable: true,
+                }}
+                breakpoints={{
+                    600: {},
+                    900: {},
+                    1200: {},
+                    1536: {},
                 }}
                 navigation={true}
                 modules={[Parallax, Pagination, Navigation]}
@@ -37,10 +44,7 @@ const ProfileSwiper = () => {
                     >
                         About me...
                     </div>
-                    <div
-                        className={`${styles.title}`}
-                        data-swiper-parallax="0"
-                    >
+                    <div className={`${styles.title}`} data-swiper-parallax="0">
                         Alex Hughes
                     </div>
                     <div
@@ -68,9 +72,9 @@ const ProfileSwiper = () => {
                     >
                         <p>
                             I recently completed Northcoders’ Software
-                            Development course, expanding my skillset and
-                            preparing me to transfer to a field that aligns with
-                            my strengths and interests.
+                            Development course providing me with foundations to
+                            transfer to a field that aligns with my passions and
+                            interests.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -108,7 +112,7 @@ const ProfileSwiper = () => {
                         <p>
                             I've worked in a variety of environments and love to
                             be in the thick of it. I'm at my best when under
-                            pressure and I always do my part, and more.
+                            pressure and I always do my part and more.
                         </p>
                     </div>
                 </SwiperSlide>
