@@ -24,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const card = (
     <React.Fragment>
         <CardContent>
-            <Typography variant="h5">Contact Me</Typography>
+            <Typography variant="h5">Get In Touch</Typography>
         </CardContent>
         <CardActions
             sx={{
@@ -104,9 +104,7 @@ const card = (
 export default function ContactCard() {
     return (
         <Box sx={{ marginTop: "5px", minWidth: 200 }}>
-            <Item>
                 <Card variant="outlined">{card}</Card>
-            </Item>
         </Box>
     );
 }
