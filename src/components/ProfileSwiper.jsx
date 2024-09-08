@@ -72,8 +72,8 @@ const ProfileSwiper = () => {
                     >
                         <p>
                             I recently completed Northcoders’ Software
-                            Development course providing me with foundations to
-                            transfer to a field that aligns with my passions and
+                            Development course providing me with the foundation to
+                            transfer my skills to a field that aligns with my passions and
                             interests.
                         </p>
                     </div>
