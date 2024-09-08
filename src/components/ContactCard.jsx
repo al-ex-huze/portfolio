@@ -13,7 +13,6 @@ import { IconButton } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: "#fff",
-    ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: "center",
     color: theme.palette.text.secondary,
@@ -38,10 +37,11 @@ const card = (
             <IconButton
                 aria-label="redirect"
                 onClick={(event) =>
-                    (window.location.href = "https://github.com/al-ex-huze")
+                    (window.location.href =
+                        "https://www.linkedin.com/in/alex-hughes-b960a1301/")
                 }
             >
-                <GitHubIcon
+                <LinkedInIcon
                     sx={{
                         fontSize: {
                             xs: "60px",
@@ -56,11 +56,10 @@ const card = (
             <IconButton
                 aria-label="redirect"
                 onClick={(event) =>
-                    (window.location.href =
-                        "https://www.linkedin.com/in/alex-hughes-b960a1301/")
+                    (window.location.href = "https://github.com/al-ex-huze")
                 }
             >
-                <LinkedInIcon
+                <GitHubIcon
                     sx={{
                         fontSize: {
                             xs: "60px",
@@ -97,12 +96,12 @@ const card = (
                 mb: 1.5,
             }}
         >
-            {"("}I'm Open To Work{")"}
+            {"("}#Open To Work{")"}
         </Typography>
     </React.Fragment>
 );
 
-export default function ContactCard(){
+export default function ContactCard() {
     return (
         <Box sx={{ marginTop: "5px", minWidth: 200 }}>
             <Item>
@@ -110,6 +109,6 @@ export default function ContactCard(){
             </Item>
         </Box>
     );
-};
+}
 
 // export default ContactCard;

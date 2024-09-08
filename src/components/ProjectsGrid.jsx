@@ -18,7 +18,7 @@ const ProjectsGrid = ({ visibleSection }) => {
                     "https://be-pp-timeline.fly.dev/api/events?timeline=Projects"
                 );
                 if (!response.ok) {
-                    throw new Error("Network response was not ok");
+                    throw new Error("Loading projects failed");
                 }
                 const result = await response.json();
                 setProjectsData(result.events);

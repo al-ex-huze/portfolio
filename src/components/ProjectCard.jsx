@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
+import { Box } from "@mui/material";
 
 const ProjectCard = ({ projectDatum }) => {
     const rfcStyles = {
@@ -22,10 +23,8 @@ const ProjectCard = ({ projectDatum }) => {
 
     const Item = styled(Paper)(({ theme }) => ({
         backgroundColor: "#fff",
-        ...theme.typography.body2,
-        padding: theme.spacing(1),
+        padding: theme.spacing(0.1),
         textAlign: "center",
-        color: theme.palette.text.secondary,
         ...theme.applyStyles("dark", {
             backgroundColor: "#1A2027",
         }),
@@ -53,7 +52,7 @@ const ProjectCard = ({ projectDatum }) => {
                             <CardContent>
                                 <Typography
                                     gutterBottom
-                                    variant="h5"
+                                    variant="h4"
                                     component="div"
                                     sx={{ color: "text.primary" }}
                                 >
@@ -73,7 +72,10 @@ const ProjectCard = ({ projectDatum }) => {
                     <Item sx={{ height: "500px" }}>
                         <Card
                             variant="outlined"
-                            sx={{ height: "500px", borderRadius: "4px" }}
+                            sx={{
+                                height: "500px",
+                                borderRadius: "4px",
+                            }}
                         >
                             <CardMedia
                                 style={{
@@ -85,37 +87,48 @@ const ProjectCard = ({ projectDatum }) => {
                             <CardContent>
                                 <Typography
                                     variant="body2"
-                                    sx={{ color: "text.secondary" }}
+                                    sx={{
+                                        color: "text.secondary",
+                                        textAlign: "justify",
+                                    }}
                                 >
                                     {projectDatum.body}
                                 </Typography>
                             </CardContent>
-                            <CardActions>
-                                {!projectDatum.github_url ||
-                                projectDatum.github_url ===
-                                    "Coming Soon" ? null : (
-                                    <Button
-                                        size="small"
-                                        aria-label="redirect"
-                                        onClick={(event) =>
-                                            (window.location.href = `${projectDatum.github_url}`)
-                                        }
-                                    >
-                                        Github
-                                    </Button>
-                                )}
-                                {projectDatum.deployed_url ? (
-                                    <Button
-                                        size="small"
-                                        aria-label="redirect"
-                                        onClick={(event) =>
-                                            (window.location.href = `${projectDatum.deployed_url}`)
-                                        }
-                                    >
-                                        Deployed
-                                    </Button>
-                                ) : null}
-                            </CardActions>
+                            <Box
+                                sx={{
+                                    position: "absolute",
+                                    bottom: "0", 
+                                    right: "5%"
+                                }}
+                            >
+                                <CardActions>
+                                    {!projectDatum.github_url ||
+                                    projectDatum.github_url ===
+                                        "Coming Soon" ? null : (
+                                        <Button
+                                            size="small"
+                                            aria-label="redirect"
+                                            onClick={(event) =>
+                                                (window.location.href = `${projectDatum.github_url}`)
+                                            }
+                                        >
+                                            Github
+                                        </Button>
+                                    )}
+                                    {projectDatum.deployed_url ? (
+                                        <Button
+                                            size="small"
+                                            aria-label="redirect"
+                                            onClick={(event) =>
+                                                (window.location.href = `${projectDatum.deployed_url}`)
+                                            }
+                                        >
+                                            Deployed
+                                        </Button>
+                                    ) : null}
+                                </CardActions>
+                            </Box>
                         </Card>
                     </Item>
                 }
