@@ -84,6 +84,7 @@ const Nav = ({ setVisibleSection }) => {
                         <ThemeToggleSwitch />
                     </div>
                     <div className={`${styles.Nav__xs}`}>
+                        <ThemeToggleSwitch />
                         <IconButton
                             edge="end"
                             color="inherit"

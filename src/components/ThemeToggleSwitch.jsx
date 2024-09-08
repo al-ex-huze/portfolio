@@ -10,6 +10,7 @@ const ThemeSwitch = styled(Switch)(({ theme }) => ({
     width: 60,
     height: 30,
     padding: 10,
+    margin: 10,
     "& .MuiSwitch-switchBase": {
         margin: 1,
         padding: 0,
