@@ -6,9 +6,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { Avatar } from "@mui/material";
-
 import React from "react";
 import { useState } from "react";
+
+import ThemeToggleSwitch from "./ThemeToggleSwitch";
 
 const Nav = ({ setVisibleSection }) => {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -63,7 +64,6 @@ const Nav = ({ setVisibleSection }) => {
                         alt="Logo"
                     />
                 </IconButton>
-
                 <Typography variant="h3" style={{ flexGrow: 1 }}></Typography>
                 <div className="desktop-nav">
                     <MenuItem onClick={() => handleLinkClick("section1")}>
@@ -75,6 +75,9 @@ const Nav = ({ setVisibleSection }) => {
                     <MenuItem onClick={() => handleLinkClick("section3")}>
                         <a className="Nav__link">Contact</a>
                     </MenuItem>
+                    <ThemeToggleSwitch>
+
+                    </ThemeToggleSwitch>
                 </div>
                 <div className="mobile-nav">
                     <IconButton
