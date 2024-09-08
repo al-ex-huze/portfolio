@@ -44,8 +44,8 @@ const Nav = ({ setVisibleSection }) => {
                             sx={{
                                 bgcolor: "#ffffff",
                                 padding: {
-                                    xs: 1,
-                                    sm: 1.4,
+                                    xs: .8,
+                                    sm: 1.2,
                                     md: 1.6,
                                     lg: 1.8,
                                     xl: 2,
@@ -79,6 +79,7 @@ const Nav = ({ setVisibleSection }) => {
                         style={{ flexGrow: 1 }}
                     ></Typography>
                     <div className={`${styles.Nav__sm}`}>
+                        <ThemeToggleSwitch />
                         <MenuItem onClick={() => handleLinkClick("section1")}>
                             <a className={`${styles.Nav__link}`}>Profile</a>
                         </MenuItem>
@@ -88,7 +89,6 @@ const Nav = ({ setVisibleSection }) => {
                         <MenuItem onClick={() => handleLinkClick("section3")}>
                             <a className={`${styles.Nav__link}`}>Contact</a>
                         </MenuItem>
-                        <ThemeToggleSwitch />
                     </div>
                     <div className={`${styles.Nav__xs}`}>
                         <ThemeToggleSwitch />

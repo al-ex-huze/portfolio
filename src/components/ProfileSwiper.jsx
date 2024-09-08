@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import Typography from "@mui/material/Typography";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -42,7 +44,9 @@ const ProfileSwiper = () => {
                         className={`${styles.subtitle_xs}`}
                         data-swiper-parallax="-300"
                     >
-                        About me...
+                        <Typography sx={{ color: "theme.primary" }}>
+                            About me...
+                        </Typography>
                     </div>
                     <div className={`${styles.title}`} data-swiper-parallax="0">
                         Alex Hughes
@@ -72,9 +76,9 @@ const ProfileSwiper = () => {
                     >
                         <p>
                             I recently completed Northcoders’ Software
-                            Development course providing me with the foundation to
-                            transfer my skills to a field that aligns with my passions and
-                            interests.
+                            Development course providing me with the foundation
+                            to transfer my skills to a field that aligns with my
+                            passions and interests.
                         </p>
                     </div>
                 </SwiperSlide>

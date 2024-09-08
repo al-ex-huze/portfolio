@@ -25,13 +25,9 @@ const ProjectCard = ({ projectDatum }) => {
         backgroundColor: "#fff",
         padding: theme.spacing(0.1),
         textAlign: "center",
-        ...theme.applyStyles("dark", {
-            backgroundColor: "#1A2027",
-        }),
     }));
 
     return (
-        //get to grow
         <div className={`${styles.ProfileSwiper}`}>
             <ReactFlipCard
                 flipTrigger="onHover"
