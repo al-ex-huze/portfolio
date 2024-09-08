@@ -69,16 +69,6 @@ p {
     transition: 0.3s;
 }
 
-.Nav__link {
-    font-size: 2rem;
-    color: #ffffff;
-    padding: 0px 10px;
-}
-
-.Nav__link:hover {
-    text-decoration: underline 0.1rem;
-}
-
 .Profile__fade-in {
     grid-area: Profile;
     opacity: 1;
@@ -115,14 +105,6 @@ p {
     transition: 1s ease;
 }
 
-.desktop-nav {
-    display: none;
-}
-
-.mobile-nav {
-    display: block;
-}
-
 @media only screen and (min-width: 768px) {
     .App {
         display: grid;
@@ -140,13 +122,5 @@ p {
         width: 10%;
         transition: 0.3s ease;
         display: block;
-    }
-    .desktop-nav {
-        display: flex;
-        font-size: 2rem;
-    }
-
-    .mobile-nav {
-        display: none;
     }
 }

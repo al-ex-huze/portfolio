@@ -1,0 +1,36 @@
+.Nav {
+    grid-area: Nav;
+    top: 0px;
+    right: 0px;
+    transition: 0.3s;
+}
+
+.Nav__link {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0px 10px;
+}
+
+.Nav__link:hover {
+    text-decoration: underline 0.1rem;
+}
+
+
+.Nav__sm {
+    display: none;
+}
+
+.Nav__xs {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .Nav__sm {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .Nav__xs {
+        display: none;
+    }
+}
