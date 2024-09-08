@@ -9,8 +9,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 import { Box } from "@mui/material";
 
 const ProjectCard = ({ projectDatum }) => {

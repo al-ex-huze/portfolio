@@ -50,7 +50,7 @@ p {
         "Profile"
         "Projects"
         "Contact";
-    justify-content: center;
+    justify-items: center;
 }
 
 .Banner__visible {
