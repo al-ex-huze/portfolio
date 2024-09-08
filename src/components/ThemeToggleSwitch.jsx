@@ -7,9 +7,9 @@ import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 const ThemeSwitch = styled(Switch)(({ theme }) => ({
-    width: 62,
-    height: 34,
-    padding: 7,
+    width: 60,
+    height: 30,
+    padding: 10,
     "& .MuiSwitch-switchBase": {
         margin: 1,
         padding: 0,
@@ -32,9 +32,9 @@ const ThemeSwitch = styled(Switch)(({ theme }) => ({
         },
     },
     "& .MuiSwitch-thumb": {
-        backgroundColor: "#001e3c",
-        width: 32,
-        height: 32,
+        backgroundColor: "#003153",
+        width: 28,
+        height: 28,
         "&::before": {
             content: "''",
             position: "absolute",
