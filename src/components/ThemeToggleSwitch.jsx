@@ -1,7 +1,12 @@
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
-const ThemeToggleSwitch = styled(Switch)(({ theme }) => ({
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
+
+const ThemeSwitch = styled(Switch)(({ theme }) => ({
     width: 62,
     height: 34,
     padding: 7,
@@ -56,5 +61,24 @@ const ThemeToggleSwitch = styled(Switch)(({ theme }) => ({
         }),
     },
 }));
+
+const ThemeToggleSwitch = () => {
+    const { theme, setTheme } = useContext(ThemeContext);
+
+    const toggleTheme = () => {
+        setTheme((currentTheme) => {
+            return currentTheme === "light" ? "dark" : "light";
+        });
+    };
+
+    return (
+        <FormGroup>
+            <FormControlLabel
+                control={<ThemeSwitch defaultChecked />}
+                onChange={toggleTheme}
+            />
+        </FormGroup>
+    );
+};
 
 export default ThemeToggleSwitch;
