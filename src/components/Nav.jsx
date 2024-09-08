@@ -42,7 +42,13 @@ const Nav = ({ setVisibleSection }) => {
                         <Avatar
                             sx={{
                                 bgcolor: "#ffffff",
-                                padding: 1,
+                                padding: {
+                                    xs: 1,
+                                    sm: 1.4,
+                                    md: 1.6,
+                                    lg: 1.8,
+                                    xl: 2,
+                                },
                                 width: {
                                     xs: 40,
                                     sm: 60,
@@ -62,8 +68,8 @@ const Nav = ({ setVisibleSection }) => {
                                 xs: { width: 56, height: 56 },
                                 md: { width: 100, height: 100 },
                             }}
-                            variant="square"
-                            src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah2003153.png"
+                            variant="rounded"
+                            src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah4003153.png"
                             alt="Logo"
                         />
                     </IconButton>
