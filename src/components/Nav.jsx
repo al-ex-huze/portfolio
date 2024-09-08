@@ -1,3 +1,7 @@
+import React from "react";
+import { useContext, useState } from "react";
+
+import { Avatar } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -5,12 +9,9 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Avatar } from "@mui/material";
-import React from "react";
-import { useState } from "react";
 
+import { ThemeContext } from "../contexts/ThemeContext.jsx";
 import ThemeToggleSwitch from "./ThemeToggleSwitch";
-
 import styles from "../components/Nav.module.css";
 
 const Nav = ({ setVisibleSection }) => {
