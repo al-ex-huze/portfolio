@@ -10,7 +10,6 @@
 
 .swiper-slide {
     font-size: 1rem;
-    color: #fff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
@@ -41,7 +40,7 @@
 
 .subtitle_xs {
     text-align: left;
-    font-size: 0.66rem;
+    font-size: 0.8rem;
     font-weight: 100;
     padding: 0rem 4rem;
 }

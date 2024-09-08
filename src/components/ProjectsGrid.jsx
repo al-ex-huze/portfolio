@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid2";
 import ProjectCard from "./ProjectCard";
 import React, { useEffect, useState } from "react";
 
-const ProjectsGrid = ({ visibleSection }) => {
+const ProjectsGrid = () => {
     const [projectsData, setProjectsData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
