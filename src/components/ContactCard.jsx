@@ -1,114 +1,98 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { IconButton } from "@mui/material";
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: "#fff",
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    ...theme.applyStyles("dark", {
-        backgroundColor: "#1A2027",
-    }),
-}));
-
-const card = (
-    <React.Fragment>
-        <CardContent>
-            <Typography variant="h5">Contact Me</Typography>
-        </CardContent>
-        <CardActions
-            sx={{
-                display: "flex",
-                alignItems: "center",
-                width: "fit-content",
-                justifyContent: "space-between",
-            }}
-        >
-            <IconButton
-                aria-label="redirect"
-                onClick={(event) =>
-                    (window.location.href =
-                        "https://www.linkedin.com/in/alex-hughes-b960a1301/")
-                }
-            >
-                <LinkedInIcon
-                    sx={{
-                        fontSize: {
-                            xs: "60px",
-                            sm: "80px",
-                            md: "10px",
-                            lg: "100px",
-                            xl: "200px",
-                        },
-                    }}
-                />
-            </IconButton>
-            <IconButton
-                aria-label="redirect"
-                onClick={(event) =>
-                    (window.location.href = "https://github.com/al-ex-huze")
-                }
-            >
-                <GitHubIcon
-                    sx={{
-                        fontSize: {
-                            xs: "60px",
-                            sm: "80px",
-                            md: "10px",
-                            lg: "100px",
-                            xl: "200px",
-                        },
-                    }}
-                />
-            </IconButton>
-            <IconButton
-                aria-label="redirect"
-                onClick={(event) =>
-                    (window.location.href = "mailto:al.ex.hughes@outlook.com")
-                }
-            >
-                <EmailIcon
-                    sx={{
-                        fontSize: {
-                            xs: "60px",
-                            sm: "80px",
-                            md: "10px",
-                            lg: "100px",
-                            xl: "200px",
-                        },
-                    }}
-                />
-            </IconButton>
-        </CardActions>
-        <Typography
-            sx={{
-                color: "text.secondary",
-                mb: 1.5,
-            }}
-        >
-            {"("}#Open To Work{")"}
-        </Typography>
-    </React.Fragment>
-);
-
-export default function ContactCard() {
+const ContactCard = () => {
     return (
-        <Box sx={{ marginTop: "5px", minWidth: 200 }}>
-            <Item>
-                <Card variant="outlined">{card}</Card>
-            </Item>
+        <Box sx={{ marginTop: "5px", minWidth: 200, display: "flex", justifySelf: "center"}}>
+            <Card variant="outlined">
+                <CardContent>
+                    <Typography variant="h5">Get In Touch</Typography>
+                </CardContent>
+                <CardActions
+                    sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        width: "fit-content",
+                        justifyContent: "space-between",
+                    }}
+                >
+                    <IconButton
+                        aria-label="redirect"
+                        onClick={(event) =>
+                            (window.location.href =
+                                "https://www.linkedin.com/in/alex-hughes-b960a1301/")
+                        }
+                    >
+                        <LinkedInIcon
+                            sx={{
+                                fontSize: {
+                                    xs: "60px",
+                                    sm: "80px",
+                                    md: "10px",
+                                    lg: "100px",
+                                    xl: "200px",
+                                },
+                            }}
+                        />
+                    </IconButton>
+                    <IconButton
+                        aria-label="redirect"
+                        onClick={(event) =>
+                            (window.location.href =
+                                "https://github.com/al-ex-huze")
+                        }
+                    >
+                        <GitHubIcon
+                            sx={{
+                                fontSize: {
+                                    xs: "60px",
+                                    sm: "80px",
+                                    md: "10px",
+                                    lg: "100px",
+                                    xl: "200px",
+                                },
+                            }}
+                        />
+                    </IconButton>
+                    <IconButton
+                        aria-label="redirect"
+                        onClick={(event) =>
+                            (window.location.href =
+                                "mailto:al.ex.hughes@outlook.com")
+                        }
+                    >
+                        <EmailIcon
+                            sx={{
+                                fontSize: {
+                                    xs: "60px",
+                                    sm: "80px",
+                                    md: "10px",
+                                    lg: "100px",
+                                    xl: "200px",
+                                },
+                            }}
+                        />
+                    </IconButton>
+                </CardActions>
+                <Typography
+                    sx={{
+                        color: "text.secondary",
+                        mb: 1.5,
+                    }}
+                >
+                    {"("}#Open To Work{")"}
+                </Typography>
+            </Card>
         </Box>
     );
 }
 
-// export default ContactCard;
+export default ContactCard;

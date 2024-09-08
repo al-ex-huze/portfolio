@@ -9,8 +9,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 import { Box } from "@mui/material";
 
 const ProjectCard = ({ projectDatum }) => {
@@ -21,12 +19,6 @@ const ProjectCard = ({ projectDatum }) => {
         },
     };
 
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: "#fff",
-        padding: theme.spacing(0.1),
-        textAlign: "center",
-    }));
-
     return (
         <div className={`${styles.ProfileSwiper}`}>
             <ReactFlipCard
@@ -35,7 +27,6 @@ const ProjectCard = ({ projectDatum }) => {
                 frontStyle={rfcStyles.card}
                 backStyle={rfcStyles.card}
                 frontComponent={
-                    <Item sx={{ height: "500px", borderRadius: "4px" }}>
                         <Card
                             variant="outlined"
                             sx={{ height: "500px", borderRadius: "4px" }}
@@ -62,10 +53,8 @@ const ProjectCard = ({ projectDatum }) => {
                                 </Typography>
                             </CardContent>
                         </Card>
-                    </Item>
                 }
                 backComponent={
-                    <Item sx={{ height: "500px" }}>
                         <Card
                             variant="outlined"
                             sx={{
@@ -126,7 +115,6 @@ const ProjectCard = ({ projectDatum }) => {
                                 </CardActions>
                             </Box>
                         </Card>
-                    </Item>
                 }
             />
         </div>
