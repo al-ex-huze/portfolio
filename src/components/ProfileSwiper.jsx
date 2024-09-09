@@ -13,7 +13,6 @@ import { ThemeContext } from "../contexts/ThemeContext";
 
 const ProfileSwiper = () => {
     const { theme } = useContext(ThemeContext);
-    console.log(JSON.stringify(theme));
 
     return (
         <div className={`${styles.ProfileSwiper}`}>
@@ -64,7 +63,7 @@ const ProfileSwiper = () => {
                         Hi, I'm...
                     </div>
                     <div className={`${styles.title}`} data-swiper-parallax="0">
-                        Alex Hughes
+                            Alex Hughes
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -80,7 +79,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div
                         className={`${styles.subtitle}`}
-                        data-swiper-parallax="100"
+                        data-swiper-parallax="-100"
                     >
                         Junior Software Developer
                     </div>
@@ -100,7 +99,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div
                         className={`${styles.subtitle}`}
-                        data-swiper-parallax="100"
+                        data-swiper-parallax="-100"
                     >
                         Problem Solver
                     </div>
@@ -119,7 +118,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div
                         className={`${styles.subtitle}`}
-                        data-swiper-parallax="100"
+                        data-swiper-parallax="-100"
                     >
                         Team Player
                     </div>
