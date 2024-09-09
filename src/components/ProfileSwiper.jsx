@@ -7,13 +7,17 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import styles from "./ProfileSwiper.module.css";
 
-import { Parallax, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Parallax, Pagination, Navigation } from "swiper/modules";
 
 const ProfileSwiper = () => {
     return (
         <div className={`${styles.ProfileSwiper}`}>
             <Swiper
                 rewind={true}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: true,
+                }}
                 style={{
                     "--swiper-navigation-color": "#fff",
                     "--swiper-pagination-color": "#fff",
@@ -31,7 +35,7 @@ const ProfileSwiper = () => {
                     1536: {},
                 }}
                 navigation={true}
-                modules={[Parallax, Pagination, Navigation]}
+                modules={[Autoplay, Parallax, Pagination, Navigation]}
                 className={`${styles.mySwiper}`}
             >
                 <div
@@ -45,7 +49,7 @@ const ProfileSwiper = () => {
                         data-swiper-parallax="-300"
                     >
                         <Typography sx={{ color: "theme.primary" }}>
-                            About me...
+                            Hi, I'm
                         </Typography>
                     </div>
                     <div className={`${styles.title}`} data-swiper-parallax="0">
