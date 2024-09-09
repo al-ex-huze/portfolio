@@ -97,6 +97,7 @@ const Nav = ({ setVisibleSection }) => {
                             color="inherit"
                             onClick={handleMenuClick}
                             aria-label="menu"
+                            style={{borderRadius: 50}}
                         >
                             <MenuIcon />
                         </IconButton>

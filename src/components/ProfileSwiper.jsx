@@ -1,5 +1,3 @@
-import Typography from "@mui/material/Typography";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Parallax, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
