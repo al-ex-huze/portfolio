@@ -10,7 +10,7 @@
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
     .Banner {
         padding: 10px;
     }

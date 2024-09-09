@@ -2,19 +2,12 @@
     grid-area: Profile;
     display: flex;
     justify-self: center;
-    margin-top: min(250px, 20vh);
     width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
     .Profile {
-        margin-top: min(300px, 25vh);
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .Profile {
-        margin-top: min(250px, 25vh);
+        width: 100%
     }
 }
 

@@ -62,7 +62,7 @@
     align-self: baseline;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
     .title {
         font-size: 4rem;
         font-weight: 600;

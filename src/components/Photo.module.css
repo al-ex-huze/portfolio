@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
     .Photo {
         margin-top: 20vh;
         padding: 40px 60px;
