@@ -10,7 +10,7 @@ const PhotoCard = () => {
                 }}
             >
                 <Avatar
-                    alt="Remy Sharp"
+                    alt="Alex Hughes"
                     src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah-hs-1.jpg"
                     sx={{
                         width: {
