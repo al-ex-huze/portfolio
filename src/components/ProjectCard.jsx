@@ -42,11 +42,11 @@ const ProjectCard = ({ projectDatum }) => {
     else if (xl) breakpoint = "xl";
 
     const flipCardSx = {
-        xs: { width: "350px", height: "500px" },
-        sm: { width: "400px", height: "500px" },
-        md: { width: "450px", height: "450px" },
-        lg: { width: "500px", height: "500px" },
-        xl: { width: "550px", height: "550px" },
+        xs: { width: "350px", height: "550px" },
+        sm: { width: "400px", height: "550px" },
+        md: { width: "450px", height: "550px" },
+        lg: { width: "500px", height: "550px" },
+        xl: { width: "550px", height: "600px" },
     };
 
     return (
@@ -65,17 +65,17 @@ const ProjectCard = ({ projectDatum }) => {
                             variant="outlined"
                             sx={{
                                 height: {
-                                    xs: "500px",
-                                    sm: "500px",
-                                    md: "450px",
-                                    lg: "500px",
-                                    xl: "550px",
+                                    xs: "550px",
+                                    sm: "550px",
+                                    md: "550px",
+                                    lg: "550px",
+                                    xl: "600px",
                                 },
                                 borderRadius: "4px",
                             }}
                         >
                             <CardMedia
-                                style={{ paddingTop: "56.25%" }}
+                                style={{ paddingTop: "100%" }}
                                 image={`${projectDatum.event_img_url_1}`}
                                 title={projectDatum.title}
                             />
@@ -102,18 +102,18 @@ const ProjectCard = ({ projectDatum }) => {
                             variant="outlined"
                             sx={{
                                 height: {
-                                    xs: "500px",
-                                    sm: "450px",
-                                    md: "400px",
-                                    lg: "500px",
-                                    xl: "550px",
+                                    xs: "550px",
+                                    sm: "550px",
+                                    md: "550px",
+                                    lg: "550px",
+                                    xl: "600px",
                                 },
                                 borderRadius: "4px",
                             }}
                         >
                             <CardMedia
                                 style={{
-                                    paddingTop: "56.25%",
+                                    paddingTop: "80%",
                                 }}
                                 image={`${projectDatum.event_img_url_2}`}
                                 title={projectDatum.title}
