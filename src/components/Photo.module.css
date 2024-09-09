@@ -1,0 +1,20 @@
+.Photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .Photo {
+        margin-top: 20vh;
+        padding: 40px 60px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .Photo {
+        margin-top: 20vh;
+        margin-right: 20vh;
+    }
+}

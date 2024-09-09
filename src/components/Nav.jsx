@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useState } from "react";
 
 import { Avatar } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
@@ -10,7 +10,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
-import { ThemeContext } from "../contexts/ThemeContext.jsx";
 import ThemeToggleSwitch from "./ThemeToggleSwitch";
 import styles from "../components/Nav.module.css";
 
@@ -44,25 +43,25 @@ const Nav = ({ setVisibleSection }) => {
                             sx={{
                                 bgcolor: "#ffffff",
                                 padding: {
-                                    xs: .8,
-                                    sm: 1.2,
-                                    md: 1.6,
-                                    lg: 1.8,
-                                    xl: 2,
+                                    xs: 0.7,
+                                    sm: 0.8,
+                                    md: 0.9,
+                                    lg: 1,
+                                    xl: 1.1,
                                 },
                                 width: {
                                     xs: 40,
-                                    sm: 60,
-                                    md: 80,
-                                    lg: 100,
-                                    xl: 120,
+                                    sm: 45,
+                                    md: 50,
+                                    lg: 55,
+                                    xl: 60,
                                 },
                                 height: {
                                     xs: 40,
-                                    sm: 60,
-                                    md: 80,
-                                    lg: 100,
-                                    xl: 120,
+                                    sm: 45,
+                                    md: 50,
+                                    lg: 55,
+                                    xl: 60,
                                 },
                             }}
                             size={{
@@ -97,7 +96,7 @@ const Nav = ({ setVisibleSection }) => {
                             color="inherit"
                             onClick={handleMenuClick}
                             aria-label="menu"
-                            style={{borderRadius: 50}}
+                            style={{ borderRadius: 50 }}
                         >
                             <MenuIcon />
                         </IconButton>

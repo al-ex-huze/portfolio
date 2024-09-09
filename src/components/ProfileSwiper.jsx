@@ -23,12 +23,10 @@ const ProfileSwiper = () => {
                 style={
                     theme.palette.mode === "dark"
                         ? {
-                              "--swiper-navigation-color": "#ffffff",
                               "--swiper-pagination-color": "#ffffff",
                               padding: "10px",
                           }
                         : {
-                              "--swiper-navigation-color": "#000d15",
                               "--swiper-pagination-color": "#000d15",
                               padding: "10px",
                           }
@@ -44,7 +42,6 @@ const ProfileSwiper = () => {
                     1200: {},
                     1536: {},
                 }}
-                navigation={true}
                 modules={[Autoplay, Parallax, Pagination, Navigation]}
                 className={`${styles.mySwiper}`}
             >
@@ -88,9 +85,7 @@ const ProfileSwiper = () => {
                     >
                         <p>
                             I recently completed Northcoders’ Software
-                            Development course providing me with the foundation
-                            to transfer my skills to a field that aligns with my
-                            passions and interests.
+                            Development course installing within me the foundations of programming..
                         </p>
                     </div>
                 </SwiperSlide>
@@ -107,9 +102,8 @@ const ProfileSwiper = () => {
                         "
                     >
                         <p>
-                            I'm at my best when made use of. I love being tasked
-                            with a problem and will always rise to a challenge
-                            and find a solution when needed.
+                            I'm at my best when made use of. I love being challenged
+                            with a task and will always rise to and persist with a solution.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -126,9 +120,8 @@ const ProfileSwiper = () => {
                         "
                     >
                         <p>
-                            I've worked in a variety of environments and love to
-                            be in the thick of it. I'm at my best when under
-                            pressure and I always do my part and more.
+                            I've worked in a variety of environments and am great under
+                            pressure. I will always do my part and more.
                         </p>
                     </div>
                 </SwiperSlide>
