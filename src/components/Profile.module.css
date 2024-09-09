@@ -3,7 +3,7 @@
     display: flex;
     justify-self: center;
     margin-top: min(250px, 20vh);
-    max-width: 100%;
+    width: 100%;
 }
 
 @media only screen and (min-width: 600px) {

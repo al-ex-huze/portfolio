@@ -24,13 +24,6 @@ const ContactCard = () => {
                 <CardContent>
                     <Typography variant="h5">Get In Touch</Typography>
                 </CardContent>
-                <CardMedia
-                    style={{ paddingTop: "100%", borderRadius: "50%" }}
-                    image={
-                        "https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah-hs-1.jpg"
-                    }
-                    title="Headshot"
-                />
                 <CardActions
                     sx={{
                         display: "flex",
