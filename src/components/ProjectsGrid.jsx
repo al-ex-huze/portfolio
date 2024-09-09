@@ -1,15 +1,17 @@
-import { styled } from "@mui/material/styles";
+import { useEffect, useState } from "react";
+
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid2";
 
+import useWindowDimensions from "./GetDimensions";
 import ProjectCard from "./ProjectCard";
-import React, { useEffect, useState } from "react";
 
 const ProjectsGrid = () => {
     const [projectsData, setProjectsData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const { height, width } = useWindowDimensions();
 
     useEffect(() => {
         const fetchProjectsData = async () => {
@@ -44,10 +46,10 @@ const ProjectsGrid = () => {
         <Box sx={{ mx: "auto", width: 1, flexGrow: 1 }}>
             <Grid
                 container
-                spacing={{ xs: 2, sm: 4, md: 6, lg: 10, xl: 12 }}
+                spacing={{ xs: 2, sm: 4, md: 4, lg: 6, xl: 8 }}
                 sx={{
                     width: "100",
-                    paddingX: { xs: 5, sm: 10, md: 40, lg: 20, xl: 10 },
+                    paddingX: { xs: `${(width - 365) / 2}px`, sm: `${(width - 365) / 2}px`, md: `${(width - 750) / 2}px`, lg: `${(width - 1165) / 2}px`, xl: 10 },
                 }}
             >
                 {projectsData.map((projectDatum) => {
