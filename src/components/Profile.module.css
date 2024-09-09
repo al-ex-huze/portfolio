@@ -14,7 +14,7 @@
 
 @media only screen and (min-width: 768px) {
     .Profile {
-        margin-top: min(250px, 20vh);
+        margin-top: min(250px, 25vh);
     }
 }
 
