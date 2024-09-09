@@ -7,6 +7,7 @@
 
 @media only screen and (min-width: 600px) {
     .Profile {
+        margin-top: min(250px, 20vh);
         width: 100%
     }
 }

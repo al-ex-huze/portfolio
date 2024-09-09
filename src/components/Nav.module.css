@@ -14,7 +14,6 @@
     text-decoration: underline 0.1rem;
 }
 
-
 .Nav__sm {
     display: none;
 }
@@ -23,7 +22,7 @@
     display: flex;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
     .Nav__sm {
         display: flex;
         font-size: 2rem;
@@ -31,5 +30,10 @@
 
     .Nav__xs {
         display: none;
+    }
+    .Nav__link {
+        font-size: 1.5rem;
+        color: #ffffff;
+        padding: 0px 10px;
     }
 }
