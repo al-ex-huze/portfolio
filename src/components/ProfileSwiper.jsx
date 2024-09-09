@@ -1,15 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import Typography from "@mui/material/Typography";
-
+import { Autoplay, Parallax, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import styles from "./ProfileSwiper.module.css";
 
-import { Autoplay, Parallax, Pagination, Navigation } from "swiper/modules";
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const ProfileSwiper = () => {
+    const { theme } = useContext(ThemeContext);
+
     return (
         <div className={`${styles.ProfileSwiper}`}>
             <Swiper
@@ -18,11 +20,19 @@ const ProfileSwiper = () => {
                     delay: 3000,
                     disableOnInteraction: true,
                 }}
-                style={{
-                    "--swiper-navigation-color": "#fff",
-                    "--swiper-pagination-color": "#fff",
-                    padding: "10px",
-                }}
+                style={
+                    theme.palette.mode === "dark"
+                        ? {
+                              "--swiper-navigation-color": "#ffffff",
+                              "--swiper-pagination-color": "#ffffff",
+                              padding: "10px",
+                          }
+                        : {
+                              "--swiper-navigation-color": "#000d15",
+                              "--swiper-pagination-color": "#000d15",
+                              padding: "10px",
+                          }
+                }
                 speed={600}
                 parallax={true}
                 pagination={{
@@ -48,12 +58,10 @@ const ProfileSwiper = () => {
                         className={`${styles.subtitle_xs}`}
                         data-swiper-parallax="-300"
                     >
-                        <Typography sx={{ color: "theme.primary" }}>
-                            Hi, I'm
-                        </Typography>
+                        Hi, I'm...
                     </div>
                     <div className={`${styles.title}`} data-swiper-parallax="0">
-                        Alex Hughes
+                            Alex Hughes
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -69,7 +77,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div
                         className={`${styles.subtitle}`}
-                        data-swiper-parallax="100"
+                        data-swiper-parallax="-100"
                     >
                         Junior Software Developer
                     </div>
@@ -89,7 +97,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div
                         className={`${styles.subtitle}`}
-                        data-swiper-parallax="100"
+                        data-swiper-parallax="-100"
                     >
                         Problem Solver
                     </div>
@@ -108,7 +116,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div
                         className={`${styles.subtitle}`}
-                        data-swiper-parallax="100"
+                        data-swiper-parallax="-100"
                     >
                         Team Player
                     </div>
