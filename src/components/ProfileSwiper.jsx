@@ -23,12 +23,10 @@ const ProfileSwiper = () => {
                 style={
                     theme.palette.mode === "dark"
                         ? {
-                              "--swiper-navigation-color": "#ffffff",
                               "--swiper-pagination-color": "#ffffff",
                               padding: "10px",
                           }
                         : {
-                              "--swiper-navigation-color": "#000d15",
                               "--swiper-pagination-color": "#000d15",
                               padding: "10px",
                           }
@@ -44,7 +42,6 @@ const ProfileSwiper = () => {
                     1200: {},
                     1536: {},
                 }}
-                navigation={true}
                 modules={[Autoplay, Parallax, Pagination, Navigation]}
                 className={`${styles.mySwiper}`}
             >
