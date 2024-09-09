@@ -127,10 +127,18 @@ p {
             "Contact Contact";
         justify-items: center;
     }
-    .Header img {
-        padding: 20px;
-        width: 10%;
-        transition: 0.3s ease;
-        display: block;
+}
+
+@media only screen and (min-width: 900px) {
+    .App {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "Banner Banner"
+            "Profile Photo"
+            "Projects Projects"
+            "Contact Contact";
+        justify-items: center;
     }
 }
