@@ -44,9 +44,9 @@ const ContactCard = () => {
                                 fontSize: {
                                     xs: "60px",
                                     sm: "80px",
-                                    md: "10px",
-                                    lg: "100px",
-                                    xl: "200px",
+                                    md: "100px",
+                                    lg: "120px",
+                                    xl: "140px",
                                 },
                             }}
                         />
@@ -63,9 +63,9 @@ const ContactCard = () => {
                                 fontSize: {
                                     xs: "60px",
                                     sm: "80px",
-                                    md: "10px",
-                                    lg: "100px",
-                                    xl: "200px",
+                                    md: "100px",
+                                    lg: "120px",
+                                    xl: "140px",
                                 },
                             }}
                         />
@@ -82,9 +82,9 @@ const ContactCard = () => {
                                 fontSize: {
                                     xs: "60px",
                                     sm: "80px",
-                                    md: "10px",
-                                    lg: "100px",
-                                    xl: "200px",
+                                    md: "100px",
+                                    lg: "120px",
+                                    xl: "140px",
                                 },
                             }}
                         />
