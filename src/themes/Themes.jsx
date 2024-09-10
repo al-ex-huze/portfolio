@@ -11,7 +11,7 @@ export const themeLight = createTheme({
         },
         text: {
             primary: "#000d15",
-            secondary: "#00192a"
+            secondary: "#00192a",
         },
     },
     components: {
@@ -29,7 +29,21 @@ export const themeLight = createTheme({
                 },
                 text: {
                     primary: "#000d15",
-                    secondary: "#00192a"
+                    secondary: "#00192a",
+                },
+            },
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    variants: [
+                        {
+                            props: { variant: "cardButton"},
+                            style: {
+                                color: "#003153",
+                            },
+                        },
+                    ],
                 },
             },
         },
@@ -62,6 +76,20 @@ export const themeDark = createTheme({
             styleOverrides: {
                 colorPrimary: {
                     background: "#000d15",
+                },
+            },
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    variants: [
+                        {
+                            props: { variant: "cardButton"},
+                            style: {
+                                color: "#40657e",
+                            },
+                        },
+                    ],
                 },
             },
         },
