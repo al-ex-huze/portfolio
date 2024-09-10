@@ -306,7 +306,7 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I'm at my best when made use of. I will always rise to a challange and
+                            I'm at my best when made use of. I will always rise to a challenge and
                             persist to find a solution.
                         </Typography>
                     </div>
