@@ -136,11 +136,12 @@ const ProjectCard = ({ projectDatum }) => {
                                     right: "5%",
                                 }}
                             >
-                                <CardActions>
+                                <CardActions color="text.primary">
                                     {!projectDatum.github_url ||
                                     projectDatum.github_url ===
                                         "Coming Soon" ? null : (
                                         <Button
+                                            variant="cardButton"
                                             size="small"
                                             aria-label="redirect"
                                             onClick={(event) =>
@@ -152,6 +153,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     )}
                                     {projectDatum.deployed_url ? (
                                         <Button
+                                            variant="cardButton"
                                             size="small"
                                             aria-label="redirect"
                                             onClick={(event) =>
