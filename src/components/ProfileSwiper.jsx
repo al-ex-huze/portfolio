@@ -94,7 +94,7 @@ const ProfileSwiper = () => {
                         className={`${styles.subtitle}`}
                         data-swiper-parallax="-100"
                     >
-                        Lifelong Learner
+                        Coder
                     </div>
                     <div
                         className={`${styles.text}`}
