@@ -46,7 +46,7 @@ const ProjectCard = ({ projectDatum }) => {
         sm: { width: "400px", height: "550px" },
         md: { width: "450px", height: "550px" },
         lg: { width: "500px", height: "550px" },
-        xl: { width: "550px", height: "600px" },
+        xl: { width: "550px", height: "550px" },
     };
 
     return (
@@ -69,7 +69,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     sm: "550px",
                                     md: "550px",
                                     lg: "550px",
-                                    xl: "600px",
+                                    xl: "550px",
                                 },
                                 borderRadius: "4px",
                             }}
@@ -106,7 +106,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     sm: "550px",
                                     md: "550px",
                                     lg: "550px",
-                                    xl: "600px",
+                                    xl: "550px",
                                 },
                                 borderRadius: "4px",
                             }}
