@@ -59,16 +59,16 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             variant="subtitle1"
                             align="left"
-                            fontWeight="200"
+                            fontWeight="100"
                             sx={{
                                 fontSize: {
-                                    xs: "1rem",
-                                    sm: "1.5rem",
-                                    md: "2rem",
-                                    lg: "3rem",
-                                    xl: "3.5rem",
+                                    xs: "1.4rem",
+                                    sm: "1.8rem",
+                                    md: "2.1rem",
+                                    lg: "2.4rem",
+                                    xl: "2.7rem",
                                 },
-                                padding: { xs: "1rem 0rem 0rem 1rem" },
+                                padding: { xs: "1rem 0rem 0rem 0rem" },
                             }}
                         >
                             Hi, I'm...
@@ -88,7 +88,7 @@ const ProfileSwiper = () => {
                                     xl: "8rem",
                                 },
                                 padding: {
-                                    xs: "1rem 0rem",
+                                    xs: "0rem 0rem",
                                 },
                             }}
                         >
@@ -111,7 +111,7 @@ const ProfileSwiper = () => {
                                     xl: "2rem",
                                 },
                                 padding: {
-                                    xs: "1rem 0rem",
+                                    xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -172,7 +172,7 @@ const ProfileSwiper = () => {
                                     xl: "2rem",
                                 },
                                 padding: {
-                                    xs: "1rem 0rem",
+                                    xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -233,7 +233,7 @@ const ProfileSwiper = () => {
                                     xl: "2rem",
                                 },
                                 padding: {
-                                    xs: "1rem 0rem",
+                                    xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -295,7 +295,7 @@ const ProfileSwiper = () => {
                                     xl: "2rem",
                                 },
                                 padding: {
-                                    xs: "1rem 0rem",
+                                    xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -356,7 +356,7 @@ const ProfileSwiper = () => {
                                     xl: "2rem",
                                 },
                                 padding: {
-                                    xs: "1rem 0rem",
+                                    xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",

@@ -59,18 +59,6 @@ p {
     transform: translateY(-100%);
 }
 
-.Projects__fade-in {
-    grid-area: Projects;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Projects__fade-out {
-    grid-area: Projects;
-    opacity: 1;
-    transition: 1s ease;
-}
-
 .Contact__fade-in {
     grid-area: Contact;
     opacity: 1;
