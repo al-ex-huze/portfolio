@@ -144,15 +144,32 @@ const ProfileSwiper = () => {
                         </Typography>
                     </div>
                     <div
-                        className={`${styles.text}`}
                         data-swiper-parallax="-400
                         "
                     >
-                        <p>
+                        <Typography
+                            align="right"
+                            variant="body1"
+                            fontWeight="100"
+                            textAlign="justify"
+                            maxWidth="500px"
+                            sx={{
+                                fontSize: {
+                                    xs: "1.2rem",
+                                    sm: "1.4rem",
+                                    md: "1.6rem",
+                                    lg: "1.8rem",
+                                    xl: "2rem",
+                                },
+                                paddingX: {
+                                    xs: "1rem",
+                                },
+                            }}
+                        >
                             I recently completed Northcoders’ Software
                             Development course installing within me the
                             foundations of programming.
-                        </p>
+                        </Typography>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -179,15 +196,33 @@ const ProfileSwiper = () => {
                         </Typography>
                     </div>
                     <div
-                        className={`${styles.text}`}
                         data-swiper-parallax="-400
                         "
                     >
-                        <p>
+                        <Typography
+                            align="right"
+                            variant="body1"
+                            fontWeight="100"
+                            textAlign="justify"
+                            maxWidth="500px"
+                            sx={{
+                                fontSize: {
+                                    xs: "1.2rem",
+                                    sm: "1.4rem",
+                                    md: "1.6rem",
+                                    lg: "1.8rem",
+                                    xl: "2rem",
+                                },
+                                paddingX: {
+                                    xs: "1rem",
+                                },
+                            }}
+                        >
+                            {" "}
                             I'm continuing to explore new languages and
                             practices such as practicing CI/CD in my own
                             projects.
-                        </p>
+                        </Typography>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -214,15 +249,32 @@ const ProfileSwiper = () => {
                         </Typography>
                     </div>
                     <div
-                        className={`${styles.text}`}
                         data-swiper-parallax="-400
                         "
                     >
-                        <p>
+                        <Typography
+                            align="right"
+                            variant="body1"
+                            fontWeight="100"
+                            textAlign="justify"
+                            maxWidth="500px"
+                            sx={{
+                                fontSize: {
+                                    xs: "1.2rem",
+                                    sm: "1.4rem",
+                                    md: "1.6rem",
+                                    lg: "1.8rem",
+                                    xl: "2rem",
+                                },
+                                paddingX: {
+                                    xs: "1rem",
+                                },
+                            }}
+                        >
                             I'm at my best when made use of. I love being
                             challenged with a task and will always rise to and
                             persist with a solution.
-                        </p>
+                        </Typography>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -249,15 +301,32 @@ const ProfileSwiper = () => {
                         </Typography>
                     </div>
                     <div
-                        className={`${styles.text}`}
                         data-swiper-parallax="-400
                         "
                     >
-                        <p>
+                        <Typography
+                            align="right"
+                            variant="body1"
+                            fontWeight="100"
+                            textAlign="justify"
+                            maxWidth="500px"
+                            sx={{
+                                fontSize: {
+                                    xs: "1.2rem",
+                                    sm: "1.4rem",
+                                    md: "1.6rem",
+                                    lg: "1.8rem",
+                                    xl: "2rem",
+                                },
+                                paddingX: {
+                                    xs: "1rem",
+                                },
+                            }}
+                        >
                             I've worked in a variety of environments and am
                             great under pressure. I will always do my part and
                             more.
-                        </p>
+                        </Typography>
                     </div>
                 </SwiperSlide>
             </Swiper>
