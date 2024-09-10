@@ -61,12 +61,6 @@ p {
     transform: translateY(-100%);
 }
 
-.Nav {
-    top: 0px;
-    right: 0px;
-    transition: 0.3s;
-}
-
 .Photo__fade-in {
     grid-area: Photo;
     opacity: 1;
