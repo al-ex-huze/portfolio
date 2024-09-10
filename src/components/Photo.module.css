@@ -9,7 +9,7 @@
 @media only screen and (min-width: 600px) {
     .Photo {
         margin-top: 20vh;
-        padding: 40px 60px;
+        padding: 40px 40px 0px 0px;
     }
 }
 
