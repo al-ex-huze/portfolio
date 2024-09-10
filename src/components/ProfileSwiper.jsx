@@ -85,7 +85,24 @@ const ProfileSwiper = () => {
                     >
                         <p>
                             I recently completed Northcoders’ Software
-                            Development course installing within me the foundations of programming..
+                            Development course installing within me the foundations of programming.
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div
+                        className={`${styles.subtitle}`}
+                        data-swiper-parallax="-100"
+                    >
+                        Lifelong Learner
+                    </div>
+                    <div
+                        className={`${styles.text}`}
+                        data-swiper-parallax="-400
+                        "
+                    >
+                        <p>
+                            I'm continuing to explore new languages and practices such as practicing CI/CD in my own projects.
                         </p>
                     </div>
                 </SwiperSlide>

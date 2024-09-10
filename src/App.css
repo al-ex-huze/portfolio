@@ -25,6 +25,7 @@ body {
     width: 100%;
     height: auto;
     scroll-behavior: smooth;
+    transition: 1s ease;
 }
 
 a {
@@ -61,17 +62,6 @@ p {
     transform: translateY(-100%);
 }
 
-.Photo__fade-in {
-    grid-area: Photo;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Photo__fade-out {
-    grid-area: Photo;
-    opacity: 1;
-    transition: 1s ease;
-}
 
 .Profile__fade-in {
     grid-area: Profile;
