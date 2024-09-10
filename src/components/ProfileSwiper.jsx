@@ -246,7 +246,7 @@ const ProfileSwiper = () => {
                         >
                             {" "}
                             I'm continuing to explore new languages and
-                            practices such as practicing CI/CD in my own
+                            practices such as utilising CI/CD in my own
                             projects.
                         </Typography>
                     </div>
@@ -306,9 +306,8 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I'm at my best when made use of. I love being
-                            challenged with a task and will always rise to and
-                            persist with a solution.
+                            I'm at my best when made use of. I will always rise to a challange and
+                            persist to find a solution.
                         </Typography>
                     </div>
                 </SwiperSlide>
