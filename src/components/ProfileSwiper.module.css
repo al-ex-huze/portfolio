@@ -30,14 +30,6 @@
     justify-content: center;
 }
 
-.title {
-    text-align: right;
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 1rem;
-    padding: 0rem 0rem;
-}
-
 .subtitle_xs {
     text-align: left;
     font-size: 0.8rem;
@@ -63,13 +55,6 @@
 }
 
 @media only screen and (min-width: 900px) {
-    .title {
-        font-size: 4rem;
-        font-weight: 600;
-        margin: 1rem;
-        padding: 0rem 4rem;
-    }
-
     .subtitle_xs {
         text-align: left;
         font-size: 1rem;

@@ -7,6 +7,9 @@ import "swiper/css/navigation";
 import styles from "./ProfileSwiper.module.css";
 
 import { useContext } from "react";
+
+import { Typography } from "@mui/material";
+
 import { ThemeContext } from "../contexts/ThemeContext";
 
 const ProfileSwiper = () => {
@@ -57,8 +60,23 @@ const ProfileSwiper = () => {
                     >
                         Hi, I'm...
                     </div>
-                    <div className={`${styles.title}`} data-swiper-parallax="0">
+                    <div data-swiper-parallax="-100">
+                        <Typography
+                            variant="h1"
+                            align="right"
+                            sx={{
+                                fontSize: {
+                                    xs: "3rem",
+                                    sm: "3.5rem",
+                                    md: "4rem",
+                                    lg: "5rem",
+                                    xl: "6rem",
+                                },
+                                marginX: "1rem",
+                            }}
+                        >
                             Alex Hughes
+                        </Typography>
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -85,7 +103,8 @@ const ProfileSwiper = () => {
                     >
                         <p>
                             I recently completed Northcoders’ Software
-                            Development course installing within me the foundations of programming.
+                            Development course installing within me the
+                            foundations of programming.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -94,7 +113,7 @@ const ProfileSwiper = () => {
                         className={`${styles.subtitle}`}
                         data-swiper-parallax="-100"
                     >
-                        Coder
+                        Northcoder
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -102,7 +121,9 @@ const ProfileSwiper = () => {
                         "
                     >
                         <p>
-                            I'm continuing to explore new languages and practices such as practicing CI/CD in my own projects.
+                            I'm continuing to explore new languages and
+                            practices such as practicing CI/CD in my own
+                            projects.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -119,8 +140,9 @@ const ProfileSwiper = () => {
                         "
                     >
                         <p>
-                            I'm at my best when made use of. I love being challenged
-                            with a task and will always rise to and persist with a solution.
+                            I'm at my best when made use of. I love being
+                            challenged with a task and will always rise to and
+                            persist with a solution.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -137,8 +159,9 @@ const ProfileSwiper = () => {
                         "
                     >
                         <p>
-                            I've worked in a variety of environments and am great under
-                            pressure. I will always do my part and more.
+                            I've worked in a variety of environments and am
+                            great under pressure. I will always do my part and
+                            more.
                         </p>
                     </div>
                 </SwiperSlide>
