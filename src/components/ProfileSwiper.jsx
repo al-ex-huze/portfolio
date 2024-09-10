@@ -54,11 +54,24 @@ const ProfileSwiper = () => {
                     data-swiper-parallax="-23%"
                 ></div>
                 <SwiperSlide>
-                    <div
-                        className={`${styles.subtitle_xs}`}
-                        data-swiper-parallax="-300"
-                    >
-                        Hi, I'm...
+                    <div data-swiper-parallax="-300">
+                        <Typography
+                            variant="subtitle1"
+                            align="left"
+                            fontWeight="200"
+                            sx={{
+                                fontSize: {
+                                    xs: "1rem",
+                                    sm: "1.5rem",
+                                    md: "2rem",
+                                    lg: "3rem",
+                                    xl: "3.5rem",
+                                },
+                                padding: { xs: "2rem 1rem" },
+                            }}
+                        >
+                            Hi, I'm...
+                        </Typography>
                     </div>
                     <div data-swiper-parallax="-100">
                         <Typography
@@ -69,8 +82,11 @@ const ProfileSwiper = () => {
                                     xs: "3rem",
                                     sm: "3.5rem",
                                     md: "4rem",
-                                    lg: "5rem",
-                                    xl: "6rem",
+                                    lg: "6rem",
+                                    xl: "8rem",
+                                },
+                                paddingX: {
+                                    xs: "1rem",
                                 },
                                 marginX: "1rem",
                             }}
@@ -78,15 +94,29 @@ const ProfileSwiper = () => {
                             Alex Hughes
                         </Typography>
                     </div>
-                    <div
-                        className={`${styles.text}`}
-                        data-swiper-parallax="-400"
-                    >
-                        <p>
+                    <div data-swiper-parallax="-400">
+                        <Typography
+                            align="right"
+                            fontWeight="100"
+                            textAlign="justify"
+                            maxWidth="500px"
+                            sx={{
+                                fontSize: {
+                                    xs: "1rem",
+                                    sm: "1rem",
+                                    md: "1rem",
+                                    lg: "1.5rem",
+                                    xl: "2rem",
+                                },
+                                paddingX: {
+                                    xs: "1rem",
+                                },
+                            }}
+                        >
                             I'm an energetic and versatile developer with strong
                             problem-solving skills built in the engineering and
                             construction industries.
-                        </p>
+                        </Typography>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

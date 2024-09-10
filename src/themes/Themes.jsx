@@ -29,22 +29,6 @@ export const themeLight = createTheme({
                 },
             },
         },
-        MuiTypography: {
-            defaultProps: {
-                variantMapping: {
-                    h1: "h2",
-                    h2: "h2",
-                    h3: "h2",
-                    h4: "h2",
-                    h5: "h2",
-                    h6: "h2",
-                    subtitle1: "h2",
-                    subtitle2: "h2",
-                    body1: "span",
-                    body2: "span",
-                },
-            },
-        },
     },
 });
 
@@ -62,11 +46,7 @@ export const themeDark = createTheme({
             primary: "#ffffff",
         },
         typography: {
-            subtitle1: {
-            },
-            body1: {
-            },
-            button: {
+            h1: {
             },
         },
     },
@@ -78,22 +58,7 @@ export const themeDark = createTheme({
                 },
             },
         },
-        MuiTypography: {
-            defaultProps: {
-                variantMapping: {
-                    h1: "h2",
-                    h2: "h2",
-                    h3: "h2",
-                    h4: "h2",
-                    h5: "h2",
-                    h6: "h2",
-                    subtitle1: "h2",
-                    subtitle2: "h2",
-                    body1: "span",
-                    body2: "span",
-                },
-            },
-        },
+
         MuiCard: {
             styleOverrides: {
                 colorPrimary: {
