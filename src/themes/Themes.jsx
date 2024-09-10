@@ -13,12 +13,9 @@ export const themeLight = createTheme({
             primary: "#000d15",
         },
         typography: {
-            subtitle1: {
-            },
-            body1: {
-            },
-            button: {
-            },
+            subtitle1: {},
+            body1: {},
+            button: {},
         },
     },
     components: {
@@ -46,8 +43,7 @@ export const themeDark = createTheme({
             primary: "#ffffff",
         },
         typography: {
-            h1: {
-            },
+            h1: {},
         },
     },
     components: {

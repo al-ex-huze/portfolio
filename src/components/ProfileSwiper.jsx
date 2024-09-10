@@ -67,7 +67,7 @@ const ProfileSwiper = () => {
                                     lg: "3rem",
                                     xl: "3.5rem",
                                 },
-                                padding: { xs: "2rem 1rem" },
+                                padding: { xs: "1rem 0rem 0rem 0rem" },
                             }}
                         >
                             Hi, I'm...
@@ -97,15 +97,16 @@ const ProfileSwiper = () => {
                     <div data-swiper-parallax="-400">
                         <Typography
                             align="right"
+                            variant="body1"
                             fontWeight="100"
                             textAlign="justify"
                             maxWidth="500px"
                             sx={{
                                 fontSize: {
-                                    xs: "1rem",
-                                    sm: "1rem",
-                                    md: "1rem",
-                                    lg: "1.5rem",
+                                    xs: "1.2rem",
+                                    sm: "1.4rem",
+                                    md: "1.6rem",
+                                    lg: "1.8rem",
                                     xl: "2rem",
                                 },
                                 paddingX: {
@@ -120,11 +121,27 @@ const ProfileSwiper = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div
-                        className={`${styles.subtitle}`}
-                        data-swiper-parallax="-100"
-                    >
-                        Junior Software Developer
+                    <div data-swiper-parallax="-100">
+                        <Typography
+                            variant="h2"
+                            align="right"
+                            sx={{
+                                fontSize: {
+                                    xs: "2rem",
+                                    sm: "2.5rem",
+                                    md: "3rem",
+                                    lg: "3.5rem",
+                                    xl: "4rem",
+                                },
+                                padding: {
+                                    xs: "4rem 0rem 0rem 0rem",
+                                    md: "4rem 4rem 0rem 4rem",
+                                },
+                                marginX: "1rem",
+                            }}
+                        >
+                            Junior Software Developer
+                        </Typography>
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -139,11 +156,27 @@ const ProfileSwiper = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div
-                        className={`${styles.subtitle}`}
-                        data-swiper-parallax="-100"
-                    >
-                        Northcoder
+                    <div data-swiper-parallax="-100">
+                        <Typography
+                            variant="h2"
+                            align="right"
+                            sx={{
+                                fontSize: {
+                                    xs: "2rem",
+                                    sm: "2.5rem",
+                                    md: "3rem",
+                                    lg: "3.5rem",
+                                    xl: "4rem",
+                                },
+                                padding: {
+                                    xs: "4rem 0rem 0rem 0rem",
+                                    md: "4rem 4rem 0rem 4rem",
+                                },
+                                marginX: "1rem",
+                            }}
+                        >
+                            Northcoder
+                        </Typography>
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -158,11 +191,27 @@ const ProfileSwiper = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div
-                        className={`${styles.subtitle}`}
-                        data-swiper-parallax="-100"
-                    >
-                        Problem Solver
+                    <div data-swiper-parallax="-100">
+                        <Typography
+                            variant="h2"
+                            align="right"
+                            sx={{
+                                fontSize: {
+                                    xs: "2rem",
+                                    sm: "2.5rem",
+                                    md: "3rem",
+                                    lg: "3.5rem",
+                                    xl: "4rem",
+                                },
+                                padding: {
+                                    xs: "4rem 0rem 0rem 0rem",
+                                    md: "4rem 4rem 0rem 4rem",
+                                },
+                                marginX: "1rem",
+                            }}
+                        >
+                            Problem Solver
+                        </Typography>
                     </div>
                     <div
                         className={`${styles.text}`}
@@ -177,11 +226,27 @@ const ProfileSwiper = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div
-                        className={`${styles.subtitle}`}
-                        data-swiper-parallax="-100"
-                    >
-                        Team Player
+                    <div data-swiper-parallax="-100">
+                        <Typography
+                            variant="h2"
+                            align="right"
+                            sx={{
+                                fontSize: {
+                                    xs: "2rem",
+                                    sm: "2.5rem",
+                                    md: "3rem",
+                                    lg: "3.5rem",
+                                    xl: "4rem",
+                                },
+                                padding: {
+                                    xs: "4rem 0rem 0rem 0rem",
+                                    md: "4rem 4rem 0rem 4rem",
+                                },
+                                marginX: "1rem",
+                            }}
+                        >
+                            Team Player
+                        </Typography>
                     </div>
                     <div
                         className={`${styles.text}`}
