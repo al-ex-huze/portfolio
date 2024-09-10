@@ -9,13 +9,11 @@ export const themeLight = createTheme({
         primary: {
             main: "#003153",
         },
-        text: {
-            primary: "#000d15",
-        },
         typography: {
-            subtitle1: {},
-            body1: {},
-            button: {},
+            text: {
+                primary: "#000d15",
+                secondary: "#000d15",
+            },
         },
     },
     components: {
@@ -41,9 +39,6 @@ export const themeDark = createTheme({
         },
         text: {
             primary: "#ffffff",
-        },
-        typography: {
-            h1: {},
         },
     },
     components: {
