@@ -67,7 +67,7 @@ const ProfileSwiper = () => {
                                     lg: "3rem",
                                     xl: "3.5rem",
                                 },
-                                padding: { xs: "1rem 0rem 0rem 0rem" },
+                                padding: { xs: "1rem 0rem 0rem 1rem" },
                             }}
                         >
                             Hi, I'm...
@@ -88,7 +88,6 @@ const ProfileSwiper = () => {
                                 paddingX: {
                                     xs: "1rem",
                                 },
-                                marginX: "1rem",
                             }}
                         >
                             Alex Hughes
@@ -100,7 +99,6 @@ const ProfileSwiper = () => {
                             variant="body1"
                             fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -111,6 +109,13 @@ const ProfileSwiper = () => {
                                 },
                                 paddingX: {
                                     xs: "1rem",
+                                },
+                                maxWidth: {
+                                    xs: "100%",
+                                    sm: "90%",
+                                    md: "80%",
+                                    lg: "70%",
+                                    xl: "60%",
                                 },
                             }}
                         >
@@ -164,6 +169,13 @@ const ProfileSwiper = () => {
                                 paddingX: {
                                     xs: "1rem",
                                 },
+                                maxWidth: {
+                                    xs: "100%",
+                                    sm: "90%",
+                                    md: "80%",
+                                    lg: "70%",
+                                    xl: "60%",
+                                },
                             }}
                         >
                             I recently completed Northcoders’ Software
@@ -215,6 +227,13 @@ const ProfileSwiper = () => {
                                 },
                                 paddingX: {
                                     xs: "1rem",
+                                },
+                                maxWidth: {
+                                    xs: "100%",
+                                    sm: "90%",
+                                    md: "80%",
+                                    lg: "70%",
+                                    xl: "60%",
                                 },
                             }}
                         >
@@ -269,6 +288,13 @@ const ProfileSwiper = () => {
                                 paddingX: {
                                     xs: "1rem",
                                 },
+                                maxWidth: {
+                                    xs: "100%",
+                                    sm: "90%",
+                                    md: "80%",
+                                    lg: "70%",
+                                    xl: "60%",
+                                },
                             }}
                         >
                             I'm at my best when made use of. I love being
@@ -320,6 +346,13 @@ const ProfileSwiper = () => {
                                 },
                                 paddingX: {
                                     xs: "1rem",
+                                },
+                                maxWidth: {
+                                    xs: "100%",
+                                    sm: "90%",
+                                    md: "80%",
+                                    lg: "70%",
+                                    xl: "60%",
                                 },
                             }}
                         >
