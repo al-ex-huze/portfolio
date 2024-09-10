@@ -9,11 +9,9 @@ export const themeLight = createTheme({
         primary: {
             main: "#003153",
         },
-        typography: {
-            text: {
-                primary: "#000d15",
-                secondary: "#000d15",
-            },
+        text: {
+            primary: "#000d15",
+            secondary: "#000d15",
         },
     },
     components: {

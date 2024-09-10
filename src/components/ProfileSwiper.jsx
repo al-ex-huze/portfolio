@@ -56,6 +56,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div data-swiper-parallax="-300">
                         <Typography
+                            color="text.primary"
                             variant="subtitle1"
                             align="left"
                             fontWeight="200"
@@ -75,6 +76,7 @@ const ProfileSwiper = () => {
                     </div>
                     <div data-swiper-parallax="-100">
                         <Typography
+                            color="text.primary"
                             variant="h1"
                             align="right"
                             sx={{
@@ -85,8 +87,8 @@ const ProfileSwiper = () => {
                                     lg: "6rem",
                                     xl: "8rem",
                                 },
-                                paddingX: {
-                                    xs: "1rem",
+                                padding: {
+                                    xs: "1rem 0rem",
                                 },
                             }}
                         >
@@ -95,6 +97,7 @@ const ProfileSwiper = () => {
                     </div>
                     <div data-swiper-parallax="-400">
                         <Typography
+                            color="text.primary"
                             align="right"
                             variant="body1"
                             fontWeight="100"
@@ -107,8 +110,8 @@ const ProfileSwiper = () => {
                                     lg: "1.8rem",
                                     xl: "2rem",
                                 },
-                                paddingX: {
-                                    xs: "1rem",
+                                padding: {
+                                    xs: "1rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -128,6 +131,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div data-swiper-parallax="-100">
                         <Typography
+                            color="text.primary"
                             variant="h2"
                             align="right"
                             sx={{
@@ -153,6 +157,7 @@ const ProfileSwiper = () => {
                         "
                     >
                         <Typography
+                            color="text.primary"
                             align="right"
                             variant="body1"
                             fontWeight="100"
@@ -166,8 +171,8 @@ const ProfileSwiper = () => {
                                     lg: "1.8rem",
                                     xl: "2rem",
                                 },
-                                paddingX: {
-                                    xs: "1rem",
+                                padding: {
+                                    xs: "1rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -187,6 +192,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div data-swiper-parallax="-100">
                         <Typography
+                            color="text.primary"
                             variant="h2"
                             align="right"
                             sx={{
@@ -212,6 +218,7 @@ const ProfileSwiper = () => {
                         "
                     >
                         <Typography
+                            color="text.primary"
                             align="right"
                             variant="body1"
                             fontWeight="100"
@@ -225,8 +232,8 @@ const ProfileSwiper = () => {
                                     lg: "1.8rem",
                                     xl: "2rem",
                                 },
-                                paddingX: {
-                                    xs: "1rem",
+                                padding: {
+                                    xs: "1rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -247,6 +254,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div data-swiper-parallax="-100">
                         <Typography
+                            color="text.primary"
                             variant="h2"
                             align="right"
                             sx={{
@@ -272,6 +280,7 @@ const ProfileSwiper = () => {
                         "
                     >
                         <Typography
+                            color="text.primary"
                             align="right"
                             variant="body1"
                             fontWeight="100"
@@ -285,8 +294,8 @@ const ProfileSwiper = () => {
                                     lg: "1.8rem",
                                     xl: "2rem",
                                 },
-                                paddingX: {
-                                    xs: "1rem",
+                                padding: {
+                                    xs: "1rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
@@ -306,6 +315,7 @@ const ProfileSwiper = () => {
                 <SwiperSlide>
                     <div data-swiper-parallax="-100">
                         <Typography
+                            color="text.primary"
                             variant="h2"
                             align="right"
                             sx={{
@@ -331,6 +341,7 @@ const ProfileSwiper = () => {
                         "
                     >
                         <Typography
+                            color="text.primary"
                             align="right"
                             variant="body1"
                             fontWeight="100"
@@ -344,8 +355,8 @@ const ProfileSwiper = () => {
                                     lg: "1.8rem",
                                     xl: "2rem",
                                 },
-                                paddingX: {
-                                    xs: "1rem",
+                                padding: {
+                                    xs: "1rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
