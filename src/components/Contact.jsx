@@ -6,9 +6,7 @@ import styles from "./Contact.module.css";
 
 const Contact = ({ visibleSection }) => {
     return (
-            <div className={`${styles.Contact}${" "}Contact__${
-                    visibleSection === "section3" ? "fade-in" : "fade-out"
-                }`}
+            <div className={`${styles.Contact}`}
                 id="section3"
             >
                 <ContactCard />

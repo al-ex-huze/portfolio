@@ -84,13 +84,13 @@ const ProjectCard = ({ projectDatum }) => {
                                     gutterBottom
                                     variant="h4"
                                     component="div"
-                                    sx={{ color: "text.primary" }}
+                                    color="text.primary"
                                 >
                                     {projectDatum.title}
                                 </Typography>
                                 <Typography
                                     variant="body2"
-                                    sx={{ color: "text.secondary" }}
+                                    color="text.secondary"
                                 >
                                     {projectDatum.topics}
                                 </Typography>
@@ -121,8 +121,8 @@ const ProjectCard = ({ projectDatum }) => {
                             <CardContent>
                                 <Typography
                                     variant="body2"
+                                    color="text.secondary"
                                     sx={{
-                                        color: "text.secondary",
                                         textAlign: "justify",
                                     }}
                                 >

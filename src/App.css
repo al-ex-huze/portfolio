@@ -5,7 +5,6 @@ html {
     padding: 0;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    color: #ffffff;
     line-height: 1.5;
     font-weight: 100;
     width: 100%;
@@ -21,10 +20,9 @@ html {
 
 body {
     color: #ffffff;
-    margin: 0;
     width: 100%;
-    height: auto;
     scroll-behavior: smooth;
+    transition: 0.5s ease;
 }
 
 a {
@@ -59,60 +57,6 @@ p {
 
 .Banner__hidden {
     transform: translateY(-100%);
-}
-
-.Nav {
-    top: 0px;
-    right: 0px;
-    transition: 0.3s;
-}
-
-.Photo__fade-in {
-    grid-area: Photo;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Photo__fade-out {
-    grid-area: Photo;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Profile__fade-in {
-    grid-area: Profile;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Profile__fade-out {
-    grid-area: Profile;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Projects__fade-in {
-    grid-area: Projects;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Projects__fade-out {
-    grid-area: Projects;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Contact__fade-in {
-    grid-area: Contact;
-    opacity: 1;
-    transition: 1s ease;
-}
-
-.Contact__fade-out {
-    grid-area: Contact;
-    opacity: 1;
-    transition: 1s ease;
 }
 
 @media only screen and (min-width: 600px) {

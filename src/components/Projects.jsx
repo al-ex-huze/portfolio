@@ -5,9 +5,7 @@ import styles from "./Projects.module.css"
 const Projects = ({ visibleSection }) => {
     return (
         <div
-            className={`${styles.Projects}${" "}Projects__${
-                visibleSection === "section2" ? "fade-in" : "fade-out"
-            }`}
+            className={`${styles.Projects}`}
             id="section2"
         >
             <ProjectsGrid visibleSection={visibleSection} />
