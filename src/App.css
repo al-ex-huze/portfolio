@@ -45,10 +45,10 @@ body {
     transform: translateY(-100%);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
     .App {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto auto;
         grid-template-areas:
             "Banner Banner"
@@ -56,12 +56,6 @@ body {
             "Projects Projects"
             "Contact Contact";
         justify-items: center;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .App {
-        grid-template-columns: 55% 45%;
     }
 }
 

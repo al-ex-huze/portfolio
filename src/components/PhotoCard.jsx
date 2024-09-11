@@ -14,18 +14,18 @@ const PhotoCard = () => {
                     src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah-hs-1.jpg"
                     sx={{
                         width: {
-                            xs: 250,
-                            sm: 200,
-                            md: 300,
-                            lg: 400,
-                            xl: 500,
+                            xs: 300,
+                            sm: 400,
+                            md: 500,
+                            lg: 550,
+                            xl: 600,
                         },
                         height: {
-                            xs: 250,
-                            sm: 200,
-                            md: 300,
-                            lg: 400,
-                            xl: 500,
+                            xs: 300,
+                            sm: 400,
+                            md: 500,
+                            lg: 550,
+                            xl: 600,
                         },
                     }}
                 />
