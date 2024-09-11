@@ -9,7 +9,8 @@
 @media only screen and (min-width: 600px) {
     .Photo {
         margin-top: 20vh;
-        padding: 40px 40px 0px 0px;
+        justify-content: left;
+        padding: 40px 0px 0px 0px;
     }
 }
 
@@ -18,5 +19,11 @@
         margin-right: 20vh;
         margin-right: 0px;
         padding: 40px 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Photo {
+        justify-content: center;
     }
 }

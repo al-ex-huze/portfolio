@@ -116,15 +116,15 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "90%",
-                                    md: "80%",
-                                    lg: "70%",
-                                    xl: "60%",
+                                    md: "85%",
+                                    lg: "80%",
+                                    xl: "75%",
                                 },
                             }}
                         >
                             I'm an energetic and versatile developer with strong
                             problem-solving skills built in the engineering and
-                            construction industries and from experience within
+                            construction industries and experience within
                             maintenance and commissioning projects.
                         </Typography>
                     </div>
@@ -178,9 +178,9 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "90%",
-                                    md: "80%",
-                                    lg: "70%",
-                                    xl: "60%",
+                                    md: "85%",
+                                    lg: "80%",
+                                    xl: "75%",
                                 },
                             }}
                         >
@@ -240,9 +240,9 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "90%",
-                                    md: "80%",
-                                    lg: "70%",
-                                    xl: "60%",
+                                    md: "85%",
+                                    lg: "80%",
+                                    xl: "75%",
                                 },
                             }}
                         >
@@ -304,9 +304,9 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "90%",
-                                    md: "80%",
-                                    lg: "70%",
-                                    xl: "60%",
+                                    md: "85%",
+                                    lg: "80%",
+                                    xl: "75%",
                                 },
                             }}
                         >
@@ -367,9 +367,9 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "90%",
-                                    md: "80%",
-                                    lg: "70%",
-                                    xl: "60%",
+                                    md: "85%",
+                                    lg: "80%",
+                                    xl: "75%",
                                 },
                             }}
                         >
