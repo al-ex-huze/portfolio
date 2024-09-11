@@ -2,34 +2,25 @@
     grid-area: Profile;
     transition: 1s ease;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
     .Profile {
-        margin-top: min(250px, 20vh);
-        padding: 0px 0px 0px 60px;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .Profile {
-        max-width: 1200px;
-        padding: 0px 0px 0px 100px;
-
+        padding: 0px 100px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .Profile {
-        padding: 0px 0px 0px 140px;
-
-    }
+        margin-top: 20vh;
+        padding: 0px 0px 0px 10vw;
+ }
 }
 
 @media only screen and (min-width: 1536px) {
     .Profile {
-        padding: 0px 0px 0px 200px;
+        padding: 0px 0px 0px 15vw;
     }
 }

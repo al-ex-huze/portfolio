@@ -108,17 +108,17 @@ const ProfileSwiper = () => {
                                     sm: "1.4rem",
                                     md: "1.6rem",
                                     lg: "1.8rem",
-                                    xl: "2rem",
+                                    xl: "2.2rem",
                                 },
                                 padding: {
                                     xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
-                                    sm: "90%",
-                                    md: "85%",
-                                    lg: "80%",
-                                    xl: "75%",
+                                    sm: "95%",
+                                    md: "90%",
+                                    lg: "85%",
+                                    xl: "80%",
                                 },
                             }}
                         >
@@ -170,17 +170,17 @@ const ProfileSwiper = () => {
                                     sm: "1.4rem",
                                     md: "1.6rem",
                                     lg: "1.8rem",
-                                    xl: "2rem",
+                                    xl: "2.2rem",
                                 },
                                 padding: {
                                     xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
-                                    sm: "90%",
-                                    md: "85%",
-                                    lg: "80%",
-                                    xl: "75%",
+                                    sm: "95%",
+                                    md: "90%",
+                                    lg: "85%",
+                                    xl: "80%",
                                 },
                             }}
                         >
@@ -232,17 +232,17 @@ const ProfileSwiper = () => {
                                     sm: "1.4rem",
                                     md: "1.6rem",
                                     lg: "1.8rem",
-                                    xl: "2rem",
+                                    xl: "2.2rem",
                                 },
                                 padding: {
                                     xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
-                                    sm: "90%",
-                                    md: "85%",
-                                    lg: "80%",
-                                    xl: "75%",
+                                    sm: "95%",
+                                    md: "90%",
+                                    lg: "85%",
+                                    xl: "80%",
                                 },
                             }}
                         >
@@ -296,17 +296,17 @@ const ProfileSwiper = () => {
                                     sm: "1.4rem",
                                     md: "1.6rem",
                                     lg: "1.8rem",
-                                    xl: "2rem",
+                                    xl: "2.2rem",
                                 },
                                 padding: {
                                     xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
-                                    sm: "90%",
-                                    md: "85%",
-                                    lg: "80%",
-                                    xl: "75%",
+                                    sm: "95%",
+                                    md: "90%",
+                                    lg: "85%",
+                                    xl: "80%",
                                 },
                             }}
                         >
@@ -359,17 +359,17 @@ const ProfileSwiper = () => {
                                     sm: "1.4rem",
                                     md: "1.6rem",
                                     lg: "1.8rem",
-                                    xl: "2rem",
+                                    xl: "2.2rem",
                                 },
                                 padding: {
                                     xs: "1rem 0rem 2rem 0rem",
                                 },
                                 maxWidth: {
                                     xs: "100%",
-                                    sm: "90%",
-                                    md: "85%",
-                                    lg: "80%",
-                                    xl: "75%",
+                                    sm: "95%",
+                                    md: "90%",
+                                    lg: "85%",
+                                    xl: "80%",
                                 },
                             }}
                         >

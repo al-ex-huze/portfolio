@@ -2,28 +2,24 @@
     grid-area: Photo;
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: min(200px, 20vh);
     width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-    .Photo {
-        margin-top: 20vh;
-        justify-content: left;
-        padding: 40px 0px 0px 0px;
-    }
 }
 
 @media only screen and (min-width: 900px) {
     .Photo {
-        margin-right: 20vh;
-        margin-right: 0px;
-        padding: 40px 0px;
+        margin-top: 20vh;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .Photo {
         justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .Photo {
+        padding: 0px 10vw 0px 0;
     }
 }
