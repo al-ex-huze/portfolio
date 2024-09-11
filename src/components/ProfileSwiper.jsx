@@ -20,7 +20,7 @@ const ProfileSwiper = () => {
             <Swiper
                 rewind={true}
                 autoplay={{
-                    delay: 3000,
+                    delay: 4000,
                     disableOnInteraction: true,
                 }}
                 style={
@@ -124,7 +124,8 @@ const ProfileSwiper = () => {
                         >
                             I'm an energetic and versatile developer with strong
                             problem-solving skills built in the engineering and
-                            construction industries.
+                            construction industries and from experience within
+                            maintenance and commissioning projects.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -184,8 +185,9 @@ const ProfileSwiper = () => {
                             }}
                         >
                             I recently completed Northcoders’ Software
-                            Development course installing within me the
-                            foundations of programming.
+                            Development course transforming my skillset into
+                            that of a programmer's and taking advantage of my
+                            natural aptitude for STEM subjects.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -244,10 +246,12 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            {" "}
-                            I'm continuing to explore new languages and
-                            practices such as utilising CI/CD in my own
-                            projects.
+                            Northcoders has instilled in me the confidence to
+                            tackle anything in the world of programming and I
+                            have explored various languages. I am currently
+                            focusing on full stack development in React.js,
+                            Express.js and PSQL and practicing CI/CD in my
+                            projects with AWS and Fly.io services.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -306,8 +310,11 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I'm at my best when made use of. I will always rise to a challenge and
-                            persist to find a solution.
+                            I'm really at my best when made use of. Challenge me
+                            with a task and I will always rise to it and find a
+                            solution when needed. Given the opportunity I will
+                            try to innovate and provide something a bit
+                            different.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -366,9 +373,10 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I've worked in a variety of environments and am
-                            great under pressure. I will always do my part and
-                            more.
+                            I've worked in a variety of environments and love
+                            to be in amongst it and the pressure that comes with
+                            that brings out the best in me. I am principled and
+                            will always do my part and more.
                         </Typography>
                     </div>
                 </SwiperSlide>
