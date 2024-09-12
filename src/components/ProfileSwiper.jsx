@@ -246,7 +246,7 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            Northcoders has instilled in me the confidence to
+                            Northcoders has given me the confidence and fundamental skills to
                             tackle anything in the world of programming and I
                             have explored various languages. I am currently
                             focusing on full stack development in React.js,
