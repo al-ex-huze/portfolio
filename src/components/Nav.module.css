@@ -22,7 +22,7 @@
     display: flex;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
     .Nav__sm {
         display: flex;
     }

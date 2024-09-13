@@ -73,10 +73,37 @@ const Nav = ({ setVisibleSection }) => {
                             alt="Logo"
                         />
                     </IconButton>
+
                     <Typography
                         variant="h3"
                         style={{ flexGrow: 1 }}
-                    ></Typography>
+                        noWrap
+                        sx={{
+                            ml: 1,
+                            mr: 2,
+                            display: { xs: "flex", sm: "none" },
+                            fontWeight: 700,
+                            letterSpacing: ".3rem",
+                            fontSize: "1rem"
+                        }}
+                    >
+                        Alex Hughes
+                    </Typography>
+                    <Typography
+                        variant="h3"
+                        style={{ flexGrow: 1 }}
+                        noWrap
+                        sx={{
+                            ml: { sm: 2, md: 3, lg: 5 },
+                            mr: 2,
+                            display: { xs: "none", sm: "flex" },
+                            fontWeight: 700,
+                            letterSpacing: ".3rem",
+                            fontSize:{sm: "1.5rem", md: "2rem" ,lg: "3rem"}
+                        }}
+                    >
+                        Alex Hughes
+                    </Typography>
                     <div className={`${styles.Nav__sm}`}>
                         <ThemeToggleSwitch />
                         <MenuItem onClick={() => handleLinkClick("section1")}>
