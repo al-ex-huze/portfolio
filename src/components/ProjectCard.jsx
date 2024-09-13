@@ -53,13 +53,14 @@ const ProjectCard = ({ projectDatum }) => {
                         {projectDatum.body}
                     </Typography>
                 </CardContent>
-                <CardActions style={{ flexGrow: 1 }}>
+                <CardActions style={{ flexGrow: 1, ml: 2 }}>
                     {!projectDatum.github_url ||
                     projectDatum.github_url === "Coming Soon" ? null : (
                         <Button
-                            gutters
                             variant="contained"
+                            disableElevation={true}
                             size="small"
+                            sx={{margin:1}}
                             aria-label="redirect"
                             onClick={(event) =>
                                 (window.location.href = `${projectDatum.github_url}`)
@@ -71,6 +72,7 @@ const ProjectCard = ({ projectDatum }) => {
                     {projectDatum.deployed_url ? (
                         <Button
                             variant="contained"
+                            disableElevation={true}
                             size="small"
                             aria-label="redirect"
                             onClick={(event) =>
