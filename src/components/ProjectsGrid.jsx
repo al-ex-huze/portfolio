@@ -3,15 +3,14 @@ import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 
-import useWindowDimensions from "./GetDimensions";
 import ProjectCard from "./ProjectCard";
+import CircularLoader from "./CircularLoader";
 
 const ProjectsGrid = () => {
     const [projectsData, setProjectsData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const { height, width } = useWindowDimensions();
 
     useEffect(() => {
         const fetchProjectsData = async () => {
@@ -20,7 +19,7 @@ const ProjectsGrid = () => {
                     "https://be-pp-timeline.fly.dev/api/events?timeline=Projects"
                 );
                 if (!response.ok) {
-                    throw new Error("Loading projects failed");
+                    throw new Error("Loading failed");
                 }
                 const result = await response.json();
                 setProjectsData(result.events);
@@ -35,7 +34,7 @@ const ProjectsGrid = () => {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <CircularLoader />
     }
 
     if (error) {

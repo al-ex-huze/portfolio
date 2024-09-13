@@ -69,7 +69,7 @@ const Nav = ({ setVisibleSection }) => {
                                 md: { width: 100, height: 100 },
                             }}
                             variant="rounded"
-                            src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah4003153.png"
+                            src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah3003153.png"
                             alt="Logo"
                         />
                     </IconButton>
@@ -82,9 +82,9 @@ const Nav = ({ setVisibleSection }) => {
                             ml: 1,
                             mr: 2,
                             display: { xs: "flex", sm: "none" },
-                            fontWeight: 700,
+                            fontWeight: 500,
                             letterSpacing: ".3rem",
-                            fontSize: "1rem"
+                            fontSize: "0.8rem"
                         }}
                     >
                         Alex Hughes
@@ -97,9 +97,9 @@ const Nav = ({ setVisibleSection }) => {
                             ml: { sm: 2, md: 3, lg: 5 },
                             mr: 2,
                             display: { xs: "none", sm: "flex" },
-                            fontWeight: 700,
-                            letterSpacing: ".3rem",
-                            fontSize:{sm: "1.5rem", md: "2rem" ,lg: "3rem"}
+                            fontWeight: 500,
+                            letterSpacing: ".2rem",
+                            fontSize:{sm: "1rem", md: "1.5rem" ,lg: "2rem"}
                         }}
                     >
                         Alex Hughes
