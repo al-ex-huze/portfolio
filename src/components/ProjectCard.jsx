@@ -141,7 +141,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     projectDatum.github_url ===
                                         "Coming Soon" ? null : (
                                         <Button
-                                            variant="cardButton"
+                                            variant="outlined"
                                             size="small"
                                             aria-label="redirect"
                                             onClick={(event) =>
@@ -153,7 +153,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     )}
                                     {projectDatum.deployed_url ? (
                                         <Button
-                                            variant="cardButton"
+                                            variant="outlined"
                                             size="small"
                                             aria-label="redirect"
                                             onClick={(event) =>

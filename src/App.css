@@ -13,9 +13,7 @@ html {
     background-color: #000d15;
     font-size: 1em;
     font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
 }
 
 body {
