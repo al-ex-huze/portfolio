@@ -1,9 +1,6 @@
-import ReactFlipCard from "reactjs-flip-card";
 import styles from "./ProjectCard.module.css";
 
 import * as React from "react";
-
-import useWindowDimensions from "./GetDimensions";
 
 import { Box } from "@mui/material";
 import Card from "@mui/material/Card";
@@ -13,9 +10,6 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 
 const ProjectCard = ({ projectDatum }) => {
     return (
