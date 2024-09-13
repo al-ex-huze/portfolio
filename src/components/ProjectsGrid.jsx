@@ -46,15 +46,16 @@ const ProjectsGrid = () => {
         <Box sx={{ mx: "auto", width: 1, flexGrow: 1 }}>
             <Grid
                 container
-                spacing={{ xs: 2, sm: 4, md: 4, lg: 6, xl: 8 }}
-                sx={{
-                    width: "100",
-                    paddingX: { xs: `${(width - 365) / 2}px`, sm: `${(width - 365) / 2}px`, md: `${(width - 750) / 2}px`, lg: `${(width - 1165) / 2}px`, xl: 10 },
-                }}
+                spacing={{ xs: 2, sm: 3, md: 4, lg: 5, xl: 6 }}
+                columns={{ xs: 4, sm: 4, md: 8, lg: 8, xl: 12  }}
+                alignItems="stretch"
             >
                 {projectsData.map((projectDatum) => {
                     return (
-                        <Grid key={projectDatum.event_id}>
+                        <Grid
+                            key={projectDatum.event_id}
+                            size={{ xs: 4, sm: 4, md: 4, lg: 4, xl: 4  }}
+                        >
                             <ProjectCard projectDatum={projectDatum} />
                         </Grid>
                     );

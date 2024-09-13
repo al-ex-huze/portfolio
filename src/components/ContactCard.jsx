@@ -10,95 +10,133 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { IconButton } from "@mui/material";
 
+import ReactFlipCard from "reactjs-flip-card";
+
 const ContactCard = () => {
+    const rfcStyles = {
+        card: {
+            color: "white",
+            borderRadius: 20,
+        },
+    };
+
     return (
         <Box
             sx={{
-                marginTop: "5px",
-                minWidth: 200,
+                marginTop: "50px",
+                marginBottom: "50px",
                 display: "flex",
                 justifySelf: "center",
             }}
         >
-            <Card variant="outlined">
-                <CardContent>
-                    <Typography variant="h5">Get In Touch</Typography>
-                </CardContent>
-                <CardActions
-                    sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        width: "fit-content",
-                        justifyContent: "space-between",
-                    }}
-                >
-                    <IconButton
-                        aria-label="redirect"
-                        onClick={(event) =>
-                            (window.location.href =
-                                "https://www.linkedin.com/in/alex-hughes-b960a1301/")
-                        }
-                    >
-                        <LinkedInIcon
+            <ReactFlipCard
+                flipTrigger="onHover"
+                containerStyle={{
+                    width: "fit-content",
+                    height: "fit-content",
+                }}
+                frontStyle={rfcStyles.card}
+                backStyle={rfcStyles.card}
+                frontComponent={
+                    <Card sx={{ height: "100%" }}>
+                        <CardContent>
+                            <Typography
+                                variant="h3"
+                                sx={{
+                                    mt: 1,
+                                    color: "text.secondary",
+                                    fontSize: {
+                                        xs: "2rem",
+                                        sm: "2.2rem",
+                                        md: "2.4rem",
+                                        lg: "2.6rem",
+                                        xl: "2.8rem",
+                                    },
+                                }}
+                            >
+                                Get In Touch
+                            </Typography>
+                        </CardContent>
+                        <Typography
                             sx={{
+                                color: "text.secondary",
                                 fontSize: {
-                                    xs: "60px",
-                                    sm: "80px",
-                                    md: "100px",
-                                    lg: "120px",
-                                    xl: "140px",
+                                    xs: "1rem",
+                                    sm: "1.2rem",
+                                    md: "1.4rem",
+                                    lg: "1.6rem",
+                                    xl: "1.8rem",
                                 },
                             }}
-                        />
-                    </IconButton>
-                    <IconButton
-                        aria-label="redirect"
-                        onClick={(event) =>
-                            (window.location.href =
-                                "https://github.com/al-ex-huze")
-                        }
-                    >
-                        <GitHubIcon
-                            sx={{
-                                fontSize: {
-                                    xs: "60px",
-                                    sm: "80px",
-                                    md: "100px",
-                                    lg: "120px",
-                                    xl: "140px",
-                                },
-                            }}
-                        />
-                    </IconButton>
-                    <IconButton
-                        aria-label="redirect"
-                        onClick={(event) =>
-                            (window.location.href =
-                                "mailto:al.ex.hughes@outlook.com")
-                        }
-                    >
-                        <EmailIcon
-                            sx={{
-                                fontSize: {
-                                    xs: "60px",
-                                    sm: "80px",
-                                    md: "100px",
-                                    lg: "120px",
-                                    xl: "140px",
-                                },
-                            }}
-                        />
-                    </IconButton>
-                </CardActions>
-                <Typography
-                    sx={{
-                        color: "text.secondary",
-                        mb: 1.5,
-                    }}
-                >
-                    {"("}#Open To Work{")"}
-                </Typography>
-            </Card>
+                        >
+                            #Open To Work
+                        </Typography>
+                    </Card>
+                }
+                backComponent={
+                    <Card style={{ height: "100%" }}>
+                        <CardActions>
+                            <IconButton
+                                aria-label="redirect"
+                                onClick={(event) =>
+                                    (window.location.href =
+                                        "https://www.linkedin.com/in/alex-hughes-b960a1301/")
+                                }
+                            >
+                                <LinkedInIcon
+                                    sx={{
+                                        fontSize: {
+                                            xs: "80px",
+                                            sm: "90px",
+                                            md: "100px",
+                                            lg: "120px",
+                                            xl: "140px",
+                                        },
+                                    }}
+                                />
+                            </IconButton>
+                            <IconButton
+                                aria-label="redirect"
+                                onClick={(event) =>
+                                    (window.location.href =
+                                        "https://github.com/al-ex-huze")
+                                }
+                            >
+                                <GitHubIcon
+                                    sx={{
+                                        fontSize: {
+                                            xs: "80px",
+                                            sm: "90px",
+                                            md: "100px",
+                                            lg: "120px",
+                                            xl: "140px",
+                                        },
+                                    }}
+                                />
+                            </IconButton>
+                            <IconButton
+                                aria-label="redirect"
+                                onClick={(event) =>
+                                    (window.location.href =
+                                        "mailto:al.ex.hughes@outlook.com")
+                                }
+                            >
+                                <EmailIcon
+                                    sx={{
+                                        fontSize: {
+                                            xs: "80px",
+                                            sm: "90px",
+                                            md: "100px",
+                                            lg: "120px",
+                                            xl: "140px",
+                                        },
+                                    }}
+                                />
+                            </IconButton>
+                        </CardActions>
+                    </Card>
+                }
+            />
         </Box>
     );
 };
