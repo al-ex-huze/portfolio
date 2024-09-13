@@ -11,7 +11,6 @@ const ProjectsGrid = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-
     useEffect(() => {
         const fetchProjectsData = async () => {
             try {
@@ -34,7 +33,7 @@ const ProjectsGrid = () => {
     }, []);
 
     if (loading) {
-        return <CircularLoader />
+        return <CircularLoader />;
     }
 
     if (error) {
@@ -45,15 +44,17 @@ const ProjectsGrid = () => {
         <Box sx={{ mx: "auto", width: 1, flexGrow: 1 }}>
             <Grid
                 container
-                spacing={{ xs: 2, sm: 3, md: 4, lg: 5, xl: 6 }}
-                columns={{ xs: 4, sm: 4, md: 8, lg: 8, xl: 12  }}
+                spacing={{ xs: 2, sm: 2, md: 2, lg: 2, xl: 2 }}
+                columns={{ xs: 4, sm: 4, md: 8, lg: 8, xl: 12 }}
+                display="flex"
+                justifyContent="center"
                 alignItems="stretch"
             >
                 {projectsData.map((projectDatum) => {
                     return (
                         <Grid
                             key={projectDatum.event_id}
-                            size={{ xs: 4, sm: 4, md: 4, lg: 4, xl: 4  }}
+                            size={{ xs: 4, sm: 4, md: 4, lg: 4, xl: 4 }}
                         >
                             <ProjectCard projectDatum={projectDatum} />
                         </Grid>

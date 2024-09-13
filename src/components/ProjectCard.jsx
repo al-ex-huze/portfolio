@@ -23,7 +23,7 @@ const ProjectCard = ({ projectDatum }) => {
             >
                 <CardHeader
                     title={projectDatum.title}
-                    titleTypographyProps={{ variant: "h3", textAlign: "right" }}
+                    titleTypographyProps={{ variant: "h4", textAlign: "right" }}
                     style={{ flexGrow: 1 }}
                 />
                 <CardMedia
@@ -34,7 +34,7 @@ const ProjectCard = ({ projectDatum }) => {
                 <CardContent style={{ flexGrow: 1 }}>
                     <Typography
                         gutterBottom
-                        variant="h6"
+                        variant="body1"
                         component="div"
                         sx={{
                             textAlign: "right",

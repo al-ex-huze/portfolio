@@ -1,7 +1,7 @@
 .Projects {
     grid-area: Projects;
     margin-top: 10vh;
-    max-width: 1600px;
+    max-width: 2000px;
 }
 
 @media only screen and (min-width: 900px) {
