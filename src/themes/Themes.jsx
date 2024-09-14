@@ -37,6 +37,7 @@ export const themeLight = createTheme({
                         {
                             props: { variant: "contained" },
                             style: {
+                                paddingTop: 7,
                                 backgroundColor: "#003153",
                             },
                         },
@@ -91,6 +92,7 @@ export const themeDark = createTheme({
                         {
                             props: { variant: "contained" },
                             style: {
+                                paddingTop: 7,
                                 backgroundColor: "#003153",
                             },
                         },
