@@ -39,12 +39,6 @@ const ProfileSwiper = () => {
                 pagination={{
                     clickable: true,
                 }}
-                breakpoints={{
-                    600: {},
-                    900: {},
-                    1200: {},
-                    1536: {},
-                }}
                 modules={[Autoplay, Parallax, Pagination, Navigation]}
                 className={`${styles.mySwiper}`}
             >
@@ -59,7 +53,6 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             variant="subtitle1"
                             align="left"
-                            fontWeight="100"
                             sx={{
                                 fontSize: {
                                     xs: "1.4rem",
@@ -100,7 +93,6 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
                             sx={{
                                 fontSize: {
@@ -116,9 +108,8 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
-                                    md: "90%",
-                                    lg: "85%",
-                                    xl: "80%",
+                                    md: "95%",
+                                    xl: "90%",
                                 },
                             }}
                         >
@@ -160,9 +151,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -177,15 +166,14 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
-                                    md: "90%",
-                                    lg: "85%",
-                                    xl: "80%",
+                                    md: "95%",
+                                    lg: "90%",
                                 },
                             }}
                         >
                             I recently completed Northcoders’ Software
                             Development course transforming my skillset into
-                            that of a programmer's and taking advantage of my
+                            that of a programmer and taking advantage of my
                             natural aptitude for STEM subjects.
                         </Typography>
                     </div>
@@ -221,9 +209,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -238,18 +224,18 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
-                                    md: "90%",
-                                    lg: "85%",
-                                    xl: "80%",
+                                    md: "95%",
+                                    lg: "90%",
                                 },
                             }}
                         >
-                            Northcoders has given me the confidence and fundamental skills to
-                            tackle anything in the world of programming and I
-                            have explored various languages. I am currently
-                            focusing on full stack development in React.js,
-                            Express.js and PSQL and practicing CI/CD in my
-                            projects with AWS and Fly.io services.
+                            Northcoders has given me the confidence and
+                            fundamental skills to tackle anything in the world
+                            of programming and I have explored various
+                            languages. I am currently focusing on full stack
+                            development in React.js, Express.js and PSQL and
+                            practicing CI/CD in my projects with AWS and Fly.io
+                            services.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -284,9 +270,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -301,9 +285,8 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
-                                    md: "90%",
-                                    lg: "85%",
-                                    xl: "80%",
+                                    md: "95%",
+                                    lg: "90%",
                                 },
                             }}
                         >
@@ -346,9 +329,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -363,14 +344,13 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
-                                    md: "90%",
-                                    lg: "85%",
-                                    xl: "80%",
+                                    md: "95%",
+                                    lg: "90%",
                                 },
                             }}
                         >
-                            I've worked in a variety of environments and love
-                            to be in amongst it and the pressure that comes with
+                            I've worked in a variety of environments and love to
+                            be in amongst it and the pressure that comes with
                             that brings out the best in me. I am principled and
                             will always do my part and more.
                         </Typography>
