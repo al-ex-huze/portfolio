@@ -42,10 +42,21 @@ const ExpandMore = styled((props) => {
     ],
 }));
 
-
 const ProjectCard = ({ projectDatum }) => {
     const [expanded, setExpanded] = React.useState(false);
     const [isPlaying, setIsPlaying] = React.useState(false);
+
+    const targetRef = React.useRef();
+    const [dimensions, setDimensions] = React.useState({ width: 0, height: 0 });
+
+    React.useLayoutEffect(() => {
+        if (targetRef.current) {
+            setDimensions({
+                width: targetRef.current.offsetWidth,
+                height: targetRef.current.offsetHeight,
+            });
+        }
+    }, []);
 
     const handlePlayVideo = () => {
         setIsPlaying(true);
@@ -78,7 +89,6 @@ const ProjectCard = ({ projectDatum }) => {
                             <>
                                 <CardMedia
                                     title={projectDatum.title}
-                                    style={{ margin: 0, paddingBottom: 0 }}
                                     autoPlay
                                     component="video"
                                     src={`${projectDatum.event_img_url_3}`}
@@ -86,7 +96,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     // controls
                                     muted
                                     onEnded={() => setIsPlaying(false)}
-                                    height="375px"
+                                    height={`${dimensions.height}`}
                                 />
                             </>
                         ) : (
@@ -95,6 +105,7 @@ const ProjectCard = ({ projectDatum }) => {
                                     component="img"
                                     image={`${projectDatum.event_img_url_1}`}
                                     title={projectDatum.title}
+                                    ref={targetRef}
                                 />
                                 <IconButton
                                     onClick={handlePlayVideo}
