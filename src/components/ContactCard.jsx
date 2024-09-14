@@ -24,7 +24,7 @@ const ContactCard = () => {
         <Box
             sx={{
                 marginTop: "50px",
-                marginBottom: "50px",
+                marginBottom: "100px",
                 display: "flex",
                 justifySelf: "center",
             }}
@@ -38,13 +38,26 @@ const ContactCard = () => {
                 frontStyle={rfcStyles.card}
                 backStyle={rfcStyles.card}
                 frontComponent={
-                    <Card sx={{ height: "100%" }}>
+                    <Card
+                        sx={{
+                            height: {
+                                xs: "120px",
+                                sm: "140px",
+                                md: "160px",
+                                lg: "180px",
+                                xl: "200px",
+                            },
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "space-around",
+                        }}
+                    >
                         <CardContent>
                             <Typography
                                 variant="h3"
                                 sx={{
                                     mt: 1,
-                                    color: "text.secondary",
+                                    color: "text.primary",
                                     fontSize: {
                                         xs: "2rem",
                                         sm: "2.2rem",
@@ -74,7 +87,20 @@ const ContactCard = () => {
                     </Card>
                 }
                 backComponent={
-                    <Card style={{ height: "100%" }}>
+                    <Card
+                        sx={{
+                            height: {
+                                xs: "120px",
+                                sm: "140px",
+                                md: "160px",
+                                lg: "180px",
+                                xl: "200px",
+                            },
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                        }}
+                    >
                         <CardActions>
                             <IconButton
                                 aria-label="redirect"

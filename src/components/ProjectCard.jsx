@@ -35,6 +35,7 @@ const ProjectCard = ({ projectDatum }) => {
                         gutterBottom
                         variant="body1"
                         component="div"
+                        color="text.secondary"
                         sx={{
                             textAlign: "right",
                         }}
@@ -44,7 +45,7 @@ const ProjectCard = ({ projectDatum }) => {
                     <Typography
                         gutterBottom
                         variant="body2"
-                        color="text.secondary"
+                        color="text.primary"
                         sx={{
                             textAlign: "justify",
                         }}
