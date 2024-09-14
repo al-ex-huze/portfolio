@@ -53,7 +53,6 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             variant="subtitle1"
                             align="left"
-                            fontWeight="100"
                             sx={{
                                 fontSize: {
                                     xs: "1.4rem",
@@ -94,7 +93,6 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
                             sx={{
                                 fontSize: {
@@ -110,7 +108,8 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
-                                    lg: "90%",
+                                    md: "95%",
+                                    xl: "90%",
                                 },
                             }}
                         >
@@ -152,9 +151,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -169,6 +166,7 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
+                                    md: "95%",
                                     lg: "90%",
                                 },
                             }}
@@ -211,9 +209,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -228,6 +224,7 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
+                                    md: "95%",
                                     lg: "90%",
                                 },
                             }}
@@ -273,9 +270,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -290,6 +285,7 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
+                                    md: "95%",
                                     lg: "90%",
                                 },
                             }}
@@ -333,9 +329,7 @@ const ProfileSwiper = () => {
                             color="text.primary"
                             align="right"
                             variant="body1"
-                            fontWeight="100"
                             textAlign="justify"
-                            maxWidth="500px"
                             sx={{
                                 fontSize: {
                                     xs: "1.2rem",
@@ -350,6 +344,7 @@ const ProfileSwiper = () => {
                                 maxWidth: {
                                     xs: "100%",
                                     sm: "95%",
+                                    md: "95%",
                                     lg: "90%",
                                 },
                             }}
