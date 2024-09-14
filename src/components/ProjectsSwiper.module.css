@@ -1,0 +1,18 @@
+.ProjectsSwiper {
+    width: 100%;
+    max-width: 2000px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.swiper_slide {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+    width: 500px;
+    height: auto;
+}

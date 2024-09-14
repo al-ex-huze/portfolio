@@ -2,7 +2,6 @@ import styles from "./ProjectCard.module.css";
 
 import * as React from "react";
 
-import { Box } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -36,6 +35,7 @@ const ProjectCard = ({ projectDatum }) => {
                         gutterBottom
                         variant="body1"
                         component="div"
+                        color="text.secondary"
                         sx={{
                             textAlign: "right",
                         }}
@@ -45,7 +45,7 @@ const ProjectCard = ({ projectDatum }) => {
                     <Typography
                         gutterBottom
                         variant="body2"
-                        color="text.secondary"
+                        color="text.primary"
                         sx={{
                             textAlign: "justify",
                         }}
