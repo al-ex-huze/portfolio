@@ -59,14 +59,14 @@ const ProjectsSwiper = () => {
             <Swiper
                 autoHeight={false}
                 centeredSlides={true}
-                centeredSlidesBounds={true}
+                initialSlide={2}
                 effect={"coverflow"}
                 grabCursor={true}
-                slidesPerView={"auto"}
+                slidesPerView={3}
                 coverflowEffect={{
-                    rotate: -10,
+                    rotate: -5,
                     stretch: 0,
-                    depth: 50,
+                    depth: 500,
                     modifier: 1,
                     slideShadows: false,
                 }}
