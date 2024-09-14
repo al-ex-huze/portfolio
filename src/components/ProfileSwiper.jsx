@@ -144,10 +144,9 @@ const ProfileSwiper = () => {
                                     xl: "4rem",
                                 },
                                 padding: {
-                                    xs: "4rem 0rem 0rem 0rem",
-                                    md: "4rem 4rem 0rem 4rem",
+                                    xs: "6rem 0rem 0rem 0rem",
+                                    md: "6rem 0rem 0rem 4rem",
                                 },
-                                marginX: "1rem",
                             }}
                         >
                             Junior Software Developer
@@ -206,10 +205,9 @@ const ProfileSwiper = () => {
                                     xl: "4rem",
                                 },
                                 padding: {
-                                    xs: "4rem 0rem 0rem 0rem",
-                                    md: "4rem 4rem 0rem 4rem",
+                                    xs: "6rem 0rem 0rem 0rem",
+                                    md: "6rem 0rem 0rem 4rem",
                                 },
-                                marginX: "1rem",
                             }}
                         >
                             Northcoder
@@ -270,10 +268,9 @@ const ProfileSwiper = () => {
                                     xl: "4rem",
                                 },
                                 padding: {
-                                    xs: "4rem 0rem 0rem 0rem",
-                                    md: "4rem 4rem 0rem 4rem",
+                                    xs: "6rem 0rem 0rem 0rem",
+                                    md: "6rem 0rem 0rem 4rem",
                                 },
-                                marginX: "1rem",
                             }}
                         >
                             Problem Solver
@@ -333,10 +330,9 @@ const ProfileSwiper = () => {
                                     xl: "4rem",
                                 },
                                 padding: {
-                                    xs: "4rem 0rem 0rem 0rem",
-                                    md: "4rem 4rem 0rem 4rem",
+                                    xs: "6rem 0rem 0rem 0rem",
+                                    md: "6rem 0rem 0rem 4rem",
                                 },
-                                marginX: "1rem",
                             }}
                         >
                             Team Player
