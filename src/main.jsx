@@ -7,6 +7,8 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import '@fontsource-variable/suse';
+import "@fontsource/poppins"
 import { ThemeContextProvider } from "./contexts/ThemeContext.jsx";
 
 createRoot(document.getElementById("root")).render(

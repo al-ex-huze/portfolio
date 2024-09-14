@@ -1,6 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 export const themeLight = createTheme({
+    typography: { fontFamily: "Poppins" },
     palette: {
         mode: "light",
         background: {
@@ -34,7 +35,7 @@ export const themeLight = createTheme({
                 root: {
                     variants: [
                         {
-                            props: { variant: "contained"},
+                            props: { variant: "contained" },
                             style: {
                                 backgroundColor: "#003153",
                             },
@@ -46,15 +47,15 @@ export const themeLight = createTheme({
         MuiMenu: {
             styleOverrides: {
                 paper: {
-                        background: "#F8F9FA",
-                    },
-                
+                    background: "#F8F9FA",
+                },
             },
         },
     },
 });
 
 export const themeDark = createTheme({
+    typography: { fontFamily: "Poppins" },
     palette: {
         mode: "dark",
         background: {
@@ -88,7 +89,7 @@ export const themeDark = createTheme({
                 root: {
                     variants: [
                         {
-                            props: { variant: "contained"},
+                            props: { variant: "contained" },
                             style: {
                                 backgroundColor: "#003153",
                             },
@@ -100,8 +101,8 @@ export const themeDark = createTheme({
         MuiMenu: {
             styleOverrides: {
                 paper: {
-                        background: "#00192A",
-                    },
+                    background: "#00192A",
+                },
             },
         },
     },
@@ -122,7 +123,7 @@ export const themeDark = createTheme({
     seasalt: #F8F9FA
     */
 
-    /*
+/*
     rich black darker : #001320;
     gunmetal: #20313C;
     charcoal: #404e58;
