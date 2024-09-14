@@ -4,8 +4,24 @@
     max-width: 2000px;
 }
 
+.ProjectsGrid {
+    display: block;
+}
+
+.ProjectsSwiper {
+    display: none;
+}
+
 @media only screen and (min-width: 900px) {
     .Projects {
         margin-top: 10vh;
+    }
+
+    .ProjectsGrid {
+        display: none;
+    }
+
+    .ProjectsSwiper {
+        display: block;
     }
 }
