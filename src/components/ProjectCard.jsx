@@ -17,6 +17,7 @@ import Collapse from "@mui/material/Collapse";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import CircularLoader from "./CircularLoader";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -45,9 +46,10 @@ const ExpandMore = styled((props) => {
 const ProjectCard = ({ projectDatum }) => {
     const [expanded, setExpanded] = React.useState(false);
     const [isPlaying, setIsPlaying] = React.useState(false);
+    const [isVidLoading, setIsVidLoading] = React.useState(true);
+    const [dimensions, setDimensions] = React.useState({ width: 0, height: 0 });
 
     const targetRef = React.useRef();
-    const [dimensions, setDimensions] = React.useState({ width: 0, height: 0 });
 
     React.useLayoutEffect(() => {
         if (targetRef.current) {
@@ -86,19 +88,17 @@ const ProjectCard = ({ projectDatum }) => {
                     />
                     <Box style={{ position: "relative" }}>
                         {isPlaying ? (
-                            <>
-                                <CardMedia
-                                    title={projectDatum.title}
-                                    autoPlay
-                                    component="video"
-                                    src={`${projectDatum.event_img_url_3}`}
-                                    allow="autoPlay"
-                                    // controls
-                                    muted
-                                    onEnded={() => setIsPlaying(false)}
-                                    height={`${dimensions.height}`}
-                                />
-                            </>
+                                    <CardMedia
+                                        title={projectDatum.title}
+                                        autoPlay
+                                        component="video"
+                                        src={`${projectDatum.event_img_url_3}`}
+                                        allow="autoPlay"
+                                        // controls
+                                        muted
+                                        onEnded={() => setIsPlaying(false)}
+                                        height={`${dimensions.height}`}
+                                    />
                         ) : (
                             <>
                                 <CardMedia
@@ -118,8 +118,6 @@ const ProjectCard = ({ projectDatum }) => {
                                         justifyContent: "center",
                                         alignItems: "center",
                                         color: "rgba(255, 255, 255, 0.78)",
-                                        //color: "white",
-                                        zIndex: 1000,
                                     }}
                                 >
                                     <PlayCircleOutlineIcon
