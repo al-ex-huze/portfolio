@@ -73,7 +73,6 @@ const Nav = ({ setVisibleSection }) => {
                             alt="Logo"
                         />
                     </IconButton>
-
                     <Typography
                         variant="h3"
                         style={{ flexGrow: 1 }}
@@ -81,6 +80,7 @@ const Nav = ({ setVisibleSection }) => {
                         sx={{
                             ml: 1,
                             mr: 2,
+                           
                             display: { xs: "flex", sm: "none" },
                             fontWeight: 500,
                             letterSpacing: ".3rem",
@@ -96,6 +96,7 @@ const Nav = ({ setVisibleSection }) => {
                         sx={{
                             ml: { sm: 2, md: 3, lg: 5 },
                             mr: 2,
+                            paddingY:1,
                             display: { xs: "none", sm: "flex" },
                             fontWeight: 500,
                             letterSpacing: ".2rem",

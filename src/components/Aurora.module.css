@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns the aurora at the bottom */
+    overflow: hidden;
+}
+
+.aurora {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Height of the aurora */
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 255, 255, 0.5) 50%,
+        rgba(0, 0, 255, 0.7) 100%
+    );
+    animation: wave 5s infinite;
+    cursor: pointer;
+}
+
+.aurora.clicked {
+    animation: none; /* Stop the animation when clicked */
+    background: rgba(255, 0, 255, 0.8); /* Change color on click */
+}
+
+.aurora-wave {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.5);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: waveAnimation 5s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
