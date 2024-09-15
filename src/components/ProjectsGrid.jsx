@@ -44,7 +44,7 @@ const ProjectsGrid = () => {
         <Box sx={{ mx: "auto", width: 1, flexGrow: 1 }}>
             <Grid
                 container
-                spacing={{ xs: 0 }}
+                spacing={{ xs: 1 }}
                 columns={{ xs: 1, sm: 2 }}
                 display="flex"
                 justifyContent="center"
