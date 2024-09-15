@@ -60,6 +60,10 @@ const ProjectCard = ({ projectDatum }) => {
         }
     }, []);
 
+    const handleLoadedData = () => {
+        setIsVidLoading(false);
+    };
+
     const handlePlayVideo = () => {
         setIsPlaying(true);
     };
@@ -88,17 +92,34 @@ const ProjectCard = ({ projectDatum }) => {
                     />
                     <Box style={{ position: "relative" }}>
                         {isPlaying ? (
-                                    <CardMedia
-                                        title={projectDatum.title}
-                                        autoPlay
-                                        component="video"
-                                        src={`${projectDatum.event_img_url_3}`}
-                                        allow="autoPlay"
-                                        // controls
-                                        muted
-                                        onEnded={() => setIsPlaying(false)}
-                                        height={`${dimensions.height}`}
-                                    />
+                            <>
+                                <CardMedia
+                                    title={projectDatum.title}
+                                    autoPlay
+                                    component="video"
+                                    src={`${projectDatum.event_img_url_3}`}
+                                    allow="autoPlay"
+                                    muted
+                                    onEnded={() => setIsPlaying(false)}
+                                    onLoadedData={handleLoadedData}
+                                    height={`${dimensions.height}`}
+                                />
+                                {isVidLoading && (
+                                    <Box
+                                        style={{
+                                            position: "absolute",
+                                            top: "50%",
+                                            left: "50%",
+                                            transform: "translate(-50%, -50%)",
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <CircularLoader />
+                                    </Box>
+                                )}
+                            </>
                         ) : (
                             <>
                                 <CardMedia
