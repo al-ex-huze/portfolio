@@ -18,11 +18,11 @@ import "@fontsource/poppins/600.css";
 import { ThemeContextProvider } from "./contexts/ThemeContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-    // <StrictMode>
+    <StrictMode>
         <BrowserRouter>
             <ThemeContextProvider>
                 <App />
             </ThemeContextProvider>
         </BrowserRouter>
-    // </StrictMode>
+    </StrictMode>
 );
