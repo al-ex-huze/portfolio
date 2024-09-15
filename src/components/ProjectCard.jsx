@@ -1,26 +1,29 @@
-import styles from "./ProjectCard.module.css";
-
 import * as React from "react";
+
 import { styled } from "@mui/material/styles";
 
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
+import Collapse from "@mui/material/Collapse";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 
-import Collapse from "@mui/material/Collapse";
-
+import CancelIcon from "@mui/icons-material/Cancel";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+
 import CircularLoader from "./CircularLoader";
+
+import styles from "./ProjectCard.module.css";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
+
     return <IconButton {...other} />;
 })(({ theme }) => ({
     marginLeft: "auto",
@@ -47,6 +50,7 @@ const ProjectCard = ({ projectDatum }) => {
     const [expanded, setExpanded] = React.useState(false);
     const [isPlaying, setIsPlaying] = React.useState(false);
     const [isVidLoading, setIsVidLoading] = React.useState(true);
+    const [videoError, setVideoError] = React.useState(false);
     const [dimensions, setDimensions] = React.useState({ width: 0, height: 0 });
 
     const targetRef = React.useRef();
@@ -72,6 +76,11 @@ const ProjectCard = ({ projectDatum }) => {
         setExpanded(!expanded);
     };
 
+    const handleVideoError = () => {
+        setIsVidLoading(false);
+        setVideoError(true);
+    };
+
     if (projectDatum.event_img_url_3) {
         return (
             <div className={`${styles.ProjectCard}`}>
@@ -92,18 +101,60 @@ const ProjectCard = ({ projectDatum }) => {
                     />
                     <Box style={{ position: "relative" }}>
                         {isPlaying ? (
-                            <>
-                                <CardMedia
-                                    title={projectDatum.title}
-                                    autoPlay
-                                    component="video"
-                                    src={`${projectDatum.event_img_url_3}`}
-                                    allow="autoPlay"
-                                    muted
-                                    onEnded={() => setIsPlaying(false)}
-                                    onLoadedData={handleLoadedData}
-                                    height={`${dimensions.height}`}
-                                />
+                            <Box>
+                                {videoError ? (
+                                    <Box
+                                        style={{
+                                            height: `${Math.max(
+                                                dimensions.height,
+                                                350
+                                            )}`,
+                                        }}
+                                    >
+                                        <Typography
+                                            sx={{
+                                                paddingY: `${Math.max(
+                                                    dimensions.height / 8,
+                                                    100
+                                                )}px`,
+                                            }}
+                                        >
+                                            VIDEO ERROR
+                                        </Typography>
+                                        <CancelIcon
+                                            style={{
+                                                position: "relative",
+                                                top: "100%",
+                                                left: "50%",
+                                                transform:
+                                                    "translate(-50%, -50%)",
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center",
+                                            }}
+                                            sx={{
+                                                fontSize: "76px",
+                                                paddingY: `${Math.max(
+                                                    dimensions.height / 8,
+                                                    100
+                                                )}px`,
+                                            }}
+                                        />
+                                    </Box>
+                                ) : (
+                                    <CardMedia
+                                        title={projectDatum.title}
+                                        autoPlay
+                                        component="video"
+                                        src={`${projectDatum.event_img_url_1}`}
+                                        allow="autoPlay"
+                                        muted
+                                        onEnded={() => setIsPlaying(false)}
+                                        onError={handleVideoError}
+                                        onLoadedData={handleLoadedData}
+                                        height={`${dimensions.height}`}
+                                    />
+                                )}
                                 {isVidLoading && (
                                     <Box
                                         style={{
@@ -119,7 +170,7 @@ const ProjectCard = ({ projectDatum }) => {
                                         <CircularLoader />
                                     </Box>
                                 )}
-                            </>
+                            </Box>
                         ) : (
                             <>
                                 <CardMedia
