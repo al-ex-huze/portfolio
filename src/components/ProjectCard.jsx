@@ -81,50 +81,93 @@ const ProjectCard = ({ projectDatum }) => {
         setVideoError(true);
     };
 
-    if (projectDatum.event_img_url_3) {
-        return (
-            <div className={`${styles.ProjectCard}`}>
-                <Card
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        height: "100%",
+    return (
+        <div className={`${styles.ProjectCard}`}>
+            <Card
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100%",
+                }}
+            >
+                <CardHeader
+                    title={projectDatum.title}
+                    titleTypographyProps={{
+                        variant: "h5",
+                        textAlign: "right",
                     }}
-                >
-                    <CardHeader
-                        title={projectDatum.title}
-                        titleTypographyProps={{
-                            variant: "h5",
-                            textAlign: "right",
-                        }}
-                        style={{ flexGrow: 1 }}
-                    />
-                    <Box style={{ position: "relative" }}>
-                        {isPlaying ? (
-                            <Box>
-                                {videoError ? (
-                                    <Box
-                                        style={{
-                                            height: `${Math.max(
-                                                dimensions.height,
-                                                350
-                                            )}`,
-                                        }}
-                                    >
-                                        <Typography
-                                            sx={{
-                                                paddingY: `${Math.max(
-                                                    dimensions.height / 8,
-                                                    100
-                                                )}px`,
+                    style={{ flexGrow: 1 }}
+                />
+                <Box style={{ position: "relative" }}>
+                    {!projectDatum.event_img_url_3 ? (
+                        <CardMedia
+                            component="img"
+                            image={`${projectDatum.event_img_url_1}`}
+                            title={projectDatum.title}
+                            style={{ paddingBottom: 5 }}
+                        />
+                    ) : (
+                        <>
+                            {isPlaying ? (
+                                <Box>
+                                    {videoError ? (
+                                        <Box
+                                            style={{
+                                                height: `${Math.max(
+                                                    dimensions.height,
+                                                    350
+                                                )}`,
                                             }}
                                         >
-                                            VIDEO ERROR
-                                        </Typography>
-                                        <CancelIcon
+                                            <Typography
+                                                sx={{
+                                                    paddingY: `${Math.max(
+                                                        dimensions.height / 8,
+                                                        100
+                                                    )}px`,
+                                                }}
+                                            >
+                                                VIDEO ERROR
+                                            </Typography>
+                                            <CancelIcon
+                                                style={{
+                                                    position: "relative",
+                                                    top: "100%",
+                                                    left: "50%",
+                                                    transform:
+                                                        "translate(-50%, -50%)",
+                                                    display: "flex",
+                                                    justifyContent: "center",
+                                                    alignItems: "center",
+                                                }}
+                                                sx={{
+                                                    fontSize: "76px",
+                                                    paddingY: `${Math.max(
+                                                        dimensions.height / 8,
+                                                        100
+                                                    )}px`,
+                                                }}
+                                            />
+                                        </Box>
+                                    ) : (
+                                        <CardMedia
+                                            title={projectDatum.title}
+                                            autoPlay
+                                            component="video"
+                                            src={`${projectDatum.event_img_url_3}`}
+                                            allow="autoPlay"
+                                            muted
+                                            onEnded={() => setIsPlaying(false)}
+                                            onError={handleVideoError}
+                                            onLoadedData={handleLoadedData}
+                                            height={`${dimensions.height}`}
+                                        />
+                                    )}
+                                    {isVidLoading && (
+                                        <Box
                                             style={{
-                                                position: "relative",
-                                                top: "100%",
+                                                position: "absolute",
+                                                top: "50%",
                                                 left: "50%",
                                                 transform:
                                                     "translate(-50%, -50%)",
@@ -132,31 +175,21 @@ const ProjectCard = ({ projectDatum }) => {
                                                 justifyContent: "center",
                                                 alignItems: "center",
                                             }}
-                                            sx={{
-                                                fontSize: "76px",
-                                                paddingY: `${Math.max(
-                                                    dimensions.height / 8,
-                                                    100
-                                                )}px`,
-                                            }}
-                                        />
-                                    </Box>
-                                ) : (
+                                        >
+                                            <CircularLoader />
+                                        </Box>
+                                    )}
+                                </Box>
+                            ) : (
+                                <>
                                     <CardMedia
+                                        component="img"
+                                        image={`${projectDatum.event_img_url_1}`}
                                         title={projectDatum.title}
-                                        autoPlay
-                                        component="video"
-                                        src={`${projectDatum.event_img_url_1}`}
-                                        allow="autoPlay"
-                                        muted
-                                        onEnded={() => setIsPlaying(false)}
-                                        onError={handleVideoError}
-                                        onLoadedData={handleLoadedData}
-                                        height={`${dimensions.height}`}
+                                        ref={targetRef}
                                     />
-                                )}
-                                {isVidLoading && (
-                                    <Box
+                                    <IconButton
+                                        onClick={handlePlayVideo}
                                         style={{
                                             position: "absolute",
                                             top: "50%",
@@ -165,208 +198,89 @@ const ProjectCard = ({ projectDatum }) => {
                                             display: "flex",
                                             justifyContent: "center",
                                             alignItems: "center",
+                                            color: "rgba(255, 255, 255, 0.78)",
                                         }}
                                     >
-                                        <CircularLoader />
-                                    </Box>
-                                )}
-                            </Box>
-                        ) : (
-                            <>
-                                <CardMedia
-                                    component="img"
-                                    image={`${projectDatum.event_img_url_1}`}
-                                    title={projectDatum.title}
-                                    ref={targetRef}
-                                />
-                                <IconButton
-                                    onClick={handlePlayVideo}
-                                    style={{
-                                        position: "absolute",
-                                        top: "50%",
-                                        left: "50%",
-                                        transform: "translate(-50%, -50%)",
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
-                                        color: "rgba(255, 255, 255, 0.78)",
-                                    }}
-                                >
-                                    <PlayCircleOutlineIcon
-                                        sx={{
-                                            fontSize: "76px",
-                                        }}
-                                    />
-                                </IconButton>
-                            </>
-                        )}
-                    </Box>
-                    <CardActions disableSpacing>
-                        <Typography
-                            gutterBottom
-                            variant="body1"
-                            component="div"
-                            color="text.secondary"
-                            style={{ paddingLeft: 10 }}
-                            sx={{
-                                textAlign: "left",
-                            }}
-                        >
-                            {projectDatum.topics}
-                        </Typography>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography
-                                gutterBottom
-                                variant="body2"
-                                color="text.primary"
-                                sx={{
-                                    textAlign: "justify",
-                                }}
-                            >
-                                {projectDatum.body}
-                            </Typography>
-                        </CardContent>
-                        <CardActions style={{ flexGrow: 1, ml: 2 }}>
-                            {!projectDatum.github_url ||
-                            projectDatum.github_url === "Coming Soon" ? null : (
-                                <Button
-                                    variant="contained"
-                                    disableElevation={true}
-                                    size="small"
-                                    sx={{ margin: 1 }}
-                                    aria-label="redirect"
-                                    onClick={(event) =>
-                                        (window.location.href = `${projectDatum.github_url}`)
-                                    }
-                                >
-                                    Github
-                                </Button>
-                            )}
-                            {projectDatum.deployed_url ? (
-                                <Button
-                                    variant="contained"
-                                    disableElevation={true}
-                                    size="small"
-                                    aria-label="redirect"
-                                    onClick={(event) =>
-                                        (window.location.href = `${projectDatum.deployed_url}`)
-                                    }
-                                >
-                                    Deployed
-                                </Button>
-                            ) : null}
-                        </CardActions>
-                    </Collapse>
-                </Card>
-            </div>
-        );
-    } else {
-        {
-            return (
-                <div className={`${styles.ProjectCard}`}>
-                    <Card
-                        style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            height: "100%",
+                                        <PlayCircleOutlineIcon
+                                            sx={{
+                                                fontSize: "76px",
+                                            }}
+                                        />
+                                    </IconButton>
+                                </>
+                            )}{" "}
+                        </>
+                    )}
+                </Box>
+                <CardActions disableSpacing>
+                    <Typography
+                        gutterBottom
+                        variant="body1"
+                        component="div"
+                        color="text.secondary"
+                        style={{ paddingLeft: 10 }}
+                        sx={{
+                            textAlign: "left",
                         }}
                     >
-                        <CardHeader
-                            title={projectDatum.title}
-                            titleTypographyProps={{
-                                variant: "h5",
-                                textAlign: "right",
+                        {projectDatum.topics}
+                    </Typography>
+                    <ExpandMore
+                        expand={expanded}
+                        onClick={handleExpandClick}
+                        aria-expanded={expanded}
+                        aria-label="show more"
+                    >
+                        <ExpandMoreIcon />
+                    </ExpandMore>
+                </CardActions>
+                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                    <CardContent>
+                        <Typography
+                            gutterBottom
+                            variant="body2"
+                            color="text.primary"
+                            sx={{
+                                textAlign: "justify",
                             }}
-                            style={{ flexGrow: 1 }}
-                        />
-                        <CardMedia
-                            component="img"
-                            image={`${projectDatum.event_img_url_1}`}
-                            title={projectDatum.title}
-                            style={{ paddingBottom: 5 }}
-                        />
-                        <CardActions disableSpacing>
-                            <Typography
-                                gutterBottom
-                                variant="body1"
-                                component="div"
-                                color="text.secondary"
-                                style={{ paddingLeft: 10 }}
-                                sx={{
-                                    textAlign: "left",
-                                }}
+                        >
+                            {projectDatum.body}
+                        </Typography>
+                    </CardContent>
+                    <CardActions style={{ flexGrow: 1, ml: 2 }}>
+                        {!projectDatum.github_url ||
+                        projectDatum.github_url === "Coming Soon" ? null : (
+                            <Button
+                                variant="contained"
+                                disableElevation={true}
+                                size="small"
+                                sx={{ margin: 1 }}
+                                aria-label="redirect"
+                                onClick={(event) =>
+                                    (window.location.href = `${projectDatum.github_url}`)
+                                }
                             >
-                                {projectDatum.topics}
-                            </Typography>
-                            <ExpandMore
-                                expand={expanded}
-                                onClick={handleExpandClick}
-                                aria-expanded={expanded}
-                                aria-label="show more"
+                                Github
+                            </Button>
+                        )}
+                        {projectDatum.deployed_url ? (
+                            <Button
+                                variant="contained"
+                                disableElevation={true}
+                                size="small"
+                                aria-label="redirect"
+                                onClick={(event) =>
+                                    (window.location.href = `${projectDatum.deployed_url}`)
+                                }
                             >
-                                <ExpandMoreIcon />
-                            </ExpandMore>
-                        </CardActions>
-                        <Collapse in={expanded} timeout="auto" unmountOnExit>
-                            <CardContent>
-                                <Typography
-                                    gutterBottom
-                                    variant="body2"
-                                    color="text.primary"
-                                    sx={{
-                                        textAlign: "justify",
-                                    }}
-                                >
-                                    {projectDatum.body}
-                                </Typography>
-                            </CardContent>
-                            <CardActions style={{ flexGrow: 1, ml: 2 }}>
-                                {!projectDatum.github_url ||
-                                projectDatum.github_url ===
-                                    "Coming Soon" ? null : (
-                                    <Button
-                                        variant="contained"
-                                        disableElevation={true}
-                                        size="small"
-                                        sx={{ margin: 1 }}
-                                        aria-label="redirect"
-                                        onClick={(event) =>
-                                            (window.location.href = `${projectDatum.github_url}`)
-                                        }
-                                    >
-                                        Github
-                                    </Button>
-                                )}
-                                {projectDatum.deployed_url ? (
-                                    <Button
-                                        variant="contained"
-                                        disableElevation={true}
-                                        size="small"
-                                        aria-label="redirect"
-                                        onClick={(event) =>
-                                            (window.location.href = `${projectDatum.deployed_url}`)
-                                        }
-                                    >
-                                        Deployed
-                                    </Button>
-                                ) : null}
-                            </CardActions>
-                        </Collapse>
-                    </Card>
-                </div>
-            );
-        }
-    }
+                                Deployed
+                            </Button>
+                        ) : null}
+                    </CardActions>
+                </Collapse>
+            </Card>
+        </div>
+    );
 };
 
 export default ProjectCard;
