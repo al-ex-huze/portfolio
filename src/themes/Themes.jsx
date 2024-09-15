@@ -1,7 +1,10 @@
 import { createTheme } from "@mui/material/styles";
 
 export const themeLight = createTheme({
-    typography: { fontFamily: "Poppins", body1: { fontWeight: 200 } },
+    typography: {
+        fontFamily: '"Poppins", "Roboto", "Arial", "sans-serif"',
+        body1: { fontWeight: 200 },
+    },
     palette: {
         mode: "light",
         background: {
