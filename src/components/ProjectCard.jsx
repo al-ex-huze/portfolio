@@ -152,15 +152,15 @@ const ProjectCard = ({ projectDatum }) => {
                                     ) : (
                                         <CardMedia
                                             title={projectDatum.title}
+                                            muted
+                                            playsInline
                                             autoPlay
                                             component="video"
                                             src={`${projectDatum.event_img_url_3}`}
-                                            allow="autoPlay"
-                                            muted
                                             onEnded={() => setIsPlaying(false)}
                                             onError={handleVideoError}
                                             onLoadedData={handleLoadedData}
-                                            height={`${dimensions.height}`}
+                                            height={"500px"}
                                         />
                                     )}
                                     {isVidLoading && (
@@ -208,7 +208,7 @@ const ProjectCard = ({ projectDatum }) => {
                                         />
                                     </IconButton>
                                 </>
-                            )}{" "}
+                            )}
                         </>
                     )}
                 </Box>
