@@ -3,12 +3,10 @@ import React from "react";
 import PhotoCard from "./PhotoCard";
 import styles from "./Photo.module.css"
 
-const Photo = ({ visibleSection }) => {
+const Photo = () => {
     return (
         <div
-            className={`${styles.Photo}${" "}Photo__${
-                visibleSection === "section4" ? "fade-in" : "fade-out"
-            }`}
+            className={`${styles.Photo}`}
             id="section4"
         >
             <PhotoCard />

@@ -50,7 +50,7 @@ const Banner = ({ setVisibleSection }) => {
                 isVisible ? "Banner__visible" : "Banner__hidden"
             }`}
         >
-            <Nav setVisibleSection={setVisibleSection} />
+            <Nav/>
         </div>
     );
 };
