@@ -218,9 +218,10 @@ const ProjectCard = ({ projectDatum }) => {
                         variant="body1"
                         component="div"
                         color="text.secondary"
-                        style={{ paddingLeft: 10 }}
+                        style={{ paddingLeft: 10, paddingRight:10 }}
                         sx={{
                             textAlign: "left",
+                            fontSize:{md:"1.1rem", lg:"1.2rem", xl:"1.3rem"}
                         }}
                     >
                         {projectDatum.topics}
