@@ -13,7 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ThemeToggleSwitch from "./ThemeToggleSwitch";
 import styles from "../components/Nav.module.css";
 
-const Nav = ({ setVisibleSection }) => {
+const Nav = () => {
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleLinkClickMob = (section) => {
@@ -30,7 +30,6 @@ const Nav = ({ setVisibleSection }) => {
     };
 
     const handleLinkClick = (section) => {
-        setVisibleSection(section);
         document.getElementById(section).scrollIntoView({ behavior: "smooth" });
     };
 

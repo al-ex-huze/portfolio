@@ -116,7 +116,7 @@ const ProfileSwiper = () => {
                             I'm an energetic and versatile developer with strong
                             problem-solving skills built in the engineering and
                             construction industries and experience in delivering
-                            within maintenance and commissioning projects.\
+                            within maintenance and commissioning projects.
                         </Typography>
                     </div>
                 </SwiperSlide>
