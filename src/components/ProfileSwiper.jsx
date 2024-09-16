@@ -115,8 +115,8 @@ const ProfileSwiper = () => {
                         >
                             I'm an energetic and versatile developer with strong
                             problem-solving skills built in the engineering and
-                            construction industries and experience within
-                            maintenance and commissioning projects.
+                            construction industries and experience in delivering
+                            within maintenance and commissioning projects.\
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -229,13 +229,11 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            Northcoders has given me the confidence and
-                            skills to tackle anything in the world
-                            of programming and I have explored various
-                            languages. I am currently focusing on full stack
-                            development in React.js, Express.js and PSQL and
-                            practicing CI/CD in my projects with AWS and Fly.io
-                            services.
+                            Northcoders has given me the confidence and skills
+                            to tackle anything in the world of programming and I
+                            have explored various languages. I am currently
+                            focusing on full stack development in React.js,
+                            Express.js and PSQL.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -290,9 +288,9 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I'm really at my best when made use of. Challenge me
-                            with a task and I will always rise to it and find a
-                            solution when needed. Given the opportunity I will
+                            I'm at my best when made use of. Challenge me with a
+                            task and I can be relied upon to find a solution
+                            when needed. Given the opportunity, I will always
                             try to innovate and provide something a bit
                             different.
                         </Typography>
@@ -350,9 +348,8 @@ const ProfileSwiper = () => {
                             }}
                         >
                             I've worked in a variety of environments and love to
-                            be in amongst it and the pressure that comes with
-                            that brings out the best in me. I am principled and
-                            will always do my part and more.
+                            be in amongst it. I excel under pressure and will
+                            always do my part and more.
                         </Typography>
                     </div>
                 </SwiperSlide>

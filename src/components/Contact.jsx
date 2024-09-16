@@ -10,6 +10,7 @@ const Contact = ({ visibleSection }) => {
                 id="section3"
             >
                 <ContactCard />
+                
             </div>
     );
 };
