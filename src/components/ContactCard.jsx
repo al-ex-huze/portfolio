@@ -41,7 +41,7 @@ const ContactCard = () => {
                         sx={{
                             height: {
                                 xs: "180px",
-                                sm: "2000px",
+                                sm: "200px",
                                 md: "220px",
                                 lg: "240px",
                                 xl: "260px",
@@ -90,7 +90,7 @@ const ContactCard = () => {
                         sx={{
                             height: {
                                 xs: "180px",
-                                sm: "2000px",
+                                sm: "200px",
                                 md: "220px",
                                 lg: "240px",
                                 xl: "260px",
