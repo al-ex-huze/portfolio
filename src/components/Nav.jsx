@@ -37,7 +37,7 @@ const Nav = () => {
     return (
         <AppBar position="static" style={{ backgroundColor: "#000d15" }}>
             <div className={`${styles.Nav}`}>
-                <Toolbar>
+                <Toolbar sx={{margin:1}}>
                     <Glow>
                         <Avatar
                             style={{ cursor: "pointer" }}
