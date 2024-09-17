@@ -10,6 +10,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
+import Glow from "./Glow";
 import ThemeToggleSwitch from "./ThemeToggleSwitch";
 import styles from "../components/Nav.module.css";
 
@@ -37,8 +38,10 @@ const Nav = () => {
         <AppBar position="static" style={{ backgroundColor: "#000d15" }}>
             <div className={`${styles.Nav}`}>
                 <Toolbar>
-                    <IconButton onClick={() => handleLinkClick("App")}>
+                    <Glow>
                         <Avatar
+                            style={{ cursor: "pointer" }}
+                            onClick={() => handleLinkClick("App")}
                             sx={{
                                 bgcolor: "#ffffff",
                                 padding: {
@@ -71,7 +74,7 @@ const Nav = () => {
                             src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah3003153.png"
                             alt="Logo"
                         />
-                    </IconButton>
+                    </Glow>
                     <Typography
                         variant="h3"
                         style={{ flexGrow: 1 }}
@@ -79,11 +82,11 @@ const Nav = () => {
                         sx={{
                             ml: 1,
                             mr: 2,
-                           
+
                             display: { xs: "flex", sm: "none" },
                             fontWeight: 500,
                             letterSpacing: ".3rem",
-                            fontSize: "0.8rem"
+                            fontSize: "0.8rem",
                         }}
                     >
                         Alex Hughes
@@ -95,11 +98,11 @@ const Nav = () => {
                         sx={{
                             ml: { sm: 2, md: 3, lg: 5 },
                             mr: 2,
-                            paddingY:1,
+                            paddingY: 1,
                             display: { xs: "none", sm: "flex" },
                             fontWeight: 500,
                             letterSpacing: ".2rem",
-                            fontSize:{sm: "1rem", md: "1.5rem" ,lg: "2rem"}
+                            fontSize: { sm: "1rem", md: "1.5rem", lg: "2rem" },
                         }}
                     >
                         Alex Hughes

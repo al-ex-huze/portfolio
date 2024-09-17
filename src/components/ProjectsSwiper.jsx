@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid2";
 
 import ProjectCard from "./ProjectCard";
 import CircularLoader from "./CircularLoader";
