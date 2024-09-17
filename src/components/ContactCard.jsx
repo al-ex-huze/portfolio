@@ -40,11 +40,11 @@ const ContactCard = () => {
                     <Card
                         sx={{
                             height: {
-                                xs: "120px",
-                                sm: "140px",
-                                md: "160px",
-                                lg: "180px",
-                                xl: "200px",
+                                xs: "180px",
+                                sm: "2000px",
+                                md: "220px",
+                                lg: "240px",
+                                xl: "260px",
                             },
                             display: "flex",
                             flexDirection: "column",
@@ -89,11 +89,11 @@ const ContactCard = () => {
                     <Card
                         sx={{
                             height: {
-                                xs: "120px",
-                                sm: "140px",
-                                md: "160px",
-                                lg: "180px",
-                                xl: "200px",
+                                xs: "180px",
+                                sm: "2000px",
+                                md: "220px",
+                                lg: "240px",
+                                xl: "260px",
                             },
                             display: "flex",
                             flexDirection: "column",

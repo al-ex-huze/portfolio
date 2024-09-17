@@ -220,6 +220,7 @@ const ProjectCard = ({ projectDatum }) => {
                         color="text.secondary"
                         style={{ paddingLeft: 10, paddingRight:10 }}
                         sx={{
+                            fontWeight: 300,
                             textAlign: "left",
                             fontSize:{md:"1.1rem", lg:"1.2rem", xl:"1.3rem"}
                         }}
