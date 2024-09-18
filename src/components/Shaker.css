@@ -1,0 +1,110 @@
+.shaker {
+    transition: transform 0.1s ease;
+}
+
+.shaking {
+    animation: shake 0.2s infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateX(-5px);
+        transform: translateY(3);
+    }
+    50% {
+        transform: translateX(5px);
+        transform: translateY(-5);
+    }
+    75% {
+        transform: translateX(-5px);
+        transform: translateY(3);
+    }
+    100% {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+}
+
+.intensity-1 {
+    animation-duration: 0.5s;
+}
+
+.intensity-2 {
+    animation-duration: 0.45s;
+}
+
+.intensity-3 {
+    animation-duration: 0.4s;
+}
+
+.intensity-4 {
+    animation-duration: 0.35s;
+}
+
+.intensity-5 {
+    animation-duration: 0.3s;
+}
+
+.intensity-6 {
+    animation-duration: 0.25s;
+}
+
+.intensity-7 {
+    animation-duration: 0.2s;
+}
+
+.intensity-8 {
+    animation-duration: 0.15s;
+}
+
+.intensity-9 {
+    animation-duration: 0.1s;
+}
+
+.intensity-10 {
+    animation-duration: 0.075s;
+}
+
+.intensity-11 {
+    animation-duration: 0.05s;
+}
+
+.intensity-12 {
+    animation-duration: 0.025s;
+}
+
+.intensity-13 {
+    animation-duration: 0.02s;
+}
+
+.intensity-14 {
+    animation-duration: 0.015s;
+}
+
+.intensity-15 {
+    animation-duration: 0.01s;
+}
+
+.intensity-16 {
+  animation-duration: 0.008s;
+}
+
+.intensity-17 {
+  animation-duration: 0.006s;
+}
+
+.intensity-18 {
+  animation-duration: 0.004s;
+}
+
+.intensity-19 {
+  animation-duration: 0.002s;
+}
+
+.intensity-20 {
+  animation-duration: 0.001s;
+}
