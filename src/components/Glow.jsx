@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 const GlowingBox = styled(Box)(({ theme }) => ({
-    borderRadius: "0px",
+    borderRadius: "6px",
     backgroundColor: theme.palette.background.paper,
     boxShadow:
         "0 0 8px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3)",

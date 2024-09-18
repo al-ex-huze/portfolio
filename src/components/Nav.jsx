@@ -12,6 +12,8 @@ import MenuItem from "@mui/material/MenuItem";
 
 import Glow from "./Glow";
 import ThemeToggleSwitch from "./ThemeToggleSwitch";
+import Shaker from "./Shaker";
+
 import styles from "../components/Nav.module.css";
 
 const Nav = () => {
@@ -37,44 +39,46 @@ const Nav = () => {
     return (
         <AppBar position="static" style={{ backgroundColor: "#000d15" }}>
             <div className={`${styles.Nav}`}>
-                <Toolbar sx={{margin:1}}>
-                    <Glow>
-                        <Avatar
-                            style={{ cursor: "pointer" }}
-                            onClick={() => handleLinkClick("App")}
-                            sx={{
-                                bgcolor: "#ffffff",
-                                padding: {
-                                    xs: 0.7,
-                                    sm: 0.8,
-                                    md: 0.9,
-                                    lg: 1,
-                                    xl: 1.1,
-                                },
-                                width: {
-                                    xs: 40,
-                                    sm: 45,
-                                    md: 50,
-                                    lg: 55,
-                                    xl: 60,
-                                },
-                                height: {
-                                    xs: 40,
-                                    sm: 45,
-                                    md: 50,
-                                    lg: 55,
-                                    xl: 60,
-                                },
-                            }}
-                            size={{
-                                xs: { width: 56, height: 56 },
-                                md: { width: 100, height: 100 },
-                            }}
-                            variant="rounded"
-                            src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah3003153.png"
-                            alt="Logo"
-                        />
-                    </Glow>
+                <Toolbar sx={{ margin: 1 }}>
+                    <Shaker>
+                        <Glow>
+                            <Avatar
+                                style={{ cursor: "pointer" }}
+                                onClick={() => handleLinkClick("App")}
+                                sx={{
+                                    bgcolor: "#ffffff",
+                                    padding: {
+                                        xs: 0.7,
+                                        sm: 0.8,
+                                        md: 0.9,
+                                        lg: 1,
+                                        xl: 1.1,
+                                    },
+                                    width: {
+                                        xs: 40,
+                                        sm: 45,
+                                        md: 50,
+                                        lg: 55,
+                                        xl: 60,
+                                    },
+                                    height: {
+                                        xs: 40,
+                                        sm: 45,
+                                        md: 50,
+                                        lg: 55,
+                                        xl: 60,
+                                    },
+                                }}
+                                size={{
+                                    xs: { width: 56, height: 56 },
+                                    md: { width: 100, height: 100 },
+                                }}
+                                variant="rounded"
+                                src="https://alimageexbuckhuetzepub.s3.eu-north-1.amazonaws.com/ah3003153.png"
+                                alt="Logo"
+                            />
+                        </Glow>
+                    </Shaker>{" "}
                     <Typography
                         variant="h3"
                         style={{ flexGrow: 1 }}

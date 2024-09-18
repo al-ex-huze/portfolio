@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { IconButton } from "@mui/material";
-import ShakeIcon from "@mui/icons-material/Repeat"; // You can use any icon you prefer
-import "./ShakingIcon.css"; // Import CSS for animations
+import { useState, useEffect } from "react";
+import Box from "@mui/material/Box";
+import "./Shaker.css";
 
-const ShakingIcon = () => {
+const Shaker = ({ children }) => {
     const [isShaking, setIsShaking] = useState(false);
     const [intensity, setIntensity] = useState(0);
 
@@ -12,8 +11,8 @@ const ShakingIcon = () => {
 
         if (isShaking) {
             timer = setInterval(() => {
-                setIntensity((prev) => Math.min(prev + 1, 10)); // Increase intensity up to 10
-            }, 100); // Increase intensity every 100ms
+                setIntensity((prev) => Math.min(prev + 1, 20));
+            }, 100);
         }
 
         return () => clearInterval(timer);
@@ -30,16 +29,16 @@ const ShakingIcon = () => {
     };
 
     return (
-        <IconButton
+        <Box
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
-            className={`shake-icon intensity-${intensity} ${
+            className={`shaker intensity-${intensity} ${
                 isShaking ? "shaking" : ""
             }`}
         >
-            <ShakeIcon />
-        </IconButton>
+            {children}
+        </Box>
     );
 };
 
-export default ShakingIcon;
+export default Shaker;
