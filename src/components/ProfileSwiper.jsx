@@ -113,10 +113,10 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I'm an energetic and versatile developer with strong
-                            problem-solving skills built in the engineering and
-                            construction industries and experience in delivering
-                            within maintenance and commissioning projects.
+                            I'm an energetic and versatile engineering with
+                            strong problem-solving skills built in the fire
+                            safety industry and experience in maintenance and
+                            commissioning projects.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -172,9 +172,9 @@ const ProfileSwiper = () => {
                             }}
                         >
                             I recently completed Northcoders’ Software
-                            Development course transforming my skillset into
-                            that of a programmer and taking advantage of my
-                            natural aptitude for STEM subjects.
+                            Development course transforming my skillset and
+                            acclimatising me to writing, testing and deploying
+                            code in an industry environment.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -289,10 +289,9 @@ const ProfileSwiper = () => {
                             }}
                         >
                             I'm at my best when made use of. Challenge me with a
-                            task and I can be relied upon to find a solution
-                            when needed. Given the opportunity, I will always
-                            try to innovate and provide something a bit
-                            different.
+                            task and I can be relied upon to find a solution.
+                            Given the opportunity, I will always try to innovate
+                            and provide something a bit different.
                         </Typography>
                     </div>
                 </SwiperSlide>
@@ -347,9 +346,8 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I've worked in a variety of environments and love to
-                            be in amongst it. I excel under pressure and will
-                            always do my part and more.
+                            I've worked in a variety of fields and thrive
+                            in fast-paced settings where I excel under pressure.
                         </Typography>
                     </div>
                 </SwiperSlide>
