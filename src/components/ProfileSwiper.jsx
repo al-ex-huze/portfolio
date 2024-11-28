@@ -113,7 +113,7 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I'm an energetic and versatile engineering with
+                            I'm an energetic and versatile engineer with
                             strong problem-solving skills built in the fire
                             safety industry and experience in maintenance and
                             commissioning projects.
@@ -346,7 +346,7 @@ const ProfileSwiper = () => {
                                 },
                             }}
                         >
-                            I've worked in a variety of fields and thrive
+                            I have worked in a variety of fields and thrive
                             in fast-paced settings where I excel under pressure.
                         </Typography>
                     </div>
